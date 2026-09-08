@@ -5,10 +5,10 @@ const state = { category: 'icons', tint: '#80cfbe', playing: !reducedMotion.matc
   corner: 5, family: 'all', borderWidth: 280, borderHeight: 100, borderScale: 100, borderArtwork: 'native',
   query: '', revision: 0, time: 0 };
 const descriptions = {
-  icons: ['ORBIT-MEDIA', 'A signal that stands out.', 'Animated icon outlines and radial effects for procs, auras and active abilities.'],
-  dispels: ['LIBORBITGLOW · INCLUDED BASELINES', 'An outline with a purpose.', 'Tracer and Pin Neon follow the whole frame. Explore corners and proportions with your own contour.'],
-  fills: ['ORBIT-MEDIA · SHARED MEDIA', 'Give your bars some depth.', 'Every selected status-bar texture, with its in-game name. Explore the shading at any fill level.'],
-  borders: ['ORBIT-MEDIA · SHARED MEDIA', 'A frame for every finish.', 'Seven borders, assembled from their corners and edges. Resize the frame to see how each detail holds its shape.'],
+  icons: ['ORBIT-MEDIA', 'Icon glows', 'Animated outlines and radial effects registered with LibOrbitGlow.'],
+  dispels: ['LIBORBITGLOW', 'Dispel glows', 'Tracer and Pin Neon, with contour and aspect-ratio controls.'],
+  fills: ['ORBIT-MEDIA · LIBSHAREDMEDIA', 'Status-bar textures', 'Grayscale fills registered with LibSharedMedia.'],
+  borders: ['ORBIT-MEDIA · LIBSHAREDMEDIA', 'Nine-slice borders', 'Corner size stays fixed when the frame is resized.'],
 };
 const images = new Map();
 const borderStrips = new WeakMap();

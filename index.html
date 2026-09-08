@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore Orbit: Media's animated icon glows, status-bar textures and nine-slice borders, plus LibOrbitGlow's dispel outlines. Preview colors, corners, sizes and motion.">
+  <meta name="description" content="Preview Orbit-Media icon glows, status-bar textures and borders, and LibOrbitGlow dispel glows.">
   <meta name="theme-color" content="#101216">
   <title>Orbit: Media — Glows, status bars & borders</title>
   <link rel="icon" href="orbit.png">
@@ -14,15 +14,12 @@
   <a class="skip" href="#gallery">Skip to gallery</a>
   <header class="masthead wrap">
     <a class="brand" href="#"><img src="orbit.png" alt="" width="32" height="32"><span>ORBIT<span class="brand-sub"> / MEDIA</span></span></a>
-    <nav aria-label="Resources"><a href="docs/media.html">Documentation ↗</a><a class="download" href="https://www.curseforge.com/wow/addons/orbit-pack-glows">Get Orbit: Media ↗</a></nav>
+    <nav aria-label="Resources"><a href="docs/media.html">Documentation ↗</a><a class="download" href="https://www.curseforge.com/wow/addons/orbit-pack-glows">CurseForge ↗</a></nav>
   </header>
   <main class="wrap">
-    <div class="hero">
-      <div><p class="eyebrow"><span class="live-dot"></span> THE ARTWORK COLLECTION</p>
-      <h1>A brighter<br><span>point of view.</span></h1>
-      <p class="lede">Animated glows. Sculpted status bars. Detailed borders. Find the right finish for your interface, then make it your own.</p>
-      <p class="independent">Made for World of Warcraft. Works with compatible addons — Orbit optional.</p></div>
-      <div class="hero-art" aria-hidden="true"><div class="orbital orbital-a"></div><div class="orbital orbital-b"></div><div class="hero-mark">O<span>RBIT</span></div><span class="art-label">LIGHT · TEXTURE · MOTION</span></div>
+    <div class="intro">
+      <h1>Media gallery</h1>
+      <p>Glows, status-bar textures and borders for World of Warcraft.</p>
     </div>
     <section id="gallery" aria-labelledby="gallery-title">
       <nav class="categories" aria-label="Artwork categories">
@@ -31,7 +28,7 @@
         <button class="category" data-category="fills" aria-pressed="false"><span>03</span> Status-bar art <b id="fills-count">82</b></button>
         <button class="category" data-category="borders" aria-pressed="false"><span>04</span> Nine-slice borders <b id="borders-count">7</b></button>
       </nav>
-      <div class="section-heading"><div><p class="eyebrow" id="source-label">ORBIT-MEDIA</p><h2 id="gallery-title">A signal that stands out.</h2><p id="description">Animated icon outlines and radial effects for procs, auras and active abilities.</p></div><span id="result-count" aria-live="polite"></span></div>
+      <div class="section-heading"><div><p class="eyebrow" id="source-label">ORBIT-MEDIA</p><h2 id="gallery-title">Icon glows</h2><p id="description">Animated outlines and radial effects registered with LibOrbitGlow.</p></div><span id="result-count" aria-live="polite"></span></div>
       <div class="toolbar">
         <label class="search"><span aria-hidden="true">⌕</span><input type="search" id="search" placeholder="Find a glow…" aria-label="Search artwork"></label>
         <fieldset class="color-controls"><legend class="sr-only">Preview color</legend><span class="control-label">COLOR</span>
@@ -63,7 +60,7 @@
       <p id="empty" class="empty" hidden>No matches. Try another name or collection.</p>
       <p class="gallery-note" id="gallery-note">Previewed from the current artwork. Color and blending may look slightly different in-game.</p>
     </section>
-    <section class="integration" aria-labelledby="integration-title"><div><p class="eyebrow">USE IT IN YOUR UI</p><h2 id="integration-title">One collection.<br>Room for your style.</h2></div><div class="integration-copy"><p><strong>Orbit-Media</strong> registers icon glows with LibOrbitGlow, and status-bar textures and borders with LibSharedMedia. Choose them in a compatible addon's settings.</p><p><strong>Dispel outlines come from LibOrbitGlow.</strong> Tracer and Pin Neon are included with the library. Consumers describe their frame's contour and keep their own masks.</p><a href="docs/glows.html#status-bar-glows">Read the glow API ↗</a><a href="docs/media.html">Media documentation ↗</a></div></section>
+    <section class="integration" aria-labelledby="integration-title"><h2 id="integration-title">Addon integration</h2><div class="integration-copy"><p>Orbit-Media registers icon glows with LibOrbitGlow, and status-bar textures and borders with LibSharedMedia. Orbit is not required.</p><p>Tracer and Pin Neon dispel glows are included with LibOrbitGlow. Consuming addons supply their own contours and masks.</p><a href="docs/glows.html#status-bar-glows">Glow API ↗</a><a href="docs/media.html">Media documentation ↗</a></div></section>
   </main>
   <footer class="wrap"><span>© MoONSHO7 · Orbit: Media</span><div><a href="MEDIA-LICENSE.txt">Media license</a><a href="LIBRARY-LICENSE.txt">LibOrbitGlow · MIT</a><a href="https://github.com/MoONSHO7/Orbit-Media">GitHub ↗</a></div></footer>
   <div class="toast" id="toast" role="status" hidden></div>
