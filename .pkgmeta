@@ -1,7 +1,7 @@
-package-as: Orbit-Glow-Pack
+package-as: Orbit-Media
 
 move-folders:
-  Orbit-Glow-Pack/Orbit-Glow-Pack: Orbit-Glow-Pack
+  Orbit-Media/Orbit-Media: Orbit-Media
 
 ignore:
   - .github
@@ -9,6 +9,8 @@ ignore:
   - .env
   - .pkgmeta
   - .scripts
+  - site
+  - CURSEFORGE.md
   - "**/README.md"
 
 enable-nolib-creation: no

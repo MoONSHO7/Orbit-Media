@@ -1,40 +1,64 @@
-# Orbit Glow Pack
+# Orbit: Media
 
-A **media pack** of animated icon glows for [Orbit](../Orbit) and any other **LibOrbitGlow-1.0** consumer. It contains no engine code: Orbit-Glow-Pack *provides* media, while a consumer-provided LibOrbitGlow *plays* it.
+## Description
+SharedMedia status-bar textures, borders and animated LibOrbitGlow textures. Orbit is not required.
+Previously Orbit-Glow-Pack; the CurseForge project ID and all glow keys are unchanged.
 
-## How it works
+## Purpose
+Supply optional artwork to any compatible addon without bundling a rendering engine or requiring Orbit.
+Orbit retains Pixel, Soft, Softer, Round, Chamfer and their masks without this pack.
 
-`Register.lua` registers immediately when a consumer has already provided LibOrbitGlow. When the pack loads first, it watches `ADDON_LOADED` and registers as soon as any later addon provides the library, then removes its watcher. It has no dependency on Orbit or any other specific consumer.
+Install the pack and select its artwork in a compatible addon's glow, status-bar or border settings.
+[Browse the interactive gallery](https://moonsho7.github.io/Orbit-Media/) for all 40 icon glows, 82 status-bar fills and
+seven resizable nine-slice borders, plus LibOrbitGlow's two baseline dispel outlines. The dispel assets belong to LibOrbitGlow.
 
-```lua
-LCG:RegisterGlow("rimchase", {
-    layered = true,                                              -- body (BLEND) + core (ADD) two-layer
-    loopOnly = true,                                             -- starts directly on the loop and clears immediately
-    resolve = Resolver("rimchase"),                              -- resolves only this type's loop atlas
-    rows = 6, cols = 5, frames = 30,                             -- 30-frame 5x6 flipbook (Blizzard layout)
-    shapes  = { square = true, soft = true, softer = true, round = true },  -- corner shapes shipped for this glow
-    source  = "Orbit-Glow-Pack",
-})
-```
+## Implementation
+`Borders.lua` publishes the frozen `OrbitMedia` border catalog before registration runs.
+`RegisterBorders.lua` registers seven names through LibSharedMedia-3.0: Orbit Steel, Notch, Ornate, Glow,
+Bolt, Cross and Chamfer Shadow. It registers immediately when the library exists; otherwise an ADDON_LOADED
+listener waits for any consumer to load SharedMedia, registers once and removes itself. No Orbit API is called.
 
-Every pack glow is **loop-only**. `Proc:Start` begins the selected loop immediately, while `Proc:Stop` clears it immediately; there are no shared lifecycle flourishes or hidden start/end paths. The `Resolver(name)` closure in `Register.lua` resolves only the loop phase, and `loopOnly = true` makes that contract explicit to LibOrbitGlow. Consumers may use either lifecycle-shaped calls or the direct loop API:
+`RegisterStatusBars.lua` registers 82 grayscale 256x64 status-bar fills from `StatusBars/` with the
+same immediate/deferred SharedMedia pattern. Each of 15 styles keeps all five types, with one randomly
+selected finish per type; seven original favourites also remain. In-game names omit review IDs and
+finish labels, such as `Orbit Satin Valley` and `Orbit Raised Crown`; filenames retain their provenance.
+Workspace `output/orbit-status-textures/orbit-media-selection.json` fixes the 75 choices for future
+imports. Full authoring studies remain there; only the 82 selected TGA exports ship.
 
-```lua
-local proc = LibStub("LibOrbitGlow-1.0").Proc
-proc:Loop(frame, { glow = "rimchase", color = {r,g,b,a} })
-proc:Clear(frame, { glow = "rimchase" })
-```
+Six original edge files remain byte-for-byte unchanged. Chamfer Shadow ships a 1024x128 standard Backdrop
+edge-file export for LSM and the approved 512x512 texture for integrations that read the optional catalog.
+The latter declares source margin 96, destination corner size 12 and visual outset 4. Orbit instead bundles a
+32px native-slice Chamfer adaptation with matched masks; old pack selections map to that built-in without a duplicate row.
+Other addons continue using this standalone export and own their mask, edge size and offsets.
+The two layouts are not interchangeable: a square texture-slice asset cannot be used as a Backdrop edge file.
 
-If this pack isn't installed, those glow names simply aren't registered — LibOrbitGlow falls back to its built-in baseline (`blizzard`, the WoW proc atlas), so callers degrade gracefully.
+`Register.lua` independently registers all 40 glow names immediately if LibOrbitGlow exists, or waits for
+ADDON_LOADED in the same way. All 296 glow textures retain their bytes, shapes and registry names.
+Their BLEND body and ADD core share a 5-column, 6-row, 30-frame atlas with 128px cells and straight alpha.
+36 perimeter designs supply square/soft/softer/round; four radial designs supply square only.
 
-## Textures
+`.pkgmeta` packages the inner addon as Orbit-Media. CurseForge project ID 1586459 remains attached to releases.
+Only runtime Lua, the TOC, icon, eight border TGAs, 296 glow TGAs and 82 status-bar TGAs ship.
+Border authoring scripts, selections and proof galleries remain in workspace `output/orbit-borders/`.
+`site/` owns the separate GitHub Pages gallery. Its builder reads the current Lua registrations and exports browser PNGs
+from this pack and the sibling LibOrbitGlow checkout; website files are excluded from the addon package.
 
-`Textures/orbit-glow-<type>-loop-<shape>[-core].tga` — the 36 shape-aware border/edge glow types ship 4 corner shapes (`square`, `soft`, `softer`, `round` — ring corner radii matching Orbit's `orbit-soft/softer/round` icon mask styles at the 40px reference icon), and the 4 radial emanation types (`embers`, `polyexpand`, `reticle`, `ripplewave`) ship `square` only (no border ring — one bake fits every corner style via the lib's shape fallback). That is 36×4×2 + 4×2 = 296 files. Every texture is a 30-frame `5×6` flipbook with 128px cells and straight-alpha white RGB so LibOrbitGlow recolours it via `SetVertexColor`. Legacy border loops come from `.scripts/make-glow-pack.py`, radial loops from `make-glow-pack2.py`, and Fine Edge from `make-fine-edge-flipbooks.py`.
+## Gotchas
+- Enable Orbit-Media and remove the obsolete Orbit-Glow-Pack installation when updating manually.
+- Neither library is bundled or required as a hard dependency; compatible consumers supply the library they use.
+- Status-bar fills are opaque grayscale and accept runtime tint; the consumer owns masks, borders and fill amount.
+- Restart WoW fully after adding new loose textures; name changes only require a reload. Previously selected
+  numbered or finish-labelled status-bar names must be reselected under their new names in the consuming addon.
+- Disable the separate Orbit-StatusTextures preview addon if installed to avoid its old numbered entries.
+- Old lsm:Orbit names and media: aliases remain supported in Orbit without rewriting saved choices.
+- Original borders are unmasked; switching from Chamfer Shadow must clear the previous Soft mask.
+- LSM stores a path, not preset geometry or masks. Chamfer's edge export reproduces its native proportions with
+  edge size 12 and a 4-unit outward anchor; a consuming addon may expose different padding conventions.
+- All rejected experimental designs and Silver/Bold/Forged/Groove remain removed.
+- The pack has no mask assets and no references into Orbit's addon directory.
 
-The Fine Edge additions are `rimchase`, `twincomet`, `dashwave`, `halobreathe`, `ripplepair`, and `comettail`. `dashwave` keeps its existing registry key while replacing the older bake, so saved selections continue to resolve. All three generators now share the same visual contract: a restrained tintable bloom/body in the BLEND sheet and a narrow synchronized hot pass in the additive `-core` sheet. Legacy border motion follows true rounded-perimeter distance instead of polar angle, keeping dashes and comets uniform through corners.
-
-Orbit routes the shape automatically — and size-aware: mask corners render at fixed px radii (5/10/14) while glow art stretches with the icon, so `GlowController` picks the baked corner-radius *fraction* nearest `maskRadiusPx / iconSize` (e.g. a 40px icon in Round uses the `round` bake, an 80px icon in Round uses `soft`). A user picks one glow and the art follows both their corner style and each icon's size.
-
-## Adding a glow
-
-Generate its `orbit-glow-<name>-loop-square[-core].tga` pair into `Textures/` (and every additional shape declared for it), then add `"<name>"` to the `GLOWS` list in `Register.lua`. All registrations remain loop-only.
+## References
+[Repository](https://github.com/MoONSHO7/Orbit-Media), [Orbit](https://github.com/MoONSHO7/Orbit),
+[LibOrbitGlow](https://github.com/MoONSHO7/LibOrbitGlow), [gallery build and deployment](site/README.md).
+Workspace `output/orbit-borders/media-release/verify_shared.py` checks the real SharedMedia libraries with Orbit absent.
+Workspace `output/orbit-status-textures/qa/media-check.py` verifies every status-bar file and real SharedMedia registration.

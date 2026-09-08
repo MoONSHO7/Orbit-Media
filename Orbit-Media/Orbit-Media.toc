@@ -1,0 +1,19 @@
+## Interface: 120100
+## Title: Orbit: Media
+## IconTexture: Interface\AddOns\Orbit-Media\Orbit.png
+## Notes: SharedMedia status bars, borders and animated LibOrbitGlow media. Works independently of Orbit.
+## OptionalDeps: LibSharedMedia-3.0, LibOrbitGlow-1.0
+## Author: MoONSHO7
+## Version: @project-version@
+## Group: Orbit
+## Category: Orbit UI
+
+## X-Part-Of: Orbit
+## X-License: All Rights Reserved
+## X-Category: Interface Enhancements
+## X-Curse-Project-ID: 1586459
+
+Borders.lua
+RegisterBorders.lua
+RegisterStatusBars.lua
+Register.lua
