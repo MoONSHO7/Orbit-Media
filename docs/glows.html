@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LibOrbitGlow — Documentation</title><link rel="stylesheet" href="../style.css"><link rel="icon" href="../orbit.png"></head>
+<body><header class="masthead wrap"><a class="brand" href="../"><img src="../orbit.png" alt="" width="32" height="32">
+<span>ORBIT<span class="brand-sub"> / MEDIA</span></span></a><nav aria-label="Documentation"><a href="media.html">Media</a>
+<a href="glows.html">Glow API</a><a class="download" href="../">Back to gallery ↗</a></nav></header>
+<main class="documentation wrap"><details class="contents"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#liborbitglow-10">LibOrbitGlow-1.0</a><ul>
+<li><a href="#how-it-works">How it works</a></li>
+<li><a href="#the-built-in-glows">The built-in glows</a></li>
+<li><a href="#glow-packs">Glow Packs</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a><ul>
+<li><a href="#showing-a-glow">Showing a glow</a></li>
+<li><a href="#hiding-a-glow">Hiding a glow</a></li>
+<li><a href="#one-call-for-any-glow-recommended">One call for any glow (recommended)</a></li>
+<li><a href="#combat-and-secret-value-safety">Combat and secret-value safety</a></li>
+</ul>
+</li>
+<li><a href="#status-bar-glows">Status bar glows</a><ul>
+<li><a href="#contour-selection">Contour selection</a></li>
+<li><a href="#register-your-own-status-bar-glow">Register your own status bar glow</a></li>
+<li><a href="#injecting-surfaces-into-a-native-display">Injecting surfaces into a native display</a></li>
+</ul>
+</li>
+<li><a href="#proc-lifecycle-registry-glows">Proc lifecycle (registry glows)</a></li>
+<li><a href="#build-a-glow-pack">Build a glow pack</a><ul>
+<li><a href="#lower-level-flipbook">Lower-level flipbook</a></li>
+</ul>
+</li>
+<li><a href="#reference">Reference</a><ul>
+<li><a href="#global-options">Global options</a></li>
+<li><a href="#flipbook-engines-thin-thick-medium">Flipbook engines (Thin, Thick, Medium)</a></li>
+<li><a href="#best-practices">Best practices</a></li>
+</ul>
+</li>
+<li><a href="#embedding-versioning">Embedding &amp; versioning</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#development-checks">Development checks</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+<article><h1 id="liborbitglow-10">LibOrbitGlow-1.0</h1>
+<p>A drop-in World of Warcraft library for drawing animated <strong>glows</strong> on any frame — action buttons, aura icons, cooldowns, nameplates, anything you can point it at.</p>
+<p>It comes with <strong>four icon glows</strong> using Blizzard art and <strong>two status bar glows</strong> with bundled rectangular flipbooks. It can also render <strong>Glow Packs</strong> like <a href="https://www.curseforge.com/wow/addons/orbit-pack-glows">Orbit: Media</a> — addons that register their own animated glow atlases for the library to play. Developers add this library to their addon to display and customise glows with a single call, and to consume glow atlases (their own or a third party's) for distribution to their users.</p>
+<blockquote>
+<p>Targets retail <strong>12.1.0</strong>. Requires only <strong>LibStub</strong> — no other addon dependencies.</p>
+</blockquote>
+<hr />
+<h2 id="how-it-works">How it works</h2>
+<p>LibOrbitGlow is split into an <strong>engine</strong> and a <strong>registry</strong>:</p>
+<ul>
+<li>The <strong>engine</strong> draws the four built-in icon glows and provides pooling, recolouring, throttling, and secret-value safety.</li>
+<li>The <strong>registry</strong> is an open list of glows that <strong>Glow Packs</strong> populate at load. The library owns no pack art itself — a pack calls <code>RegisterGlow</code> for each of its glows, and from then on every addon embedding LibOrbitGlow can play them.</li>
+</ul>
+<p>The upshot: a host addon writes its glow code <strong>once</strong>, and any Glow Pack the user installs automatically appears in that addon's glow options with <strong>zero extra code</strong> on the host's side.</p>
+<hr />
+<h2 id="the-built-in-glows">The built-in glows</h2>
+<p>Four icon glows, each rendered from native Blizzard assets so they match the game's look:</p>
+<table>
+<thead>
+<tr>
+<th>Glow</th>
+<th>What it looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Classic</code></td>
+<td>The classic spell-activation flash and ant swirl</td>
+</tr>
+<tr>
+<td><code>Thin</code></td>
+<td>A thin swirling ring of ants</td>
+</tr>
+<tr>
+<td><code>Thick</code></td>
+<td>A thick proc-loop ring</td>
+</tr>
+<tr>
+<td><code>Medium</code></td>
+<td>The standard action-bar proc glow</td>
+</tr>
+</tbody>
+</table>
+<p>Icon glows use shared frame/texture pools, or host-owned objects for restricted aura hierarchies. Status bar glows use host-owned textures with native, scriptless flipbook animations. Hosts own visibility and supply accessible configuration; see the restriction contract below.</p>
+<h2 id="glow-packs">Glow Packs</h2>
+<p>Richer, hand-animated glows come from <strong>packs</strong> — small addons that register their atlases with this library. The flagship is <a href="https://www.curseforge.com/wow/addons/orbit-pack-glows"><strong>Orbit: Media</strong></a>: a library of animated proc / pandemic glows. Install a pack and it shows up automatically anywhere LibOrbitGlow is used. Developers can ship their own packs too — see <a href="#build-a-glow-pack">Build a glow pack</a>.</p>
+<hr />
+<h2 id="installation">Installation</h2>
+<p><strong>Players:</strong> install it from CurseForge when an addon requires it. It provides the glow engine and registries to consuming addons through LibStub.</p>
+<p><strong>Developers (embedding):</strong> drop the <code>LibOrbitGlow-1.0/</code> folder into your addon and include its manifest from your <code>.toc</code> or XML — it loads the icon engine and status bar module:</p>
+<pre><code class="language-xml">&lt;Include file=&quot;Libs\LibOrbitGlow-1.0\LibOrbitGlow-1.0.xml&quot;/&gt;
+</code></pre>
+<p>Then consume it via LibStub:</p>
+<pre><code class="language-lua">local lib = LibStub(&quot;LibOrbitGlow-1.0&quot;, true)
+if not lib then return end
+</code></pre>
+<hr />
+<h2 id="usage">Usage</h2>
+<p>The library exposes a simplified facade that abstracts away the underlying animation groups, textures, and geometry engines. You only ask for a glow and pass an options table.</p>
+<h3 id="showing-a-glow">Showing a glow</h3>
+<pre><code class="language-lua">local lib = LibStub(&quot;LibOrbitGlow-1.0&quot;, true)
+if not lib then return end
+
+lib.Show(frame, &quot;Medium&quot;, {
+    key = &quot;myComponentGlow&quot;,
+    color = { 0.2, 0.8, 1, 1 },
+    speed = 1.0
+})
+</code></pre>
+<h3 id="hiding-a-glow">Hiding a glow</h3>
+<p>Hide a glow using the exact same type and key you showed it with, so the library can gracefully stop the animation and recycle the frame back into the pool.</p>
+<pre><code class="language-lua">lib.Hide(frame, &quot;Medium&quot;, &quot;myComponentGlow&quot;)
+</code></pre>
+<h3 id="one-call-for-any-glow-recommended">One call for any glow (recommended)</h3>
+<p><code>lib.Show</code> / <code>lib.Hide</code> reach the built-in <strong>engine</strong> types directly. But if your addon stores a glow choice as a setting, that value might be an engine type (<code>"Medium"</code>) <em>or</em> the name of a glow a pack registered (<code>"pinring"</code>) — and you shouldn't have to branch on which. <code>lib.Apply</code> / <code>lib.Remove</code> resolve either:</p>
+<pre><code class="language-lua">local id = mySettings.glow   -- &quot;Thin&quot;, &quot;Medium&quot;, or any registered pack glow like &quot;pinring&quot;
+lib.Apply(frame, id, { key = &quot;proc&quot;, color = { 0.3, 0.8, 1, 1 } })
+-- ... later:
+lib.Remove(frame, id, &quot;proc&quot;)
+
+-- A continuous glow that stays until you Remove it (no intro; the outro still plays on Remove) -- add loop = true:
+lib.Apply(frame, id, { key = &quot;buff&quot;, color = { 1, 0.8, 0.2, 1 }, loop = true })
+</code></pre>
+<p>A registered name plays its full proc lifecycle (one-shot start, looping body, one-shot end on <code>Remove</code>); <code>loop = true</code> plays the loop continuously with no intro (call <code>Proc:Clear</code> instead of <code>Remove</code> for an instant cut). An engine type shows and hides directly. <code>Remove</code> accepts either a bare key or the same options table you passed to <code>Apply</code>. Use <code>Apply</code> / <code>Remove</code> everywhere you drive a glow from user choice.</p>
+<blockquote>
+<p><strong>Call style:</strong> the top-level verbs are <strong>dot</strong>-called — <code>lib.Show</code>, <code>lib.Hide</code>, <code>lib.Apply</code>, <code>lib.Remove</code>, <code>lib.PreLoad</code>. The registry and the <code>Proc</code> / engine sub-namespaces are <strong>colon</strong> (method) calls — <code>lib:RegisterGlow(...)</code>, <code>lib.Proc:Start(...)</code>, <code>lib.StatusBar:Show(...)</code>.</p>
+</blockquote>
+<h3 id="combat-and-secret-value-safety">Combat and secret-value safety</h3>
+<p>A curve result can itself be secret. Pass it directly to a native alpha or colour sink; do not branch or do arithmetic on it. An accessible colour table may contain secret channels, but a secret ColorMixin cannot be indexed to call <code>GetRGBA</code>. Classic performs Lua alpha arithmetic and needs plain colour values.</p>
+<p>Restricted AuraButtons require creation inside <code>initializeFrame</code>, followed by restyling only when aura access is permitted. Being out of combat does <strong>not</strong> prove an AuraButton is accessible. Callers must not invoke any glow method on an access-restricted host. Pass known layout dimensions instead of reading a secret rect. The library does not inspect aura data, infer visibility, or install aura callbacks.</p>
+<pre><code class="language-lua">parent:SetAlphaFromBoolean(secretBool, 1, 0)
+</code></pre>
+<hr />
+<h2 id="status-bar-glows">Status bar glows</h2>
+<p><code>StatusBarGlows.lua</code> owns a separate registry and renderer for rectangular frame outlines. <strong>Tracer</strong> (<code>tracer</code>) and <strong>Pin Neon</strong> (<code>pinneon</code>) ship as baselines, with 2.5:1 and 4:1 sheets and square/soft/softer/round/chamfer variants. All textures live inside the library; Orbit is not a dependency. Consumers describe their outline with <code>contour</code>, or select an explicit pack <code>shape</code>. The library never reads, creates, replaces or removes the consumer's masks.</p>
+<p>Chamfer sheets follow straight 45-degree cuts. <code>chamfer-small</code>, <code>chamfer</code>, and <code>chamfer-large</code> cut 6.25%, 12.5%, and 25% of the source content's shorter side. Rounded sheets provide <code>soft-small</code> (6.25%), <code>soft</code> (12.5%), <code>soft-large</code> (17.5%), <code>softer</code> (25%), <code>round</code> (35%), and <code>round-large</code> (50%) radii. Their registered geometry lets the library choose a sheet without consumers knowing these names.</p>
+<pre><code class="language-lua">local surfaces = lib.StatusBar:Show(bar, {
+    glow = &quot;tracer&quot;, key = &quot;dispel&quot;, color = { 0.2, 0.6, 1, 1 },
+    width = 160, height = 40,
+    contour = { kind = &quot;rounded&quot;, radius = 8 },
+})
+-- ... later, while the host is accessible:
+lib.StatusBar:Hide(bar, &quot;dispel&quot;)
+</code></pre>
+<p><code>Show</code> creates textures directly on <code>bar</code>, returns a handle with <code>body</code>, optional <code>core</code>, and the resolved <code>shape</code>, and reuses them for the lifetime of that host/key. Recolouring and resizing do not restart unchanged animation; changing the sheet or duration does. <code>Hide</code> stops both animations and hides their textures without changing the host. Reuse a bounded set of keys.</p>
+<h3 id="contour-selection">Contour selection</h3>
+<p>This API requires <code>lib.statusBarMinor &gt;= 12</code>. Corner dimensions use the same logical units as the host width and height; consumers convert physical-pixel settings through their own scale system.</p>
+<table>
+<thead>
+<tr>
+<th><code>contour</code></th>
+<th>Requested outer outline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{ kind = "square" }</code></td>
+<td>Square corners</td>
+</tr>
+<tr>
+<td><code>{ kind = "rounded", radius = 8 }</code></td>
+<td>Circular 8-unit corners</td>
+</tr>
+<tr>
+<td><code>{ kind = "chamfer", cut = 5 }</code></td>
+<td>Straight cuts extending 5 units along each adjoining edge</td>
+</tr>
+</tbody>
+</table>
+<p>Selection precedence is <strong>explicit <code>shape</code> → <code>contour</code> → square</strong>. An explicit shape overrides the contour entirely; an unavailable shape falls back to square. Omitting both always selects square, including when updating an existing glow. Zero radius/cut also selects square; oversized values clamp to half the host's shorter side.</p>
+<p>The library first chooses the closest aspect ratio proportionally, then compares the rendered horizontal and vertical corner sizes against the request. Only registered geometry of the requested kind and the square fallback participate. Equal corner errors prefer the larger fraction, then the alphabetically first shape; equal aspect errors retain definition order. A pack with no contour metadata remains square unless an explicit shape is supplied.</p>
+<p>These are baked outlines, so matches are approximate and aspect stretching can make a rounded corner elliptical. Custom silhouettes use an explicit <code>shape</code> and matching pack artwork. A mask file alone cannot describe the glow's path. Invalid or secret contour data returns <code>nil</code> before changing an existing glow; an explicit valid shape bypasses contour validation.</p>
+<p>The glow follows the host's <strong>whole rectangle</strong>, not its filled percentage. For a health bar under other frame layers, mount on a caller-owned overlay at the desired frame level. <code>width</code> and <code>height</code> are known logical layout dimensions; when omitted the library measures the host. Secret, zero, or invalid dimensions return <code>nil</code> without changing an existing glow. <code>duration</code> optionally overrides the definition's loop duration. Unknown names fall back to Tracer. Only the StatusBar API resolves these names; icon <code>Apply</code>/<code>Proc</code> and <code>GetGlowList()</code> stay separate.</p>
+<h3 id="register-your-own-status-bar-glow">Register your own status bar glow</h3>
+<pre><code class="language-lua">lib:RegisterStatusBarGlow(&quot;my-pack.ribbon&quot;, {
+    label = &quot;Ribbon&quot;, source = &quot;My Glow Pack&quot;,
+    variants = {
+        { ratio = 4, path = &quot;Interface\\AddOns\\MyPack\\Textures\\ribbon-wide&quot; },
+        { ratio = 2.5, path = &quot;Interface\\AddOns\\MyPack\\Textures\\ribbon-compact&quot; },
+    },
+    shapes = { square = &quot;&quot;, soft = &quot;-soft&quot;, round = &quot;-round&quot; },
+    contours = {
+        soft = { kind = &quot;rounded&quot;, radiusFraction = 0.125 },
+        round = { kind = &quot;rounded&quot;, radiusFraction = 0.35 },
+    },
+    rows = 6, cols = 5, frames = 30, duration = 1,
+    overhang = 0.125, core = true, coreAlpha = 0.85,
+    bodyBlend = &quot;BLEND&quot;, coreBlend = &quot;ADD&quot;,
+})
+</code></pre>
+<p>Each sheet path resolves to <code>variant.path .. shapes[shape] .. ext</code>, with <code>ext = ".tga"</code> by default. <code>shapes</code> defaults to <code>{ square = "" }</code>; a square entry is required. A single-variant, single-shape pack works too. Supply <code>rows</code>, <code>cols</code> and <code>frames</code> for a different grid. Use grayscale RGBA sheets: the same art supplies a tinted body plus an additive core; <code>core = false</code> makes it one layer. <code>overhang</code> extends each edge by that fraction of the host dimension. Values above are the rendering defaults.</p>
+<p><code>contours</code> is optional metadata keyed by the pack's own shape names. Use <code>{ kind = "rounded", radiusFraction = ... }</code> or <code>{ kind = "chamfer", cutFraction = ... }</code>, with a finite fraction from 0 to 0.5 of the <strong>source content's shorter side</strong>, excluding halo overhang. A shape uses the same fraction across its aspect variants. Metadata must reference an existing shape; square geometry is implicit and cannot be redefined as rounded/chamfered. Geometry entries are copied at registration, and malformed entries reject the registration without replacing its previous definition. Unusual shapes can omit metadata and remain explicitly selectable.</p>
+<p>Registration validates and copies the definition, returns <code>false</code> for malformed data, and replaces an existing name on success. Namespace names by pack to avoid collisions. Register during addon load; hosts can discover new definitions whenever they rebuild their options:</p>
+<pre><code class="language-lua">for _, name in ipairs(lib:GetStatusBarGlowList()) do
+    local info = lib:GetStatusBarGlowInfo(name) -- label, source, variants, shapes, contours, rendering options
+end
+</code></pre>
+<p><code>IsStatusBarGlowRegistered(name)</code> checks availability; <code>UnregisterStatusBarGlow(name)</code> removes a definition (Tracer is retained as the fallback). Treat <code>GetStatusBarGlowInfo</code> as read-only; use registration to update it. <code>lib.statusBarRevision</code> increments on registry changes. <code>lib.StatusBar:Resolve(name, width, height, shape, contour)</code> returns the selected texture path, definition and resolved shape for custom previews/debugging. Pass <code>nil</code> as <code>shape</code> to select from a contour. Existing calls using the first four arguments retain their behavior.</p>
+<h3 id="injecting-surfaces-into-a-native-display">Injecting surfaces into a native display</h3>
+<p>The returned textures are real, host-owned regions. An addon can pass them to Blizzard's display sinks in an AuraButton initializer:</p>
+<pre><code class="language-lua">initializeFrame = function(button)
+    local surfaces = lib.StatusBar:Show(button, {
+        glow = &quot;pinneon&quot;, width = 160, height = 40, key = &quot;refresh&quot;,
+    })
+    button:AddPandemicRegion(surfaces.body)
+    if surfaces.core then button:AddPandemicRegion(surfaces.core) end
+end
+</code></pre>
+<p>Once a native sink owns visibility, let it drive those regions. Do not call <code>Show</code>/<code>Hide</code> to track aura state; any later presentation change must run in an accessible styling window. The native flipbooks use no Lua scripts, pooled objects, reparenting, or per-frame addon work.</p>
+<hr />
+<h2 id="proc-lifecycle-registry-glows">Proc lifecycle (registry glows)</h2>
+<p>Registered glows (the baselines and anything a pack adds) play through <code>lib.Proc</code>. You name the glow and the icon's corner shape; the library never decides the shape — your host maps its own border style to a shape the glow's <code>def.shapes</code> provides, defaulting to <code>"square"</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Plays</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lib.Proc:Start(frame, o)</code></td>
+<td>one-shot <strong>start</strong>, then the looping <strong>body</strong> (skips straight to the loop if the glow has no start phase)</td>
+</tr>
+<tr>
+<td><code>lib.Proc:Stop(frame, o)</code></td>
+<td>one-shot <strong>end</strong>, then release (skips straight to release if the glow has no end phase)</td>
+</tr>
+<tr>
+<td><code>lib.Proc:Loop(frame, o)</code></td>
+<td>the <strong>loop</strong> only, forever — for persistent glows that never "expire"</td>
+</tr>
+<tr>
+<td><code>lib.Proc:Clear(frame, o)</code></td>
+<td>stop immediately, no end animation</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-lua">lib.Proc:Start(frame, { glow = &quot;pinring&quot;, shape = &quot;square&quot;, color = {0.3,0.8,1,1}, key = &quot;proc&quot; })
+-- ... later, when the proc expires:
+lib.Proc:Stop(frame, { glow = &quot;pinring&quot;, shape = &quot;square&quot;, key = &quot;proc&quot; })
+</code></pre>
+<p><code>o</code> accepts <code>glow</code>, <code>shape</code>, <code>color</code>, <code>key</code>, <code>frameLevel</code>, <code>scale</code>, <code>padding</code>, <code>offsetScale</code> / <code>offsetX</code> / <code>offsetY</code> (nudge the glow off-centre), and per-phase durations <code>startDuration</code> (0.28), <code>loopDuration</code> (1.0), <code>endDuration</code> (0.20) seconds. Most callers should prefer the higher-level <code>lib.Apply</code> / <code>lib.Remove</code>, which route engine types <strong>and</strong> registered names.</p>
+<p><strong>Registry API</strong> — <code>lib:RegisterGlow(name, def)</code> (returns <code>false</code> and warns on a malformed def) · <code>lib:UnregisterGlow(name)</code> · <code>lib:IsGlowRegistered(name)</code> · <code>lib:GetGlowInfo(name)</code> · <code>lib:GetGlowList()</code> (sorted names — populate UI dropdowns from this; <code>GetGlowInfo(name).source</code> groups them by pack) · <code>lib:GetResolvedPaths(name [, shape])</code> (the texture paths a glow will try, for debugging).</p>
+<p>A baseline <code>"blizzard"</code> glow is always registered, so <code>Proc</code> works with no pack installed, and any unknown glow name falls back to it.</p>
+<hr />
+<h2 id="build-a-glow-pack">Build a glow pack</h2>
+<p>A pack is just an addon that calls <code>lib:RegisterGlow</code> for each of its glows during load — no dependency on any host, only on this library being present. The <code>def</code> table describes where the art lives and how to play it. <strong>One</strong> of <code>path</code> / <code>resolve</code> / <code>atlas</code> / <code>engine</code> is required; everything else is optional.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Default</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>path</code></td>
+<td><code>string</code></td>
+<td>—</td>
+<td>File-prefix for a flipbook sheet; resolves to <code>"&lt;path&gt;-&lt;phase&gt;[-&lt;shape&gt;]&lt;layer&gt;&lt;ext&gt;"</code></td>
+</tr>
+<tr>
+<td><code>resolve</code></td>
+<td><code>function(phase, shape, layer)</code></td>
+<td>—</td>
+<td>Full override of path resolution — use any naming you like; return <code>nil</code> for a phase/layer you don't ship</td>
+</tr>
+<tr>
+<td><code>atlas</code></td>
+<td><code>string</code></td>
+<td>—</td>
+<td>A Blizzard <strong>atlas name</strong> (single layer, <code>SetAtlas</code>) instead of files</td>
+</tr>
+<tr>
+<td><code>engine</code></td>
+<td><code>string</code></td>
+<td>—</td>
+<td>Delegate to a built-in engine (<code>"Classic"</code>, <code>"Thin"</code>, <code>"Thick"</code>, <code>"Medium"</code>)</td>
+</tr>
+<tr>
+<td><code>layered</code></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td>Draw a tinted <strong>BLEND body</strong> + a near-white <strong>ADD core</strong> (depth). <code>false</code> = one tinted layer</td>
+</tr>
+<tr>
+<td><code>core</code></td>
+<td><code>boolean</code></td>
+<td><code>true</code></td>
+<td>When <code>layered</code>, include the <code>-core</code> layer (set <code>false</code> for a body-only layered glow)</td>
+</tr>
+<tr>
+<td><code>blendMode</code></td>
+<td><code>string</code></td>
+<td><code>"ADD"</code></td>
+<td>Blend for a single-layer <code>path</code> / <code>atlas</code> def</td>
+</tr>
+<tr>
+<td><code>bodyBlend</code> / <code>coreBlend</code></td>
+<td><code>string</code></td>
+<td><code>"BLEND"</code> / <code>"ADD"</code></td>
+<td>Per-layer blend overrides for a <code>layered</code> def</td>
+</tr>
+<tr>
+<td><code>phases</code></td>
+<td><code>table</code></td>
+<td>all</td>
+<td>Set of phases the art provides, e.g. <code>{ loop = true }</code></td>
+</tr>
+<tr>
+<td><code>loopOnly</code></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td>Shorthand for <code>phases = { loop = true }</code></td>
+</tr>
+<tr>
+<td><code>shaped</code></td>
+<td><code>boolean</code></td>
+<td><code>true</code></td>
+<td>Include the <code>-&lt;shape&gt;</code> segment in the default name (set <code>false</code> if your files aren't shape-specific)</td>
+</tr>
+<tr>
+<td><code>ext</code></td>
+<td><code>string</code></td>
+<td><code>".tga"</code></td>
+<td>File extension for <code>path</code> resolution</td>
+</tr>
+<tr>
+<td><code>rows</code> / <code>cols</code> / <code>frames</code></td>
+<td><code>number</code></td>
+<td><code>6</code> / <code>5</code> / <code>30</code></td>
+<td>Flipbook grid (Blizzard's 30-frame, 5-wide × 6-tall layout)</td>
+</tr>
+<tr>
+<td><code>shapes</code></td>
+<td><code>table</code></td>
+<td><code>{ square = true }</code></td>
+<td>Corner shapes your art ships, e.g. <code>{ square = true, round = true }</code></td>
+</tr>
+<tr>
+<td><code>scale</code></td>
+<td><code>number</code></td>
+<td>engine default</td>
+<td>Default size multiplier (path / atlas defs). For an <code>engine</code> def, sizing goes through <code>options</code></td>
+</tr>
+<tr>
+<td><code>desaturated</code></td>
+<td><code>boolean</code></td>
+<td><code>true</code></td>
+<td>(<code>atlas</code> defs) desaturate before tinting</td>
+</tr>
+<tr>
+<td><code>options</code></td>
+<td><code>table</code></td>
+<td>—</td>
+<td>(<code>engine</code> defs) extra engine options (<code>scale</code>, <code>frequency</code>, …)</td>
+</tr>
+<tr>
+<td><code>source</code></td>
+<td><code>string</code></td>
+<td><code>"Unknown"</code></td>
+<td>Group label for consumer pickers — use your pack name</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-lua">local lib = LibStub(&quot;LibOrbitGlow-1.0&quot;, true)
+if not lib then return end
+local ROOT = &quot;Interface\\AddOns\\MyGlowPack\\Textures\\&quot;
+
+-- 1. Full layered glow: start/loop/end x body+core, shape-suffixed.
+lib:RegisterGlow(&quot;myproc&quot;, {
+    layered = true, path = ROOT .. &quot;myproc&quot;,
+    shapes = { square = true }, source = &quot;MyGlowPack&quot;,
+})   -- expects myproc-loop-square.tga, myproc-loop-square-core.tga, myproc-start-square.tga, ...
+
+-- 2. Single-file loop-only flipbook (one sheet, no start/end, no core, no shape suffix):
+lib:RegisterGlow(&quot;spark&quot;, {
+    path = ROOT .. &quot;spark&quot;, loopOnly = true, shaped = false,
+    rows = 4, cols = 4, frames = 16, blendMode = &quot;ADD&quot;, source = &quot;MyGlowPack&quot;,
+})   -- expects exactly one file: spark-loop.tga
+
+-- 3. Arbitrary naming via a resolver (return nil for phases you don't have):
+lib:RegisterGlow(&quot;ribbon&quot;, {
+    source = &quot;MyGlowPack&quot;, rows = 5, cols = 6, frames = 30,
+    resolve = function(phase, shape, layer)
+        if phase ~= &quot;loop&quot; or layer ~= &quot;&quot; then return nil end
+        return ROOT .. &quot;fx\\ribbon_sheet.tga&quot;
+    end,
+})
+</code></pre>
+<p>The flipbook grid (<code>rows</code> / <code>cols</code> / <code>frames</code>) describes how the sheet is sliced — one frame per cell over <code>loopDuration</code> seconds (<code>.tga</code>, any cell size; Orbit: Media uses 128×128 cells on a 640×768 sheet). <strong>Layered / <code>path</code> art must be grayscale</strong> — the layers are <em>tinted</em> by your <code>color</code> at draw time (not desaturated), so coloured source art multiplies muddily; the body takes your colour and the core is auto-brightened toward white for depth.</p>
+<p>The host discovers your glows purely through <code>GetGlowList()</code> — no host-side code change is needed to surface a new pack. If a glow renders blank, call <code>lib:GetResolvedPaths(name [, shape])</code> to get the exact paths the lib is trying (WoW's <code>SetTexture</code> fails <strong>silently</strong> on a missing file), or set <code>lib.DEBUG = true</code> to print each path as it plays. A loop-only pack must declare <code>loopOnly = true</code> (or <code>phases</code>), or the lib will try to play <code>-start</code> / <code>-end</code> art it assumes exists.</p>
+<h3 id="lower-level-flipbook">Lower-level flipbook</h3>
+<p><code>lib.Flipbook:Show(frame, opts)</code> is the raw sink the registry feeds. It accepts <code>atlas</code> (a Blizzard atlas name, or a file path with <code>isTexture = true</code>), <code>rows</code> / <code>cols</code> / <code>frames</code>, <code>speed</code>, <code>blendMode</code>, <code>color</code>, <code>key</code>, plus <code>once = true</code> + <code>onFinished</code> for a single one-shot. Use it directly only if the registry / <code>Proc</code> model doesn't fit.</p>
+<hr />
+<h2 id="reference">Reference</h2>
+<h3 id="global-options">Global options</h3>
+<p>Passed as the 3rd argument to <code>lib.Show(frame, glowType, options)</code>, honoured across almost all engines.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>key</code></td>
+<td><code>string</code></td>
+<td>Unique id used for tracking and hiding. Default: <code>"Default"</code></td>
+</tr>
+<tr>
+<td><code>color</code></td>
+<td><code>table</code></td>
+<td><code>{ r, g, b, a }</code> array or an accessible <code>Color</code> object. Default: white</td>
+</tr>
+<tr>
+<td><code>frameLevel</code></td>
+<td><code>number</code></td>
+<td>Relative frame level above the parent. Default: <code>8</code></td>
+</tr>
+<tr>
+<td><code>desaturated</code></td>
+<td><code>boolean</code></td>
+<td>Atlas engines (<code>Thin</code> / <code>Thick</code> / <code>Medium</code>) desaturate before tinting; pass <code>false</code> to keep native colours. Default: <code>true</code></td>
+</tr>
+<tr>
+<td><code>force</code></td>
+<td><code>boolean</code></td>
+<td>On a re-show of a live glow, rebuild even when options are unchanged (defeats the re-tint fast path). Honoured by all engines. Default: <code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="flipbook-engines-thin-thick-medium">Flipbook engines (<code>Thin</code>, <code>Thick</code>, <code>Medium</code>)</h3>
+<ul>
+<li><code>scale</code> (number): multiplier applied to width and height. Default: <code>1.4</code>.</li>
+</ul>
+<h3 id="best-practices">Best practices</h3>
+<ul>
+<li>Always provide a specific <code>key</code>. If you render multiple glows to the same frame (e.g. tracking several auras), omitting the key overwrites the shared <code>"Default"</code> bucket.</li>
+<li>Pair a single <code>lib.Show</code> with a single <code>lib.Hide</code> (same type + key) so frames return to the pool.</li>
+<li><code>lib.PreLoad(glowType, count)</code> warms the shared pool against a hidden dummy frame so the first show in combat doesn't hitch. It amortises object <strong>allocation</strong> (per-size geometry still computes on the first real show). Engine types only — registered pack names are not poolable this way.</li>
+<li>Re-showing a live glow with the <strong>same</strong> options only re-tints (no teardown, no animation restart); changing any geometry / timing / atlas option, or passing <code>force = true</code>, rebuilds it. Driving a glow from a per-event handler is therefore cheap even without your own dedup.</li>
+</ul>
+<hr />
+<h2 id="embedding-versioning">Embedding &amp; versioning</h2>
+<p>Minor 11 removes the Pixel and Autocast engines and their registry entries. Hosts must migrate saved selections to retained styles. Load the XML manifest to include <code>StatusBarGlows.lua</code> and retain its adjacent <code>Textures</code> folder when embedding.</p>
+<p>Minor 12 adds status-bar contour selection and optional pack geometry metadata. Older string-based shape registrations remain valid; unknown metadata-free shapes are never assigned inferred geometry. This does not change the icon <code>Apply</code>/<code>Proc</code> shape API.</p>
+<p>Targets <strong>retail 12.1.0</strong>; the core engine uses <code>CreateMaskTexture</code> / <code>CreateFramePool</code>. LibStub shares one library table between embedders and upgrades it when a higher minor loads, so feature-probe rather than assume when you rely on a newer method — a co-installed older copy may not have it:</p>
+<pre><code class="language-lua">if lib.StatusBar then lib.StatusBar:Show(bar, opts) end
+</code></pre>
+<hr />
+<h2 id="license">License</h2>
+<p>MIT. See <a href="../LIBRARY-LICENSE.txt">LICENSE</a>.</p>
+<h2 id="development-checks">Development checks</h2>
+<p>Run <code>python tests/test_glows.py</code> with <code>lupa</code> (Lua 5.1). The tests exercise registration, embedded upgrades, retained icon engines, variant paths, texture ownership/reuse, resizing and cleanup. Verify actual art, layering and aura restrictions in WoW through the consuming addon's displays and previews.</p></article></main><footer class="wrap"><span>© MoONSHO7</span><a href="../">Orbit: Media gallery ↗</a></footer></body></html>

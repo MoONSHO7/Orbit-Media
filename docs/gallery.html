@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gallery development — Documentation</title><link rel="stylesheet" href="../style.css"><link rel="icon" href="../orbit.png"></head>
+<body><header class="masthead wrap"><a class="brand" href="../"><img src="../orbit.png" alt="" width="32" height="32">
+<span>ORBIT<span class="brand-sub"> / MEDIA</span></span></a><nav aria-label="Documentation"><a href="media.html">Media</a>
+<a href="glows.html">Glow API</a><a class="download" href="../">Back to gallery ↗</a></nav></header>
+<main class="documentation wrap"><details class="contents"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#media-gallery">Media gallery</a><ul>
+<li><a href="#description">Description</a></li>
+<li><a href="#purpose">Purpose</a></li>
+<li><a href="#implementation">Implementation</a></li>
+<li><a href="#gotchas">Gotchas</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+<article><h1 id="media-gallery">Media gallery</h1>
+<h2 id="description">Description</h2>
+<p>Static GitHub Pages gallery for Orbit: Media artwork and LibOrbitGlow's baseline dispel glows.</p>
+<h2 id="purpose">Purpose</h2>
+<p>Preview the current registered artwork with consumer-style tint, corner and fill controls.
+The website is separate from the addon and from LibOrbitGlow's removed in-game demo.</p>
+<h2 id="implementation">Implementation</h2>
+<p><code>build.py</code> reads the actual Lua registrations in an isolated Lua 5.1 runtime and converts their TGA assets to lossless PNG.
+<code>index.html</code>, <code>style.css</code> and <code>gallery.js</code> consume the resulting <code>catalog.json</code>; visible cards load their selected assets
+and animate the native 30-frame loops. Dispel contour matching uses the pack's registered geometry.
+The browser preserves source alpha and multiplies source RGB by tint before BLEND/ADD composition.
+The same build renders the current media, library and gallery READMEs into <code>dist/docs</code>, so website documentation travels
+with the artwork snapshot. Cached PNGs are reused only while both source and export hashes match.</p>
+<p>From the repository root, run <code>python -m pip install -r site/requirements.txt</code>, then <code>python site/build.py</code>.
+The default library input is the sibling <code>../LibOrbitGlow/LibOrbitGlow-1.0</code>; override it with <code>--library PATH</code>.
+Serve <code>site/dist</code> with <code>python -m http.server 8766 --bind 127.0.0.1 --directory site/dist</code>.
+<code>node site/check.cjs</code> runs the optional Playwright browser checks against that server (requires Playwright and a browser).
+<code>python site/publish.py</code> reviews the generated file list; <code>--publish</code> creates and pushes a website-only commit to the existing
+<code>gh-pages</code> branch. It checks the remote parent and uses Git objects directly, without touching the index or active checkout.
+Never switch the live addon checkout or push <code>main</code> to deploy the site. <code>dist</code> includes <code>.nojekyll</code> and library attribution.</p>
+<h2 id="gotchas">Gotchas</h2>
+<ul>
+<li>The gallery mirrors the local source inputs, including unreleased artwork. Rebuild before deployment; do not hand-edit PNGs
+  or the generated catalog. The source hashes in <code>catalog.json</code> identify the exact inputs used.</li>
+<li>Orbit-Media supplies icon glows and status-bar fills; LibOrbitGlow supplies dispel outlines. Status-bar fills are not glows.</li>
+<li>Browser previews approximate native WoW rendering. Consumers own masks, frame geometry and integration.</li>
+<li>Animation pauses offscreen and respects reduced-motion preferences. Search and controls apply to the selected category.</li>
+<li>The addon packager excludes this directory. The gallery does not alter or redistribute library runtime code.</li>
+</ul>
+<h2 id="references">References</h2>
+<p><a href="media.html">Orbit-Media</a>, <a href="https://github.com/MoONSHO7/LibOrbitGlow">LibOrbitGlow</a>, <a href="https://moonsho7.github.io/Orbit-Media/">live gallery</a>.</p></article></main><footer class="wrap"><span>© MoONSHO7</span><a href="../">Orbit: Media gallery ↗</a></footer></body></html>

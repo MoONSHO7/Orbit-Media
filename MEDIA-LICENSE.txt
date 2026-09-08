@@ -1,0 +1,21 @@
+All Rights Reserved
+
+Copyright (c) 2026 MoONSHO7
+
+Orbit Media -- including all source code, textures, animations, and other
+assets contained in this repository -- is the exclusive property of the author
+(MoONSHO7) and is protected by copyright law.
+
+No permission is granted to any person or entity to copy, reproduce,
+redistribute, publish, sublicense, mirror, modify, reverse-engineer, extract,
+repackage, or otherwise use any part of this project or its assets, in whole or
+in part, by any means, without the express prior written permission of the
+author.
+
+Use of the bundled glow assets in other projects is by STRICT REQUEST ONLY:
+you must contact the author and obtain written permission before using any
+asset.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR ITS USE.

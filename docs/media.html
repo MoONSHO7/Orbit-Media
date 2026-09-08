@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Orbit: Media — Documentation</title><link rel="stylesheet" href="../style.css"><link rel="icon" href="../orbit.png"></head>
+<body><header class="masthead wrap"><a class="brand" href="../"><img src="../orbit.png" alt="" width="32" height="32">
+<span>ORBIT<span class="brand-sub"> / MEDIA</span></span></a><nav aria-label="Documentation"><a href="media.html">Media</a>
+<a href="glows.html">Glow API</a><a class="download" href="../">Back to gallery ↗</a></nav></header>
+<main class="documentation wrap"><details class="contents"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#orbit-media">Orbit: Media</a><ul>
+<li><a href="#description">Description</a></li>
+<li><a href="#purpose">Purpose</a></li>
+<li><a href="#implementation">Implementation</a></li>
+<li><a href="#gotchas">Gotchas</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+<article><h1 id="orbit-media">Orbit: Media</h1>
+<h2 id="description">Description</h2>
+<p>SharedMedia status-bar textures, borders and animated LibOrbitGlow textures. Orbit is not required.
+Previously Orbit-Glow-Pack; the CurseForge project ID and all glow keys are unchanged.</p>
+<h2 id="purpose">Purpose</h2>
+<p>Supply optional artwork to any compatible addon without bundling a rendering engine or requiring Orbit.
+Orbit retains Pixel, Soft, Softer, Round, Chamfer and their masks without this pack.</p>
+<p>Install the pack and select its artwork in a compatible addon's glow, status-bar or border settings.
+<a href="https://moonsho7.github.io/Orbit-Media/">Browse the interactive gallery</a> for all 40 icon glows and 82 status-bar fills,
+plus LibOrbitGlow's two baseline dispel outlines. The dispel assets belong to LibOrbitGlow, not this media pack.</p>
+<h2 id="implementation">Implementation</h2>
+<p><code>Borders.lua</code> publishes the frozen <code>OrbitMedia</code> border catalog before registration runs.
+<code>RegisterBorders.lua</code> registers seven names through LibSharedMedia-3.0: Orbit Steel, Notch, Ornate, Glow,
+Bolt, Cross and Chamfer Shadow. It registers immediately when the library exists; otherwise an ADDON_LOADED
+listener waits for any consumer to load SharedMedia, registers once and removes itself. No Orbit API is called.</p>
+<p><code>RegisterStatusBars.lua</code> registers 82 grayscale 256x64 status-bar fills from <code>StatusBars/</code> with the
+same immediate/deferred SharedMedia pattern. Each of 15 styles keeps all five types, with one randomly
+selected finish per type; seven original favourites also remain. In-game names omit review IDs and
+finish labels, such as <code>Orbit Satin Valley</code> and <code>Orbit Raised Crown</code>; filenames retain their provenance.
+Workspace <code>output/orbit-status-textures/orbit-media-selection.json</code> fixes the 75 choices for future
+imports. Full authoring studies remain there; only the 82 selected TGA exports ship.</p>
+<p>Six original edge files remain byte-for-byte unchanged. Chamfer Shadow ships a 1024x128 standard Backdrop
+edge-file export for LSM and the approved 512x512 texture for integrations that read the optional catalog.
+The latter declares source margin 96, destination corner size 12 and visual outset 4. Orbit instead bundles a
+32px native-slice Chamfer adaptation with matched masks; old pack selections map to that built-in without a duplicate row.
+Other addons continue using this standalone export and own their mask, edge size and offsets.
+The two layouts are not interchangeable: a square texture-slice asset cannot be used as a Backdrop edge file.</p>
+<p><code>Register.lua</code> independently registers all 40 glow names immediately if LibOrbitGlow exists, or waits for
+ADDON_LOADED in the same way. All 296 glow textures retain their bytes, shapes and registry names.
+Their BLEND body and ADD core share a 5-column, 6-row, 30-frame atlas with 128px cells and straight alpha.
+36 perimeter designs supply square/soft/softer/round; four radial designs supply square only.</p>
+<p><code>.pkgmeta</code> packages the inner addon as Orbit-Media. CurseForge project ID 1586459 remains attached to releases.
+Only runtime Lua, the TOC, icon, eight border TGAs, 296 glow TGAs and 82 status-bar TGAs ship.
+Border authoring scripts, selections and proof galleries remain in workspace <code>output/orbit-borders/</code>.
+<code>site/</code> owns the separate GitHub Pages gallery. Its builder reads the current Lua registrations and exports browser PNGs
+from this pack and the sibling LibOrbitGlow checkout; website files are excluded from the addon package.</p>
+<h2 id="gotchas">Gotchas</h2>
+<ul>
+<li>Enable Orbit-Media and remove the obsolete Orbit-Glow-Pack installation when updating manually.</li>
+<li>Neither library is bundled or required as a hard dependency; compatible consumers supply the library they use.</li>
+<li>Status-bar fills are opaque grayscale and accept runtime tint; the consumer owns masks, borders and fill amount.</li>
+<li>Restart WoW fully after adding new loose textures; name changes only require a reload. Previously selected
+  numbered or finish-labelled status-bar names must be reselected under their new names in the consuming addon.</li>
+<li>Disable the separate Orbit-StatusTextures preview addon if installed to avoid its old numbered entries.</li>
+<li>Old lsm:Orbit names and media: aliases remain supported in Orbit without rewriting saved choices.</li>
+<li>Original borders are unmasked; switching from Chamfer Shadow must clear the previous Soft mask.</li>
+<li>LSM stores a path, not preset geometry or masks. Chamfer's edge export reproduces its native proportions with
+  edge size 12 and a 4-unit outward anchor; a consuming addon may expose different padding conventions.</li>
+<li>All rejected experimental designs and Silver/Bold/Forged/Groove remain removed.</li>
+<li>The pack has no mask assets and no references into Orbit's addon directory.</li>
+</ul>
+<h2 id="references">References</h2>
+<p><a href="https://github.com/MoONSHO7/Orbit-Media">Repository</a>, <a href="https://github.com/MoONSHO7/Orbit">Orbit</a>,
+<a href="https://github.com/MoONSHO7/LibOrbitGlow">LibOrbitGlow</a>, <a href="gallery.html">gallery build and deployment</a>.
+Workspace <code>output/orbit-borders/media-release/verify_shared.py</code> checks the real SharedMedia libraries with Orbit absent.
+Workspace <code>output/orbit-status-textures/qa/media-check.py</code> verifies every status-bar file and real SharedMedia registration.</p></article></main><footer class="wrap"><span>© MoONSHO7</span><a href="../">Orbit: Media gallery ↗</a></footer></body></html>

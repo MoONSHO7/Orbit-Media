@@ -1,0 +1,4374 @@
+{
+  "icons": [
+    {
+      "id": "arcs4",
+      "name": "Four Arcs",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-arcs4-loop-round.png",
+          "assets/icons/orbit-glow-arcs4-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-arcs4-loop-soft.png",
+          "assets/icons/orbit-glow-arcs4-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-arcs4-loop-softer.png",
+          "assets/icons/orbit-glow-arcs4-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-arcs4-loop-square.png",
+          "assets/icons/orbit-glow-arcs4-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "beacon",
+      "name": "Beacon",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-beacon-loop-round.png",
+          "assets/icons/orbit-glow-beacon-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-beacon-loop-soft.png",
+          "assets/icons/orbit-glow-beacon-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-beacon-loop-softer.png",
+          "assets/icons/orbit-glow-beacon-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-beacon-loop-square.png",
+          "assets/icons/orbit-glow-beacon-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "chase",
+      "name": "Chase",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-chase-loop-round.png",
+          "assets/icons/orbit-glow-chase-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-chase-loop-soft.png",
+          "assets/icons/orbit-glow-chase-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-chase-loop-softer.png",
+          "assets/icons/orbit-glow-chase-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-chase-loop-square.png",
+          "assets/icons/orbit-glow-chase-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "comet2",
+      "name": "Twin Comets",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-comet2-loop-round.png",
+          "assets/icons/orbit-glow-comet2-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-comet2-loop-soft.png",
+          "assets/icons/orbit-glow-comet2-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-comet2-loop-softer.png",
+          "assets/icons/orbit-glow-comet2-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-comet2-loop-square.png",
+          "assets/icons/orbit-glow-comet2-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "cometdual",
+      "name": "Dual Comet",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-cometdual-loop-round.png",
+          "assets/icons/orbit-glow-cometdual-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-cometdual-loop-soft.png",
+          "assets/icons/orbit-glow-cometdual-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-cometdual-loop-softer.png",
+          "assets/icons/orbit-glow-cometdual-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-cometdual-loop-square.png",
+          "assets/icons/orbit-glow-cometdual-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "cometrays",
+      "name": "Comet Rays",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-cometrays-loop-round.png",
+          "assets/icons/orbit-glow-cometrays-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-cometrays-loop-soft.png",
+          "assets/icons/orbit-glow-cometrays-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-cometrays-loop-softer.png",
+          "assets/icons/orbit-glow-cometrays-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-cometrays-loop-square.png",
+          "assets/icons/orbit-glow-cometrays-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "comettail",
+      "name": "Comet Tail",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-comettail-loop-round.png",
+          "assets/icons/orbit-glow-comettail-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-comettail-loop-soft.png",
+          "assets/icons/orbit-glow-comettail-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-comettail-loop-softer.png",
+          "assets/icons/orbit-glow-comettail-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-comettail-loop-square.png",
+          "assets/icons/orbit-glow-comettail-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "cometwave",
+      "name": "Comet Wave",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-cometwave-loop-round.png",
+          "assets/icons/orbit-glow-cometwave-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-cometwave-loop-soft.png",
+          "assets/icons/orbit-glow-cometwave-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-cometwave-loop-softer.png",
+          "assets/icons/orbit-glow-cometwave-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-cometwave-loop-square.png",
+          "assets/icons/orbit-glow-cometwave-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "dashwave",
+      "name": "Dash Wave",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-dashwave-loop-round.png",
+          "assets/icons/orbit-glow-dashwave-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-dashwave-loop-soft.png",
+          "assets/icons/orbit-glow-dashwave-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-dashwave-loop-softer.png",
+          "assets/icons/orbit-glow-dashwave-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-dashwave-loop-square.png",
+          "assets/icons/orbit-glow-dashwave-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "dual",
+      "name": "Dual",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-dual-loop-round.png",
+          "assets/icons/orbit-glow-dual-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-dual-loop-soft.png",
+          "assets/icons/orbit-glow-dual-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-dual-loop-softer.png",
+          "assets/icons/orbit-glow-dual-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-dual-loop-square.png",
+          "assets/icons/orbit-glow-dual-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "embers",
+      "name": "Embers",
+      "source": "Orbit-Media",
+      "shapes": {
+        "square": [
+          "assets/icons/orbit-glow-embers-loop-square.png",
+          "assets/icons/orbit-glow-embers-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "halo",
+      "name": "Halo",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-halo-loop-round.png",
+          "assets/icons/orbit-glow-halo-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-halo-loop-soft.png",
+          "assets/icons/orbit-glow-halo-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-halo-loop-softer.png",
+          "assets/icons/orbit-glow-halo-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-halo-loop-square.png",
+          "assets/icons/orbit-glow-halo-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "halobreathe",
+      "name": "Halo Breathe",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-halobreathe-loop-round.png",
+          "assets/icons/orbit-glow-halobreathe-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-halobreathe-loop-soft.png",
+          "assets/icons/orbit-glow-halobreathe-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-halobreathe-loop-softer.png",
+          "assets/icons/orbit-glow-halobreathe-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-halobreathe-loop-square.png",
+          "assets/icons/orbit-glow-halobreathe-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "neon",
+      "name": "Neon",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-neon-loop-round.png",
+          "assets/icons/orbit-glow-neon-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-neon-loop-soft.png",
+          "assets/icons/orbit-glow-neon-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-neon-loop-softer.png",
+          "assets/icons/orbit-glow-neon-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-neon-loop-square.png",
+          "assets/icons/orbit-glow-neon-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "orbittail",
+      "name": "Orbit Tail",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-orbittail-loop-round.png",
+          "assets/icons/orbit-glow-orbittail-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-orbittail-loop-soft.png",
+          "assets/icons/orbit-glow-orbittail-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-orbittail-loop-softer.png",
+          "assets/icons/orbit-glow-orbittail-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-orbittail-loop-square.png",
+          "assets/icons/orbit-glow-orbittail-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "pinarc",
+      "name": "Pin Arc",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-pinarc-loop-round.png",
+          "assets/icons/orbit-glow-pinarc-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-pinarc-loop-soft.png",
+          "assets/icons/orbit-glow-pinarc-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-pinarc-loop-softer.png",
+          "assets/icons/orbit-glow-pinarc-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-pinarc-loop-square.png",
+          "assets/icons/orbit-glow-pinarc-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "pinchase",
+      "name": "Pin Chase",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-pinchase-loop-round.png",
+          "assets/icons/orbit-glow-pinchase-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-pinchase-loop-soft.png",
+          "assets/icons/orbit-glow-pinchase-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-pinchase-loop-softer.png",
+          "assets/icons/orbit-glow-pinchase-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-pinchase-loop-square.png",
+          "assets/icons/orbit-glow-pinchase-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "pincomet",
+      "name": "Pin Comet",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-pincomet-loop-round.png",
+          "assets/icons/orbit-glow-pincomet-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-pincomet-loop-soft.png",
+          "assets/icons/orbit-glow-pincomet-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-pincomet-loop-softer.png",
+          "assets/icons/orbit-glow-pincomet-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-pincomet-loop-square.png",
+          "assets/icons/orbit-glow-pincomet-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "pinneon",
+      "name": "Pin Neon",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-pinneon-loop-round.png",
+          "assets/icons/orbit-glow-pinneon-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-pinneon-loop-soft.png",
+          "assets/icons/orbit-glow-pinneon-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-pinneon-loop-softer.png",
+          "assets/icons/orbit-glow-pinneon-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-pinneon-loop-square.png",
+          "assets/icons/orbit-glow-pinneon-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "pinstrobe",
+      "name": "Pin Strobe",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-pinstrobe-loop-round.png",
+          "assets/icons/orbit-glow-pinstrobe-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-pinstrobe-loop-soft.png",
+          "assets/icons/orbit-glow-pinstrobe-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-pinstrobe-loop-softer.png",
+          "assets/icons/orbit-glow-pinstrobe-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-pinstrobe-loop-square.png",
+          "assets/icons/orbit-glow-pinstrobe-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "pinswirl",
+      "name": "Pin Swirl",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-pinswirl-loop-round.png",
+          "assets/icons/orbit-glow-pinswirl-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-pinswirl-loop-soft.png",
+          "assets/icons/orbit-glow-pinswirl-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-pinswirl-loop-softer.png",
+          "assets/icons/orbit-glow-pinswirl-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-pinswirl-loop-square.png",
+          "assets/icons/orbit-glow-pinswirl-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "pinwave",
+      "name": "Pin Wave",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-pinwave-loop-round.png",
+          "assets/icons/orbit-glow-pinwave-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-pinwave-loop-soft.png",
+          "assets/icons/orbit-glow-pinwave-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-pinwave-loop-softer.png",
+          "assets/icons/orbit-glow-pinwave-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-pinwave-loop-square.png",
+          "assets/icons/orbit-glow-pinwave-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "polyexpand",
+      "name": "Polygon Expand",
+      "source": "Orbit-Media",
+      "shapes": {
+        "square": [
+          "assets/icons/orbit-glow-polyexpand-loop-square.png",
+          "assets/icons/orbit-glow-polyexpand-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "pulse",
+      "name": "Pulse",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-pulse-loop-round.png",
+          "assets/icons/orbit-glow-pulse-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-pulse-loop-soft.png",
+          "assets/icons/orbit-glow-pulse-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-pulse-loop-softer.png",
+          "assets/icons/orbit-glow-pulse-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-pulse-loop-square.png",
+          "assets/icons/orbit-glow-pulse-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "pulsewave",
+      "name": "Pulse Wave",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-pulsewave-loop-round.png",
+          "assets/icons/orbit-glow-pulsewave-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-pulsewave-loop-soft.png",
+          "assets/icons/orbit-glow-pulsewave-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-pulsewave-loop-softer.png",
+          "assets/icons/orbit-glow-pulsewave-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-pulsewave-loop-square.png",
+          "assets/icons/orbit-glow-pulsewave-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "radar",
+      "name": "Radar",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-radar-loop-round.png",
+          "assets/icons/orbit-glow-radar-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-radar-loop-soft.png",
+          "assets/icons/orbit-glow-radar-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-radar-loop-softer.png",
+          "assets/icons/orbit-glow-radar-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-radar-loop-square.png",
+          "assets/icons/orbit-glow-radar-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "raywave",
+      "name": "Ray Wave",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-raywave-loop-round.png",
+          "assets/icons/orbit-glow-raywave-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-raywave-loop-soft.png",
+          "assets/icons/orbit-glow-raywave-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-raywave-loop-softer.png",
+          "assets/icons/orbit-glow-raywave-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-raywave-loop-square.png",
+          "assets/icons/orbit-glow-raywave-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "reticle",
+      "name": "Reticle",
+      "source": "Orbit-Media",
+      "shapes": {
+        "square": [
+          "assets/icons/orbit-glow-reticle-loop-square.png",
+          "assets/icons/orbit-glow-reticle-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "rimchase",
+      "name": "Rim Chase",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-rimchase-loop-round.png",
+          "assets/icons/orbit-glow-rimchase-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-rimchase-loop-soft.png",
+          "assets/icons/orbit-glow-rimchase-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-rimchase-loop-softer.png",
+          "assets/icons/orbit-glow-rimchase-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-rimchase-loop-square.png",
+          "assets/icons/orbit-glow-rimchase-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "ripplepair",
+      "name": "Ripple Pair",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-ripplepair-loop-round.png",
+          "assets/icons/orbit-glow-ripplepair-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-ripplepair-loop-soft.png",
+          "assets/icons/orbit-glow-ripplepair-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-ripplepair-loop-softer.png",
+          "assets/icons/orbit-glow-ripplepair-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-ripplepair-loop-square.png",
+          "assets/icons/orbit-glow-ripplepair-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "ripplewave",
+      "name": "Ripple Wave",
+      "source": "Orbit-Media",
+      "shapes": {
+        "square": [
+          "assets/icons/orbit-glow-ripplewave-loop-square.png",
+          "assets/icons/orbit-glow-ripplewave-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "slowswirl",
+      "name": "Slow Swirl",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-slowswirl-loop-round.png",
+          "assets/icons/orbit-glow-slowswirl-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-slowswirl-loop-soft.png",
+          "assets/icons/orbit-glow-slowswirl-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-slowswirl-loop-softer.png",
+          "assets/icons/orbit-glow-slowswirl-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-slowswirl-loop-square.png",
+          "assets/icons/orbit-glow-slowswirl-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "spin",
+      "name": "Spin",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-spin-loop-round.png",
+          "assets/icons/orbit-glow-spin-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-spin-loop-soft.png",
+          "assets/icons/orbit-glow-spin-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-spin-loop-softer.png",
+          "assets/icons/orbit-glow-spin-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-spin-loop-square.png",
+          "assets/icons/orbit-glow-spin-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "spiral2",
+      "name": "Double Spiral",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-spiral2-loop-round.png",
+          "assets/icons/orbit-glow-spiral2-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-spiral2-loop-soft.png",
+          "assets/icons/orbit-glow-spiral2-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-spiral2-loop-softer.png",
+          "assets/icons/orbit-glow-spiral2-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-spiral2-loop-square.png",
+          "assets/icons/orbit-glow-spiral2-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "strobe",
+      "name": "Strobe",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-strobe-loop-round.png",
+          "assets/icons/orbit-glow-strobe-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-strobe-loop-soft.png",
+          "assets/icons/orbit-glow-strobe-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-strobe-loop-softer.png",
+          "assets/icons/orbit-glow-strobe-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-strobe-loop-square.png",
+          "assets/icons/orbit-glow-strobe-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "sweepfast",
+      "name": "Fast Sweep",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-sweepfast-loop-round.png",
+          "assets/icons/orbit-glow-sweepfast-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-sweepfast-loop-soft.png",
+          "assets/icons/orbit-glow-sweepfast-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-sweepfast-loop-softer.png",
+          "assets/icons/orbit-glow-sweepfast-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-sweepfast-loop-square.png",
+          "assets/icons/orbit-glow-sweepfast-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "swirl",
+      "name": "Swirl",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-swirl-loop-round.png",
+          "assets/icons/orbit-glow-swirl-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-swirl-loop-soft.png",
+          "assets/icons/orbit-glow-swirl-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-swirl-loop-softer.png",
+          "assets/icons/orbit-glow-swirl-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-swirl-loop-square.png",
+          "assets/icons/orbit-glow-swirl-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "thinpulse",
+      "name": "Thin Pulse",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-thinpulse-loop-round.png",
+          "assets/icons/orbit-glow-thinpulse-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-thinpulse-loop-soft.png",
+          "assets/icons/orbit-glow-thinpulse-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-thinpulse-loop-softer.png",
+          "assets/icons/orbit-glow-thinpulse-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-thinpulse-loop-square.png",
+          "assets/icons/orbit-glow-thinpulse-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "tracer",
+      "name": "Tracer",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-tracer-loop-round.png",
+          "assets/icons/orbit-glow-tracer-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-tracer-loop-soft.png",
+          "assets/icons/orbit-glow-tracer-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-tracer-loop-softer.png",
+          "assets/icons/orbit-glow-tracer-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-tracer-loop-square.png",
+          "assets/icons/orbit-glow-tracer-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    },
+    {
+      "id": "twincomet",
+      "name": "Twin Comet",
+      "source": "Orbit-Media",
+      "shapes": {
+        "round": [
+          "assets/icons/orbit-glow-twincomet-loop-round.png",
+          "assets/icons/orbit-glow-twincomet-loop-round-core.png"
+        ],
+        "soft": [
+          "assets/icons/orbit-glow-twincomet-loop-soft.png",
+          "assets/icons/orbit-glow-twincomet-loop-soft-core.png"
+        ],
+        "softer": [
+          "assets/icons/orbit-glow-twincomet-loop-softer.png",
+          "assets/icons/orbit-glow-twincomet-loop-softer-core.png"
+        ],
+        "square": [
+          "assets/icons/orbit-glow-twincomet-loop-square.png",
+          "assets/icons/orbit-glow-twincomet-loop-square-core.png"
+        ]
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1
+    }
+  ],
+  "dispels": [
+    {
+      "id": "pinneon",
+      "name": "Pin Neon",
+      "source": "LibOrbitGlow",
+      "variants": [
+        {
+          "ratio": 4,
+          "shapes": {
+            "chamfer": "assets/dispels/dispel-pinneon-40-chamfer.png",
+            "chamfer-large": "assets/dispels/dispel-pinneon-40-chamfer-large.png",
+            "chamfer-small": "assets/dispels/dispel-pinneon-40-chamfer-small.png",
+            "round": "assets/dispels/dispel-pinneon-40-round.png",
+            "round-large": "assets/dispels/dispel-pinneon-40-round-large.png",
+            "soft": "assets/dispels/dispel-pinneon-40-soft.png",
+            "soft-large": "assets/dispels/dispel-pinneon-40-soft-large.png",
+            "soft-small": "assets/dispels/dispel-pinneon-40-soft-small.png",
+            "softer": "assets/dispels/dispel-pinneon-40-softer.png",
+            "square": "assets/dispels/dispel-pinneon-40.png"
+          }
+        },
+        {
+          "ratio": 2.5,
+          "shapes": {
+            "chamfer": "assets/dispels/dispel-pinneon-25-chamfer.png",
+            "chamfer-large": "assets/dispels/dispel-pinneon-25-chamfer-large.png",
+            "chamfer-small": "assets/dispels/dispel-pinneon-25-chamfer-small.png",
+            "round": "assets/dispels/dispel-pinneon-25-round.png",
+            "round-large": "assets/dispels/dispel-pinneon-25-round-large.png",
+            "soft": "assets/dispels/dispel-pinneon-25-soft.png",
+            "soft-large": "assets/dispels/dispel-pinneon-25-soft-large.png",
+            "soft-small": "assets/dispels/dispel-pinneon-25-soft-small.png",
+            "softer": "assets/dispels/dispel-pinneon-25-softer.png",
+            "square": "assets/dispels/dispel-pinneon-25.png"
+          }
+        }
+      ],
+      "contours": {
+        "soft-large": {
+          "radiusFraction": 0.175,
+          "kind": "rounded"
+        },
+        "chamfer-small": {
+          "cutFraction": 0.0625,
+          "kind": "chamfer"
+        },
+        "soft": {
+          "radiusFraction": 0.125,
+          "kind": "rounded"
+        },
+        "round-large": {
+          "radiusFraction": 0.5,
+          "kind": "rounded"
+        },
+        "soft-small": {
+          "radiusFraction": 0.0625,
+          "kind": "rounded"
+        },
+        "chamfer": {
+          "cutFraction": 0.125,
+          "kind": "chamfer"
+        },
+        "round": {
+          "radiusFraction": 0.35,
+          "kind": "rounded"
+        },
+        "chamfer-large": {
+          "cutFraction": 0.25,
+          "kind": "chamfer"
+        },
+        "softer": {
+          "radiusFraction": 0.25,
+          "kind": "rounded"
+        }
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1,
+      "overhang": 0.125,
+      "coreAlpha": 0.85
+    },
+    {
+      "id": "tracer",
+      "name": "Tracer",
+      "source": "LibOrbitGlow",
+      "variants": [
+        {
+          "ratio": 4,
+          "shapes": {
+            "chamfer": "assets/dispels/dispel-tracer-40-chamfer.png",
+            "chamfer-large": "assets/dispels/dispel-tracer-40-chamfer-large.png",
+            "chamfer-small": "assets/dispels/dispel-tracer-40-chamfer-small.png",
+            "round": "assets/dispels/dispel-tracer-40-round.png",
+            "round-large": "assets/dispels/dispel-tracer-40-round-large.png",
+            "soft": "assets/dispels/dispel-tracer-40-soft.png",
+            "soft-large": "assets/dispels/dispel-tracer-40-soft-large.png",
+            "soft-small": "assets/dispels/dispel-tracer-40-soft-small.png",
+            "softer": "assets/dispels/dispel-tracer-40-softer.png",
+            "square": "assets/dispels/dispel-tracer-40.png"
+          }
+        },
+        {
+          "ratio": 2.5,
+          "shapes": {
+            "chamfer": "assets/dispels/dispel-tracer-25-chamfer.png",
+            "chamfer-large": "assets/dispels/dispel-tracer-25-chamfer-large.png",
+            "chamfer-small": "assets/dispels/dispel-tracer-25-chamfer-small.png",
+            "round": "assets/dispels/dispel-tracer-25-round.png",
+            "round-large": "assets/dispels/dispel-tracer-25-round-large.png",
+            "soft": "assets/dispels/dispel-tracer-25-soft.png",
+            "soft-large": "assets/dispels/dispel-tracer-25-soft-large.png",
+            "soft-small": "assets/dispels/dispel-tracer-25-soft-small.png",
+            "softer": "assets/dispels/dispel-tracer-25-softer.png",
+            "square": "assets/dispels/dispel-tracer-25.png"
+          }
+        }
+      ],
+      "contours": {
+        "soft-large": {
+          "radiusFraction": 0.175,
+          "kind": "rounded"
+        },
+        "chamfer-small": {
+          "cutFraction": 0.0625,
+          "kind": "chamfer"
+        },
+        "soft": {
+          "radiusFraction": 0.125,
+          "kind": "rounded"
+        },
+        "round-large": {
+          "radiusFraction": 0.5,
+          "kind": "rounded"
+        },
+        "soft-small": {
+          "radiusFraction": 0.0625,
+          "kind": "rounded"
+        },
+        "chamfer": {
+          "cutFraction": 0.125,
+          "kind": "chamfer"
+        },
+        "round": {
+          "radiusFraction": 0.35,
+          "kind": "rounded"
+        },
+        "chamfer-large": {
+          "cutFraction": 0.25,
+          "kind": "chamfer"
+        },
+        "softer": {
+          "radiusFraction": 0.25,
+          "kind": "rounded"
+        }
+      },
+      "rows": 6,
+      "cols": 5,
+      "frames": 30,
+      "duration": 1,
+      "overhang": 0.125,
+      "coreAlpha": 0.85
+    }
+  ],
+  "fills": [
+    {
+      "id": "orbit-003-satin-valley",
+      "name": "Satin Valley",
+      "registeredName": "Orbit Satin Valley",
+      "family": "Original favorites",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-003-satin-valley.png"
+    },
+    {
+      "id": "orbit-005-satin-horizon",
+      "name": "Satin Horizon",
+      "registeredName": "Orbit Satin Horizon",
+      "family": "Original favorites",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-005-satin-horizon.png"
+    },
+    {
+      "id": "orbit-008-satin-cove",
+      "name": "Satin Cove",
+      "registeredName": "Orbit Satin Cove",
+      "family": "Original favorites",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-008-satin-cove.png"
+    },
+    {
+      "id": "orbit-012-glass-ribbon",
+      "name": "Glass Ribbon",
+      "registeredName": "Orbit Glass Ribbon",
+      "family": "Original favorites",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-012-glass-ribbon.png"
+    },
+    {
+      "id": "orbit-016-glass-oblique",
+      "name": "Glass Oblique",
+      "registeredName": "Orbit Glass Oblique",
+      "family": "Original favorites",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-016-glass-oblique.png"
+    },
+    {
+      "id": "orbit-037-ceramic-saddle",
+      "name": "Ceramic Saddle",
+      "registeredName": "Orbit Ceramic Saddle",
+      "family": "Original favorites",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-037-ceramic-saddle.png"
+    },
+    {
+      "id": "orbit-188-celestial-aurora-veil",
+      "name": "Celestial Aurora Veil",
+      "registeredName": "Orbit Celestial Aurora Veil",
+      "family": "Original favorites",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-188-celestial-aurora-veil.png"
+    },
+    {
+      "id": "orbit-201-raised-crown-soft",
+      "name": "Raised Crown",
+      "registeredName": "Orbit Raised Crown",
+      "family": "Raised",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-201-raised-crown-soft.png"
+    },
+    {
+      "id": "orbit-206-raised-high-crown-studio",
+      "name": "Raised High Crown",
+      "registeredName": "Orbit Raised High Crown",
+      "family": "Raised",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-206-raised-high-crown-studio.png"
+    },
+    {
+      "id": "orbit-211-raised-broad-crown-polished",
+      "name": "Raised Broad Crown",
+      "registeredName": "Orbit Raised Broad Crown",
+      "family": "Raised",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-211-raised-broad-crown-polished.png"
+    },
+    {
+      "id": "orbit-216-raised-low-crown-sculpted",
+      "name": "Raised Low Crown",
+      "registeredName": "Orbit Raised Low Crown",
+      "family": "Raised",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-216-raised-low-crown-sculpted.png"
+    },
+    {
+      "id": "orbit-217-raised-offset-crown-soft",
+      "name": "Raised Offset Crown",
+      "registeredName": "Orbit Raised Offset Crown",
+      "family": "Raised",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-217-raised-offset-crown-soft.png"
+    },
+    {
+      "id": "orbit-221-pillow-soft-shoulder-soft",
+      "name": "Pillow Soft Shoulder",
+      "registeredName": "Orbit Pillow Soft Shoulder",
+      "family": "Pillow",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-221-pillow-soft-shoulder-soft.png"
+    },
+    {
+      "id": "orbit-227-pillow-square-shoulder-polished",
+      "name": "Pillow Square Shoulder",
+      "registeredName": "Orbit Pillow Square Shoulder",
+      "family": "Pillow",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-227-pillow-square-shoulder-polished.png"
+    },
+    {
+      "id": "orbit-232-pillow-broad-pillow-sculpted",
+      "name": "Pillow Broad Pillow",
+      "registeredName": "Orbit Pillow Broad Pillow",
+      "family": "Pillow",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-232-pillow-broad-pillow-sculpted.png"
+    },
+    {
+      "id": "orbit-234-pillow-low-pillow-studio",
+      "name": "Pillow Low Pillow",
+      "registeredName": "Orbit Pillow Low Pillow",
+      "family": "Pillow",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-234-pillow-low-pillow-studio.png"
+    },
+    {
+      "id": "orbit-240-pillow-satin-pillow-sculpted",
+      "name": "Pillow Satin Pillow",
+      "registeredName": "Orbit Pillow Satin Pillow",
+      "family": "Pillow",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-240-pillow-satin-pillow-sculpted.png"
+    },
+    {
+      "id": "orbit-244-bevel-fine-bevel-sculpted",
+      "name": "Bevel Fine Bevel",
+      "registeredName": "Orbit Bevel Fine Bevel",
+      "family": "Bevel",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-244-bevel-fine-bevel-sculpted.png"
+    },
+    {
+      "id": "orbit-245-bevel-wide-bevel-soft",
+      "name": "Bevel Wide Bevel",
+      "registeredName": "Orbit Bevel Wide Bevel",
+      "family": "Bevel",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-245-bevel-wide-bevel-soft.png"
+    },
+    {
+      "id": "orbit-252-bevel-upper-bevel-sculpted",
+      "name": "Bevel Upper Bevel",
+      "registeredName": "Orbit Bevel Upper Bevel",
+      "family": "Bevel",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-252-bevel-upper-bevel-sculpted.png"
+    },
+    {
+      "id": "orbit-256-bevel-lower-bevel-sculpted",
+      "name": "Bevel Lower Bevel",
+      "registeredName": "Orbit Bevel Lower Bevel",
+      "family": "Bevel",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-256-bevel-lower-bevel-sculpted.png"
+    },
+    {
+      "id": "orbit-259-bevel-double-bevel-polished",
+      "name": "Bevel Double Bevel",
+      "registeredName": "Orbit Bevel Double Bevel",
+      "family": "Bevel",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-259-bevel-double-bevel-polished.png"
+    },
+    {
+      "id": "orbit-261-valley-shallow-valley-soft",
+      "name": "Valley Shallow Valley",
+      "registeredName": "Orbit Valley Shallow Valley",
+      "family": "Valley",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-261-valley-shallow-valley-soft.png"
+    },
+    {
+      "id": "orbit-267-valley-deep-valley-polished",
+      "name": "Valley Deep Valley",
+      "registeredName": "Orbit Valley Deep Valley",
+      "family": "Valley",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-267-valley-deep-valley-polished.png"
+    },
+    {
+      "id": "orbit-270-valley-upper-valley-studio",
+      "name": "Valley Upper Valley",
+      "registeredName": "Orbit Valley Upper Valley",
+      "family": "Valley",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-270-valley-upper-valley-studio.png"
+    },
+    {
+      "id": "orbit-275-valley-lower-valley-polished",
+      "name": "Valley Lower Valley",
+      "registeredName": "Orbit Valley Lower Valley",
+      "family": "Valley",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-275-valley-lower-valley-polished.png"
+    },
+    {
+      "id": "orbit-278-valley-wide-valley-studio",
+      "name": "Valley Wide Valley",
+      "registeredName": "Orbit Valley Wide Valley",
+      "family": "Valley",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-278-valley-wide-valley-studio.png"
+    },
+    {
+      "id": "orbit-283-horizon-high-horizon-polished",
+      "name": "Horizon High Horizon",
+      "registeredName": "Orbit Horizon High Horizon",
+      "family": "Horizon",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-283-horizon-high-horizon-polished.png"
+    },
+    {
+      "id": "orbit-286-horizon-mid-horizon-studio",
+      "name": "Horizon Mid Horizon",
+      "registeredName": "Orbit Horizon Mid Horizon",
+      "family": "Horizon",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-286-horizon-mid-horizon-studio.png"
+    },
+    {
+      "id": "orbit-292-horizon-low-horizon-sculpted",
+      "name": "Horizon Low Horizon",
+      "registeredName": "Orbit Horizon Low Horizon",
+      "family": "Horizon",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-292-horizon-low-horizon-sculpted.png"
+    },
+    {
+      "id": "orbit-294-horizon-soft-horizon-studio",
+      "name": "Horizon Soft Horizon",
+      "registeredName": "Orbit Horizon Soft Horizon",
+      "family": "Horizon",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-294-horizon-soft-horizon-studio.png"
+    },
+    {
+      "id": "orbit-300-horizon-offset-horizon-sculpted",
+      "name": "Horizon Offset Horizon",
+      "registeredName": "Orbit Horizon Offset Horizon",
+      "family": "Horizon",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-300-horizon-offset-horizon-sculpted.png"
+    },
+    {
+      "id": "orbit-301-cove-shallow-cove-soft",
+      "name": "Cove Shallow Cove",
+      "registeredName": "Orbit Cove Shallow Cove",
+      "family": "Cove",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-301-cove-shallow-cove-soft.png"
+    },
+    {
+      "id": "orbit-307-cove-deep-cove-polished",
+      "name": "Cove Deep Cove",
+      "registeredName": "Orbit Cove Deep Cove",
+      "family": "Cove",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-307-cove-deep-cove-polished.png"
+    },
+    {
+      "id": "orbit-312-cove-wide-cove-sculpted",
+      "name": "Cove Wide Cove",
+      "registeredName": "Orbit Cove Wide Cove",
+      "family": "Cove",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-312-cove-wide-cove-sculpted.png"
+    },
+    {
+      "id": "orbit-315-cove-upper-cove-polished",
+      "name": "Cove Upper Cove",
+      "registeredName": "Orbit Cove Upper Cove",
+      "family": "Cove",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-315-cove-upper-cove-polished.png"
+    },
+    {
+      "id": "orbit-317-cove-asymmetric-cove-soft",
+      "name": "Cove Asymmetric Cove",
+      "registeredName": "Orbit Cove Asymmetric Cove",
+      "family": "Cove",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-317-cove-asymmetric-cove-soft.png"
+    },
+    {
+      "id": "orbit-322-ribbon-high-ribbon-studio",
+      "name": "Ribbon High Ribbon",
+      "registeredName": "Orbit Ribbon High Ribbon",
+      "family": "Ribbon",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-322-ribbon-high-ribbon-studio.png"
+    },
+    {
+      "id": "orbit-325-ribbon-upper-ribbon-soft",
+      "name": "Ribbon Upper Ribbon",
+      "registeredName": "Orbit Ribbon Upper Ribbon",
+      "family": "Ribbon",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-325-ribbon-upper-ribbon-soft.png"
+    },
+    {
+      "id": "orbit-330-ribbon-mid-ribbon-studio",
+      "name": "Ribbon Mid Ribbon",
+      "registeredName": "Orbit Ribbon Mid Ribbon",
+      "family": "Ribbon",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-330-ribbon-mid-ribbon-studio.png"
+    },
+    {
+      "id": "orbit-334-ribbon-low-ribbon-studio",
+      "name": "Ribbon Low Ribbon",
+      "registeredName": "Orbit Ribbon Low Ribbon",
+      "family": "Ribbon",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-334-ribbon-low-ribbon-studio.png"
+    },
+    {
+      "id": "orbit-337-ribbon-lower-ribbon-soft",
+      "name": "Ribbon Lower Ribbon",
+      "registeredName": "Orbit Ribbon Lower Ribbon",
+      "family": "Ribbon",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-337-ribbon-lower-ribbon-soft.png"
+    },
+    {
+      "id": "orbit-344-oblique-rising-light-sculpted",
+      "name": "Oblique Rising Light",
+      "registeredName": "Orbit Oblique Rising Light",
+      "family": "Oblique",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-344-oblique-rising-light-sculpted.png"
+    },
+    {
+      "id": "orbit-347-oblique-falling-light-polished",
+      "name": "Oblique Falling Light",
+      "registeredName": "Orbit Oblique Falling Light",
+      "family": "Oblique",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-347-oblique-falling-light-polished.png"
+    },
+    {
+      "id": "orbit-350-oblique-gentle-slant-studio",
+      "name": "Oblique Gentle Slant",
+      "registeredName": "Orbit Oblique Gentle Slant",
+      "family": "Oblique",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-350-oblique-gentle-slant-studio.png"
+    },
+    {
+      "id": "orbit-354-oblique-steep-slant-studio",
+      "name": "Oblique Steep Slant",
+      "registeredName": "Orbit Oblique Steep Slant",
+      "family": "Oblique",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-354-oblique-steep-slant-studio.png"
+    },
+    {
+      "id": "orbit-357-oblique-crossed-shoulder-soft",
+      "name": "Oblique Crossed Shoulder",
+      "registeredName": "Orbit Oblique Crossed Shoulder",
+      "family": "Oblique",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-357-oblique-crossed-shoulder-soft.png"
+    },
+    {
+      "id": "orbit-361-saddle-shallow-saddle-soft",
+      "name": "Saddle Shallow Saddle",
+      "registeredName": "Orbit Saddle Shallow Saddle",
+      "family": "Saddle",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-361-saddle-shallow-saddle-soft.png"
+    },
+    {
+      "id": "orbit-366-saddle-deep-saddle-studio",
+      "name": "Saddle Deep Saddle",
+      "registeredName": "Orbit Saddle Deep Saddle",
+      "family": "Saddle",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-366-saddle-deep-saddle-studio.png"
+    },
+    {
+      "id": "orbit-372-saddle-high-saddle-sculpted",
+      "name": "Saddle High Saddle",
+      "registeredName": "Orbit Saddle High Saddle",
+      "family": "Saddle",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-372-saddle-high-saddle-sculpted.png"
+    },
+    {
+      "id": "orbit-375-saddle-low-saddle-polished",
+      "name": "Saddle Low Saddle",
+      "registeredName": "Orbit Saddle Low Saddle",
+      "family": "Saddle",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-375-saddle-low-saddle-polished.png"
+    },
+    {
+      "id": "orbit-379-saddle-offset-saddle-polished",
+      "name": "Saddle Offset Saddle",
+      "registeredName": "Orbit Saddle Offset Saddle",
+      "family": "Saddle",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-379-saddle-offset-saddle-polished.png"
+    },
+    {
+      "id": "orbit-384-lens-round-lens-sculpted",
+      "name": "Lens Round Lens",
+      "registeredName": "Orbit Lens Round Lens",
+      "family": "Lens",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-384-lens-round-lens-sculpted.png"
+    },
+    {
+      "id": "orbit-387-lens-flat-lens-polished",
+      "name": "Lens Flat Lens",
+      "registeredName": "Orbit Lens Flat Lens",
+      "family": "Lens",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-387-lens-flat-lens-polished.png"
+    },
+    {
+      "id": "orbit-389-lens-upper-lens-soft",
+      "name": "Lens Upper Lens",
+      "registeredName": "Orbit Lens Upper Lens",
+      "family": "Lens",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-389-lens-upper-lens-soft.png"
+    },
+    {
+      "id": "orbit-393-lens-lower-lens-soft",
+      "name": "Lens Lower Lens",
+      "registeredName": "Orbit Lens Lower Lens",
+      "family": "Lens",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-393-lens-lower-lens-soft.png"
+    },
+    {
+      "id": "orbit-397-lens-long-lens-soft",
+      "name": "Lens Long Lens",
+      "registeredName": "Orbit Lens Long Lens",
+      "family": "Lens",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-397-lens-long-lens-soft.png"
+    },
+    {
+      "id": "orbit-402-enamel-fine-glaze-studio",
+      "name": "Enamel Fine Glaze",
+      "registeredName": "Orbit Enamel Fine Glaze",
+      "family": "Enamel",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-402-enamel-fine-glaze-studio.png"
+    },
+    {
+      "id": "orbit-408-enamel-broad-glaze-sculpted",
+      "name": "Enamel Broad Glaze",
+      "registeredName": "Orbit Enamel Broad Glaze",
+      "family": "Enamel",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-408-enamel-broad-glaze-sculpted.png"
+    },
+    {
+      "id": "orbit-411-enamel-upper-glaze-polished",
+      "name": "Enamel Upper Glaze",
+      "registeredName": "Orbit Enamel Upper Glaze",
+      "family": "Enamel",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-411-enamel-upper-glaze-polished.png"
+    },
+    {
+      "id": "orbit-415-enamel-low-glaze-polished",
+      "name": "Enamel Low Glaze",
+      "registeredName": "Orbit Enamel Low Glaze",
+      "family": "Enamel",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-415-enamel-low-glaze-polished.png"
+    },
+    {
+      "id": "orbit-420-enamel-pearl-glaze-sculpted",
+      "name": "Enamel Pearl Glaze",
+      "registeredName": "Orbit Enamel Pearl Glaze",
+      "family": "Enamel",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-420-enamel-pearl-glaze-sculpted.png"
+    },
+    {
+      "id": "orbit-424-twin-light-close-lights-sculpted",
+      "name": "Twin Light Close Lights",
+      "registeredName": "Orbit Twin Light Close Lights",
+      "family": "Twin Light",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-424-twin-light-close-lights-sculpted.png"
+    },
+    {
+      "id": "orbit-426-twin-light-wide-lights-studio",
+      "name": "Twin Light Wide Lights",
+      "registeredName": "Orbit Twin Light Wide Lights",
+      "family": "Twin Light",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-426-twin-light-wide-lights-studio.png"
+    },
+    {
+      "id": "orbit-432-twin-light-upper-lights-sculpted",
+      "name": "Twin Light Upper Lights",
+      "registeredName": "Orbit Twin Light Upper Lights",
+      "family": "Twin Light",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-432-twin-light-upper-lights-sculpted.png"
+    },
+    {
+      "id": "orbit-433-twin-light-lower-lights-soft",
+      "name": "Twin Light Lower Lights",
+      "registeredName": "Orbit Twin Light Lower Lights",
+      "family": "Twin Light",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-433-twin-light-lower-lights-soft.png"
+    },
+    {
+      "id": "orbit-438-twin-light-unequal-lights-studio",
+      "name": "Twin Light Unequal Lights",
+      "registeredName": "Orbit Twin Light Unequal Lights",
+      "family": "Twin Light",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-438-twin-light-unequal-lights-studio.png"
+    },
+    {
+      "id": "orbit-443-underlight-low-glow-polished",
+      "name": "Underlight Low Glow",
+      "registeredName": "Orbit Underlight Low Glow",
+      "family": "Underlight",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-443-underlight-low-glow-polished.png"
+    },
+    {
+      "id": "orbit-448-underlight-wide-glow-sculpted",
+      "name": "Underlight Wide Glow",
+      "registeredName": "Orbit Underlight Wide Glow",
+      "family": "Underlight",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-448-underlight-wide-glow-sculpted.png"
+    },
+    {
+      "id": "orbit-449-underlight-raised-glow-soft",
+      "name": "Underlight Raised Glow",
+      "registeredName": "Orbit Underlight Raised Glow",
+      "family": "Underlight",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-449-underlight-raised-glow-soft.png"
+    },
+    {
+      "id": "orbit-456-underlight-sharp-glow-sculpted",
+      "name": "Underlight Sharp Glow",
+      "registeredName": "Orbit Underlight Sharp Glow",
+      "family": "Underlight",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-456-underlight-sharp-glow-sculpted.png"
+    },
+    {
+      "id": "orbit-458-underlight-soft-glow-studio",
+      "name": "Underlight Soft Glow",
+      "registeredName": "Orbit Underlight Soft Glow",
+      "family": "Underlight",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-458-underlight-soft-glow-studio.png"
+    },
+    {
+      "id": "orbit-464-edge-light-fine-rim-sculpted",
+      "name": "Edge Light Fine Rim",
+      "registeredName": "Orbit Edge Light Fine Rim",
+      "family": "Edge Light",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-464-edge-light-fine-rim-sculpted.png"
+    },
+    {
+      "id": "orbit-466-edge-light-wide-rim-studio",
+      "name": "Edge Light Wide Rim",
+      "registeredName": "Orbit Edge Light Wide Rim",
+      "family": "Edge Light",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-466-edge-light-wide-rim-studio.png"
+    },
+    {
+      "id": "orbit-471-edge-light-top-rim-polished",
+      "name": "Edge Light Top Rim",
+      "registeredName": "Orbit Edge Light Top Rim",
+      "family": "Edge Light",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-471-edge-light-top-rim-polished.png"
+    },
+    {
+      "id": "orbit-474-edge-light-bottom-rim-studio",
+      "name": "Edge Light Bottom Rim",
+      "registeredName": "Orbit Edge Light Bottom Rim",
+      "family": "Edge Light",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-474-edge-light-bottom-rim-studio.png"
+    },
+    {
+      "id": "orbit-477-edge-light-balanced-rim-soft",
+      "name": "Edge Light Balanced Rim",
+      "registeredName": "Orbit Edge Light Balanced Rim",
+      "family": "Edge Light",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-477-edge-light-balanced-rim-soft.png"
+    },
+    {
+      "id": "orbit-483-veil-quiet-veil-polished",
+      "name": "Veil Quiet Veil",
+      "registeredName": "Orbit Veil Quiet Veil",
+      "family": "Veil",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-483-veil-quiet-veil-polished.png"
+    },
+    {
+      "id": "orbit-485-veil-rising-veil-soft",
+      "name": "Veil Rising Veil",
+      "registeredName": "Orbit Veil Rising Veil",
+      "family": "Veil",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-485-veil-rising-veil-soft.png"
+    },
+    {
+      "id": "orbit-490-veil-falling-veil-studio",
+      "name": "Veil Falling Veil",
+      "registeredName": "Orbit Veil Falling Veil",
+      "family": "Veil",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-490-veil-falling-veil-studio.png"
+    },
+    {
+      "id": "orbit-495-veil-wide-veil-polished",
+      "name": "Veil Wide Veil",
+      "registeredName": "Orbit Veil Wide Veil",
+      "family": "Veil",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-495-veil-wide-veil-polished.png"
+    },
+    {
+      "id": "orbit-497-veil-layered-veil-soft",
+      "name": "Veil Layered Veil",
+      "registeredName": "Orbit Veil Layered Veil",
+      "family": "Veil",
+      "source": "Orbit-Media",
+      "image": "assets/fills/orbit-497-veil-layered-veil-soft.png"
+    }
+  ],
+  "assets": {
+    "assets/icons/orbit-glow-arcs4-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "991906881b061e75575f03c4468600f1ceec08633154e9786627aed169019d6f",
+      "pngSha256": "232431be964d2793529e7b3749c6a2a80b9db5e65e915bccea1409706fd0719d"
+    },
+    "assets/icons/orbit-glow-arcs4-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "2ab4ad1309805fb05f3fab94f45fac367ef6176a00e452e055a3a14d6446a85f",
+      "pngSha256": "f38d83e0a61022611666a1fee283b388323716f6251770a67336dc76dfc7951a"
+    },
+    "assets/icons/orbit-glow-arcs4-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "2b4c17f26e280f5dca86a0c138d8b43fad16514ac903cff80297a89eddb39215",
+      "pngSha256": "dfc0727653f2a056db83b0bb5474fda72401959d55c5604ff786746409b8c1a6"
+    },
+    "assets/icons/orbit-glow-arcs4-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "3aba646f6fb91b0169cd3fdc89d1fb99471deb4fe995be9a317c457be89cf5af",
+      "pngSha256": "933777244c59ee963d53057558e43db6a95c959ccef10ade70fd42a44149ee54"
+    },
+    "assets/icons/orbit-glow-arcs4-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "06e1125033b7bef624033888c6dc7e7b245fd9850182218708a7b1b4aca58454",
+      "pngSha256": "ccd7bd67285409683d8ff0cd866992a21d4f0a056f517f8098fb02b36e7bd691"
+    },
+    "assets/icons/orbit-glow-arcs4-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "4f194fa9a0ff2a877f3115c016b3cedbb3d0c0124bcbcdb827e0ce103300f4b2",
+      "pngSha256": "c682a05a339b5bebcca30f4f8324014886f85bb9fc545da559243dcf7c60fae5"
+    },
+    "assets/icons/orbit-glow-arcs4-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "a7c5708991dcaec7ed47fb9bf515bfe51ce3741ab53ea70072f394370e79e885",
+      "pngSha256": "6b01a8858aac914b7616e4b3b598c6d20257657f86a205c909bf4b4521349443"
+    },
+    "assets/icons/orbit-glow-arcs4-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "408fdc756c76c9f638633f8152e2d7292ae42797bcd164232064a70960bf0737",
+      "pngSha256": "65c056c6a74126499172fdc1f84b205ab2bfed6cbbd052f21a4e62569b4a8371"
+    },
+    "assets/icons/orbit-glow-beacon-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "f7ee1396e0da007a6931d245b58ae5895ce618127d52024c6540ea589b86496c",
+      "pngSha256": "3398bbe4e9f41518a9a0ae18556e7ae0285077db21c2b29928a1ec8ad47b0f8f"
+    },
+    "assets/icons/orbit-glow-beacon-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "1d61f911dff35fb85b858b5269ae8826caf5e2f27146e87808796ab2775c274d",
+      "pngSha256": "687dc8879e84a66d79dd9d6b9e7d8558f4c733660d35b3c517f01920e1318f1d"
+    },
+    "assets/icons/orbit-glow-beacon-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "d907b71e5ef4eb57c85588e22f60006fa7c077a93654dda60948a4e583e338d4",
+      "pngSha256": "1c080f684a37dea7b163fdfc7e98f5a2cbcf6a1f265f4d7bb2e4f8366fdd6584"
+    },
+    "assets/icons/orbit-glow-beacon-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "ebfd5e58e7ca683b86193f7dbfd16d8a205156409c11a4e61271d7288b3b3e76",
+      "pngSha256": "c793b2ed82e844aeadedd9ff553d31f9954dcc7d53de1532b477d14c5defa7cd"
+    },
+    "assets/icons/orbit-glow-beacon-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "2d7bd63ac72e3f14cd9506442d14c9f81b6ca5e972b1de07ee66de7f57b52f1e",
+      "pngSha256": "e04c6062ca578c1e55568ae18ab17586f48f37cc3df8e4cbdbc491daf6e6375d"
+    },
+    "assets/icons/orbit-glow-beacon-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "967cfe50f1b93641ea230c96fd9e0cee0d3b18c08e1f51372bdf11027f92016a",
+      "pngSha256": "22c35ad207ad03bc35c1d4c1751290dda5bca4d9b8d14165e03cb37786c07b8b"
+    },
+    "assets/icons/orbit-glow-beacon-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "3a647d7751c2736e32a391422317a21e883afc6410d03c4b5d3ff09ee268d824",
+      "pngSha256": "93af1c2d1991e4ff5a117835fccf28a2eddbd5eea718f2b097ed01949f355097"
+    },
+    "assets/icons/orbit-glow-beacon-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "4bc45690019a0dff82a7a241b4e76a7d7250a7e70edc13d8237f024b7bcbcd5b",
+      "pngSha256": "eeee674368973be2022bd35876fabd7a2c6bb86664088e8fde2e23dfd75678b6"
+    },
+    "assets/icons/orbit-glow-chase-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "c6e240a143a46afc42224809f7ac87fbb29e3b30c54521306c2a077baf750e05",
+      "pngSha256": "cf32f545cd170f67b60cb642d0c6c0ded8753f5976a79fb93c578b830aa96a66"
+    },
+    "assets/icons/orbit-glow-chase-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "ffdc82e9892cff69a6c8daed8af5e4a07c26ece2c66a7565c94b34f434fe480a",
+      "pngSha256": "394e484bd336210e386cbb5ceb1945df0a6c690e24e8b7df7e0644acbfd8afe5"
+    },
+    "assets/icons/orbit-glow-chase-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "c67d535b94c8fb70288b6216a1e64f24eddcd947a60d1aad80d1d14e8942df59",
+      "pngSha256": "e53b9ff73e7217977dd000b6f1aa9e4cbad679fdf124f4b01bc3519a39d8703a"
+    },
+    "assets/icons/orbit-glow-chase-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "3b94703f45a38e3d0b6b6270148f12b9fc03d29d6ba2ea6fb73dcbcbab12881a",
+      "pngSha256": "594bea81c1c4a6726d65444f8b82b803a1503602f8f54609871e8f155b26f293"
+    },
+    "assets/icons/orbit-glow-chase-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "51cb4f911094594add39a101d4e3930561e8cf60f2376b5fb656c9461e09a4c0",
+      "pngSha256": "33cc59a6c2204aec1ba51af73397e1a5c875293caa9248cac7fda0b98be003da"
+    },
+    "assets/icons/orbit-glow-chase-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "ab08aeaa6e28ffab04b6a2988b039c022723bf39833a86b2102893304ea8edc6",
+      "pngSha256": "9326c839497ef4ba6dffc2ce9ca29b37635d3d92d14cc05a5faef08ed973682b"
+    },
+    "assets/icons/orbit-glow-chase-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "887771b6c75e8764c00aa713bff2eddd05df40a51ab3874ce077a90950e46c79",
+      "pngSha256": "99202f49437528d5fbeb542b08e1d4aa1831e3901f9358bba741cb0deb8a19a3"
+    },
+    "assets/icons/orbit-glow-chase-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "4157f3c72deff41ca02b99d3dcaadd83c75d7445ea6be64347bf7f6c62ad6bce",
+      "pngSha256": "4babeff8af70b40c1c908dbca99e810d4ce2fdc6b0ef28aba83c721012e748fa"
+    },
+    "assets/icons/orbit-glow-comet2-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "967c87640e7feb6e493a44890b04c326f77d67d0d1c87f35b98351e61c71497a",
+      "pngSha256": "3b5b0ed432e69b9f887749b1987c397ecb88f4f3c66964e9a8d03b47bcb086aa"
+    },
+    "assets/icons/orbit-glow-comet2-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "78f17595e838ad729d72a512ba619b3b6cb60593383509757871495924e7a3f1",
+      "pngSha256": "1137d24b50410cecd7a8542da0cc7f378e2b66295753c57d74e4538d664e021b"
+    },
+    "assets/icons/orbit-glow-comet2-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "d960466f7acafe60bedcbbb0851583016837ba78e1af1be5aaa669109bfaf61b",
+      "pngSha256": "764f1d797086320ebb961b84ccf0ed4bf7e93a3b64afe5b943e7efb8e821675b"
+    },
+    "assets/icons/orbit-glow-comet2-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "fb94a4fb03f1a92af814c69ff2215942c63b6c1853142e1de72c49dc8c0a24d9",
+      "pngSha256": "ec6221e32c8e61e19a6a2fb9d5e36f5104140c2e6ca61167ac6e802bef927a6e"
+    },
+    "assets/icons/orbit-glow-comet2-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "7beb6705e1af4ac0ff9479c9e0b457c91d3c224215d829d13857819ff58a0e22",
+      "pngSha256": "6e1128321c7bc24c067f6591214881301782bfc08a22fb82502021cd4a753710"
+    },
+    "assets/icons/orbit-glow-comet2-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "de5bf00431a6e48eb2ffd55ab3de5ff57a6bfd58b4f8c7fb812a7ba4862d5ed5",
+      "pngSha256": "20c881b677221c97568d4dd962827146e7456b96a202418c786b46cbb5b0dfc4"
+    },
+    "assets/icons/orbit-glow-comet2-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "453b2bca1bdf7d29d1ee96a6099c1e673ba75579a5fa74b3694fc1241a1695d5",
+      "pngSha256": "44c61893fd80b2a6ace64fd1ed432bdb65d882fee5403a4389a455db22fa85ec"
+    },
+    "assets/icons/orbit-glow-comet2-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "7062b3f10457d99881d570741ffeb19fedd7bde06d735247c8dec29ba8332e17",
+      "pngSha256": "c78d85901f9d11361d52e16dac30fb9acd8ab2959a79bf960e3c7cf9180913e4"
+    },
+    "assets/icons/orbit-glow-cometdual-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "aae114d0128df94b8b80c7c7e6e965edcf39204a7b44e1712d267e5ebf25983f",
+      "pngSha256": "c196738f11ee39e0f66677ecac0ee4ff7ee08df6ede4d00dadea07812d785baf"
+    },
+    "assets/icons/orbit-glow-cometdual-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "85d44a92de0ee789abc76c84568138a97080cccf3b048c6090cfc39319405230",
+      "pngSha256": "9ff463e547c7f05874067521d9ae230a7919f48b50463bb5bade505d87cc7478"
+    },
+    "assets/icons/orbit-glow-cometdual-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "0c6f721cb49a8270d452615e6f733edada32aee8fcc22a57d06e86eb8929670d",
+      "pngSha256": "8d02a1b15020e2189ee33e6a9ea5db02e0076580db934a8c27ed945d145282ba"
+    },
+    "assets/icons/orbit-glow-cometdual-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "b8e7571bc1464bcaae763da96bee100456ea3b30b332a2ecbc3978bb9ba4c13d",
+      "pngSha256": "e54696c005ee593c8b1af72d5fb0ffef6cd55c3f32e70ea562bb2699fafd156c"
+    },
+    "assets/icons/orbit-glow-cometdual-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "18cd66cc31a14ab35aa75c60c326588f88346e097cb8034b57a5ea4dc37483d7",
+      "pngSha256": "c0ca14929febafb0f19f84bf94abc2aea0d73f7330b62556e621670b0f980136"
+    },
+    "assets/icons/orbit-glow-cometdual-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "9501bdecfa092f336a85d6fed7f06b2a7a4bdcf2c17bc14670dc0b516f4412bb",
+      "pngSha256": "c853801614c59d5635ee6fcddb08064d9ad1f0c71380bf2b0831de21f22345ee"
+    },
+    "assets/icons/orbit-glow-cometdual-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "54ab9fc335c1cab659d1ea468d067b776e4455294ab9a615f3262749e5a700fa",
+      "pngSha256": "81b271ba7e2d5906f5f88b445b9e8ee626094a1b429d6fd567767595af072858"
+    },
+    "assets/icons/orbit-glow-cometdual-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "ba19fe62cc39e20901a6a236828b4ba157341c24423c30247971c8e4a483d3b0",
+      "pngSha256": "c2b126b06139284c7f46c7bb6bb214337636e20c1b4667a5a438e186123572be"
+    },
+    "assets/icons/orbit-glow-cometrays-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "c4ebf14012de7314fbd4d9895c4009b2b18e9a6bfca0ebef8802f420fe8664c7",
+      "pngSha256": "c9ac9acb0167634d14088b931c9397e78c645019f0e32ad4133c0279af4b1911"
+    },
+    "assets/icons/orbit-glow-cometrays-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "5a66ca3f364a687fcf659a1b372cc893e3f01bb3b08a8708d89d1401abdc4cab",
+      "pngSha256": "d859f160c8e3dd968dce36bdf03db255c98753cb0c427e5efa784dd8a6f6ee5b"
+    },
+    "assets/icons/orbit-glow-cometrays-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "29d652650c65eeeb3e701304e570a142f244f1121c9944f3db95e84637895a9b",
+      "pngSha256": "e8f2407dadba50fd57f3395e7ffebe044036ceeb2fd947e6c7ee35b7701b6223"
+    },
+    "assets/icons/orbit-glow-cometrays-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "5db405043ba1663f224b9234d464f8de6a52f10471da52a041f2791ceb208334",
+      "pngSha256": "4de230618ce5ff45c3262a88bf589adba729f4fc5929a2da47d2625852f61db6"
+    },
+    "assets/icons/orbit-glow-cometrays-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "257336f3dce2cbccdc5eda80f0a8a4bf0fccee0004f70a74f47851ac40aa2a1d",
+      "pngSha256": "fa74e8ef28aa1aae75d533d4a6198f8414f47e2af07007634f9d9c097a2a48ca"
+    },
+    "assets/icons/orbit-glow-cometrays-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "9ec59b27f2d990465800df7e570ec166d9b2d30f4b4d38fb1b9f6587d857c994",
+      "pngSha256": "a9b832ce5c81c8a1c3b19354ba57e7673ea62ef2eaada57e4acbbb28226995cf"
+    },
+    "assets/icons/orbit-glow-cometrays-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "1fe375ba382091bc6e5cb6c0fbc6886c9ad2b96842fd76a4ccf8bb66bd5738b1",
+      "pngSha256": "515ad1ed3464e5b15c8b59a1a0c2b26b9d0213417f74ef8f3fca176547893e80"
+    },
+    "assets/icons/orbit-glow-cometrays-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "d780ef7bcbbcf28943ce809b449dcd795431c958b51348d68fade45384bd6d16",
+      "pngSha256": "72a97f6fe0ff9b63b13d8fac447ef0135c1b6a53f04447573814edd1f877e91f"
+    },
+    "assets/icons/orbit-glow-comettail-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "053493078d43efda3a2098ede243a4fe3fe4b305366e4048862737b12ab881d5",
+      "pngSha256": "95d343e6856dfe492574cf169a4dbb759ef767e185ec573301606130696b1ea6"
+    },
+    "assets/icons/orbit-glow-comettail-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "2dfe8d7a9ab855eff1fc8d3e53634b14e069f4298db72505fa75091f1fff8cd4",
+      "pngSha256": "a5144a6c1d1d397c3c0bf01a0eec864d70e051caca9afff3712b744eb7949f49"
+    },
+    "assets/icons/orbit-glow-comettail-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "c98e86259cc5ef94d2f05c885bb743b0082400be2b0533c711ddceb607856529",
+      "pngSha256": "9c54210c2c503158fd474aa7bb7a2cdd23496555e75fc49e7e26dc9d645b2fde"
+    },
+    "assets/icons/orbit-glow-comettail-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "9b0938525fac2e97803b11cd69f2129b98a34e086ad8d536de99f7c983ef0ee8",
+      "pngSha256": "3298f96eb2ad73bacb4a1c0525a3d3b01b1894556d3d3ecca55560a339b4e36b"
+    },
+    "assets/icons/orbit-glow-comettail-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "4633eed8a9e5e67810a8aa0df372fb50ca7c602afe2f410ad829410836f2483b",
+      "pngSha256": "477c777ff7c1ec190528137153a986d688473bb6e74170c21db1d043c3cdf7d2"
+    },
+    "assets/icons/orbit-glow-comettail-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "f47076207a5cf7cb0e38ba388b15d68ce0346ef08ccc666ecfb3bc8dda0c1dba",
+      "pngSha256": "fb8e92417087fa8e5ef5cb9812a2dc61551be1c8d79127cef2a9712e132b17bf"
+    },
+    "assets/icons/orbit-glow-comettail-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "a169b8005500ed34e3a465929d8d8ce86731121b1c646590e02929a8edc54356",
+      "pngSha256": "aee81f74b3af2f24b542bdfca325b1dc0daebbe917879532891bfa016f2fc4a1"
+    },
+    "assets/icons/orbit-glow-comettail-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "2e125f83cb131cf0d385fd097fb1acd027bf947507abe41b5e8c4efc641db3ca",
+      "pngSha256": "2780a64c9f42728a24113d8fa01ed2dcbd2c320967600169550627f7f2f8d3e4"
+    },
+    "assets/icons/orbit-glow-cometwave-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "c72dbb1d044e1e6e1122c1216761e3e1edf3d8c12524d2982697a036b6aada13",
+      "pngSha256": "f501a825dbae3abd6f739a362c504dab8035b98013d031813f43ad32a65a54aa"
+    },
+    "assets/icons/orbit-glow-cometwave-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "ab4be0d46ae7ada7f744cfd2f76e43923839187f7f7a938f1eea58fe95e358ea",
+      "pngSha256": "a5c3a2ebd616a582cc9dfaaa90097bc312d3825ca79d869e5028c67bc315757a"
+    },
+    "assets/icons/orbit-glow-cometwave-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "06ef9e0e609312bfa120ce8042a66c1c75551c116a053383366b1c173bb2b582",
+      "pngSha256": "a04e9fe5eb7f16203533109f58cc31afec762d4a469b1a6e5ec3630ef3dfb90b"
+    },
+    "assets/icons/orbit-glow-cometwave-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "cc214e80ea2e41ee189ce1045e97ff08ce2d00348052a5ca98538af17b776aec",
+      "pngSha256": "40beb74dd8fa8ea1456bbd3dfcfc9500d817bdc42ee78e0812f65d12c5633024"
+    },
+    "assets/icons/orbit-glow-cometwave-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "1db749d83c5048be0cb5413ace149d9d84a24a416e1e5ba0ec23aa74a4e1c9f9",
+      "pngSha256": "75a21aa2d06e658bf0053cbd2fc4257537dd035849955763890ecfdbc7b475df"
+    },
+    "assets/icons/orbit-glow-cometwave-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "333e24095d318004c478457c4907d0c3d42a438aa592a03bb146afffaae7e52e",
+      "pngSha256": "8955f5045fef7a50ca454fcc481667cb7ca422748dc6ae5083c2921b3bb80355"
+    },
+    "assets/icons/orbit-glow-cometwave-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "67f94550ec9fb9dfa39d642a5ebc8d3cbbcba51f46b34d48ddff0d2453fa14af",
+      "pngSha256": "e94b314769ccd2e5359160c09fca4d5ae910bb684678ef7fd749fd73b092a658"
+    },
+    "assets/icons/orbit-glow-cometwave-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "c36b455a47f9fac42dfcdb5d753ef084ebd0215b8059d023ad430757f6a53f53",
+      "pngSha256": "3415d39ff020219852d8d1d0228727db2845c637b3959520f2ed306fea173ca4"
+    },
+    "assets/icons/orbit-glow-dashwave-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "737992e2dccfd217ee13ce8f8748d8998f1b45a76ce3f74875e281fac091bede",
+      "pngSha256": "6de522844eff8bc47868cc435ef0e12e37d76cfcf4b9cd2d122f7acd4619e599"
+    },
+    "assets/icons/orbit-glow-dashwave-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "2fb79e1383d4017adc119996d710d1288261d66dd7ffa6735b3dbb834c8901a5",
+      "pngSha256": "829d9db8fead937dde1a305b1bc80f786ad0d75a674cdb41b7cfe8d453d566c2"
+    },
+    "assets/icons/orbit-glow-dashwave-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "002394ea06edffda755617517d14f3e505eed7fffdb9ab3a2f91cd8da516d869",
+      "pngSha256": "be4a20a4de2857f716a107b30695b31f8d898b2d0e5bed1da45e9be5ffa437bc"
+    },
+    "assets/icons/orbit-glow-dashwave-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "5839cfeb0d3e904a085f37cee6f7153682935f0ca65f12a470bf87ed9ff8e195",
+      "pngSha256": "e92c82bcc2db0bd6196f4d7643f404976d7927579ca4adab0438ab3b301046a6"
+    },
+    "assets/icons/orbit-glow-dashwave-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "63278b2db08be87ebfb70020b5e7f3f30547fa38b84629a035556d02c4da831b",
+      "pngSha256": "d4285708de7976c7eab02933f5cf0093b6fcc563837129b214682a2229cb5d73"
+    },
+    "assets/icons/orbit-glow-dashwave-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "b69f80cdb31789d0e9c782aa0fdcdd407b6edeca9b64642dc5f4b3729a3fc02b",
+      "pngSha256": "62170fa6f83e6a594c04062f3cf23c384c60e51927cc98eae0f52171bd09bb24"
+    },
+    "assets/icons/orbit-glow-dashwave-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "d2f6988b220921ee04161b5680ee3d329c9582a7f4cec24420a95d5a37bd2340",
+      "pngSha256": "c1a85632f2328a7342a0b9938d9a43226b58d34416bafb0c753d854ddf784c52"
+    },
+    "assets/icons/orbit-glow-dashwave-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "83478359f074d0960193d33b183da588e211656744de3eca7ee1a16b571205aa",
+      "pngSha256": "ab8091026fd22e970a6a727a9c88cabf51621610100d3b76f21c1e2cfd7a3b7a"
+    },
+    "assets/icons/orbit-glow-dual-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "1769c131fadeafaa1f8ca275f5d84ff7c18a1d1f4e3549343a5aaa2dc14b5b33",
+      "pngSha256": "4914b0fee0b6c49a35fc5f55167c98f61f73bac282cf626f41d9f9ada9c5d2a4"
+    },
+    "assets/icons/orbit-glow-dual-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "7da8b135f5df8ad63b38bd228af700180dfea131e6f451e20f2e63c262168cdd",
+      "pngSha256": "397ce9a4c342d7e17368a6b4d7f2f830664d8afcc74fa5a66a8de7b541569f72"
+    },
+    "assets/icons/orbit-glow-dual-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "96ce5104c5b273a96715316a517a4ac91f6687151f712385bb8da1ca0fb00789",
+      "pngSha256": "66c6e99680b6ec1f0ecfe35c22faa6c03af03fd8428ff38426185ca634d8f589"
+    },
+    "assets/icons/orbit-glow-dual-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "75c2ce3d2b4bb1613c0ef46d3f5a17fb1c4e62aefd4c0d994ff9ebfc4b1ccde1",
+      "pngSha256": "e16710df9ab99b17d76e1d7d12fae8003915c72d3e43faf8ec27862fcca93d2d"
+    },
+    "assets/icons/orbit-glow-dual-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "4e0ab4147abf906b998e2b717781623d533d68ab5d6db6fd8f36e79f9ab31e69",
+      "pngSha256": "0e71cb69fb1aff222ac87a24bae304ab6b3852aa1e027dce66ff49a66817bce3"
+    },
+    "assets/icons/orbit-glow-dual-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "2a52a6571f97460a6eed5fd579d86c8d23e2200fb48a4adf8465b53650bd7a2b",
+      "pngSha256": "3ce5ed50447fe79cf782cc22b553c031970b780efb5f02699ca3959782a6856a"
+    },
+    "assets/icons/orbit-glow-dual-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "eaf3bbc94d723fa4f727eeed504b491985dc9f9ad6637489050dc17f4eba1eac",
+      "pngSha256": "f7fb3eb9a3ed16337ee10ce9fc922b35dbb84e81af72007550684ba4c2e83de3"
+    },
+    "assets/icons/orbit-glow-dual-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "74496baed0986a27fb8c54aa3f9a12f9dcd56e4ca67aa158e1057dd6d430ba91",
+      "pngSha256": "4a52377d58a33e1a7b5bf65cd729a44097f594a723da272c3f51e1e0f175cc5d"
+    },
+    "assets/icons/orbit-glow-embers-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "58484d028d1bc591606111934403e418678440200b4d946614a10fb82291704c",
+      "pngSha256": "237c2d331203bb86b9bc82052a3aea3b89bc4ca8ee20ef6017e05a7706365b69"
+    },
+    "assets/icons/orbit-glow-embers-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "3e4faca6275b17c8e9fb33d4e4bb5a43bd06ac42e2a1e751c23162be132cd00d",
+      "pngSha256": "fac7c42f6eb688bf43b32c4dff73df6a2214e5dd16ce0b2d9fb1c99be5c82ec1"
+    },
+    "assets/icons/orbit-glow-halo-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "db11324b712198a7c38f11bc7b358543df2846741d3921536848274cae094fda",
+      "pngSha256": "c14a59d52397faa80c984ffc05aee6c9ef67868712391baffc83f44dc661f6f6"
+    },
+    "assets/icons/orbit-glow-halo-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "8cca8b4ec915a1648647b0d33658d2976529ba1193f6f94f032fa1b6fcc912c0",
+      "pngSha256": "950c54d713205b5d0d6935fec588e398fb87a9151f874f9143fd41c55031f26f"
+    },
+    "assets/icons/orbit-glow-halo-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "349db0090a105fe2ed76649b8d2edcd8454a40b5241ec4915e1af5f01ce0fe5d",
+      "pngSha256": "7456917af0028ad3c317c15ec8d8c8b874c0b5cd54d21c90e656a77a10882235"
+    },
+    "assets/icons/orbit-glow-halo-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "ee6d3f01ca3dbd21a4f7ac81a9f49c4c80e94fe75115e1147e227bcfea827d09",
+      "pngSha256": "486b196e5e3f747f35a7908e6ab056e824822d7ef8c460e6eb46177ce1eaa755"
+    },
+    "assets/icons/orbit-glow-halo-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "101ef78aea9cba7ed1b7a52cc20dde276f2d3d12cad710d7dbfc03d6e5d89d0c",
+      "pngSha256": "803dd1b7450af440ddd2e8cabaa9f2d9413e7c097f7d0bf1218823f420fccd50"
+    },
+    "assets/icons/orbit-glow-halo-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "163e9419a000b6faa2893de26809f43e60ff192665e56d83d557746bf6be76e2",
+      "pngSha256": "79e37a98f4b54a867afe5fd36a425e059e1df156db96dfc2b5212ec133931128"
+    },
+    "assets/icons/orbit-glow-halo-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "9a88b6e43c4275e71f5ee8e3b9960b17d1193f1fa9898cdea1f90ac534476247",
+      "pngSha256": "4d350e51ea64eae0cdfdd9747c41c3fcc4b93db5218196ff1f9c5896307c8535"
+    },
+    "assets/icons/orbit-glow-halo-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "f3f51ce8d190b880db819a7c261e43480663289a2b3ba0dac0f9f9902af26c92",
+      "pngSha256": "9c8b86c6e8b758ab223660ef462c2782e9dcb7ca02a4a03968018dc5aac05123"
+    },
+    "assets/icons/orbit-glow-halobreathe-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "bd406d0ab4d932e0212be3be24a2a52a749f64a3d6081eb83e64958c36ad09fc",
+      "pngSha256": "001d32e7964944f958ca637c234187e9b03873b97c1870ab09cbd2d9bbc0f527"
+    },
+    "assets/icons/orbit-glow-halobreathe-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "9b5646c9e98aee673a01f6a490901cf19439d40b30b0dfc71d7a06523aad2620",
+      "pngSha256": "e94daa48f65a6331addadf4b50cb7c854c87c5386ed8caaca9ce996860491fd9"
+    },
+    "assets/icons/orbit-glow-halobreathe-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "f5ef9b3154150dd73c710f720ca22e700302b38d680e19cd340ab041073e8db3",
+      "pngSha256": "26e57fee2b9d43117f0f2d96d11cba5f30c1116df4fef37c77174aa9fb4e7460"
+    },
+    "assets/icons/orbit-glow-halobreathe-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "3d9b320b8c8496fe2c2814293c3eac5737b07e8689af24e916b576de23f49e3e",
+      "pngSha256": "df4ef3719345f7fb0685fd677d3fbe9ead395971c08129ca308220de0db2adcc"
+    },
+    "assets/icons/orbit-glow-halobreathe-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "7c6cdd49facc83df3a0eb3b4ee838b5e2ba811ff1bc68fa70f25ba76e2ed21ff",
+      "pngSha256": "f650c7446e54215142a7429dcf69263e066e6a5068fd831611822802fc32c63d"
+    },
+    "assets/icons/orbit-glow-halobreathe-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "672d4ce31b82090169c13883f0200778c26002146146dd168f1dc90dc118aa67",
+      "pngSha256": "3ec6cff08de42f1ff9f8ca908f4e1f120a8280dc166b5ee260944bf5ddc724f4"
+    },
+    "assets/icons/orbit-glow-halobreathe-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "acecd25b495c6b47211bf278ff498abe3a7113bf2fbe3d2271c9a96dd580fd03",
+      "pngSha256": "a7169264218a822f8ce70b01a309463e63ea5f27f766a89b5320bf81fcad8c87"
+    },
+    "assets/icons/orbit-glow-halobreathe-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "2b3096d1c844937b872717f79d1e6c4cad209a38f684d0bbe91671a6532350b4",
+      "pngSha256": "c733f8e84921cab3b84adf80a371d730c017a1a2db91bd6a61b9e32489642be3"
+    },
+    "assets/icons/orbit-glow-neon-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "2364630f1e11725a9e50a318ca5201c9a09475ef9cd300242624c10bbc6df822",
+      "pngSha256": "6f9bfa2bc087c3758a78ec0fdcd86ac525bd555219c66ad5c62a1dc20d20bf60"
+    },
+    "assets/icons/orbit-glow-neon-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "0aef17368a396e3746cb0a4bfe4c1943a3ec1913d563954fbd72114ea83b79c5",
+      "pngSha256": "7326b36e10ae68af689e7776205165b4325aebd66c76134c036949118d0846d0"
+    },
+    "assets/icons/orbit-glow-neon-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "8c03d669c3ab12dcd642e022eb91452309eb08802dd3c4244b091e457de931e1",
+      "pngSha256": "507c076fa5b2896ebe9758775fbeb29a7dd3c92f35610e3dd72db441fb24dd25"
+    },
+    "assets/icons/orbit-glow-neon-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "eb11f903a4a1feaa3a9a0d53637ed4c7732034a5044bc88b556ae5d827e1bccb",
+      "pngSha256": "72e1118e6cb88234e932ffe78466428df7e328f8bf6e7890d01a5779fc9af0c0"
+    },
+    "assets/icons/orbit-glow-neon-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "d1b83b433a3e68abac96f403987c45af1b90a8d891c4d676b4ec562cc9461e5d",
+      "pngSha256": "048b37c67f4ac5f5b3d3409a38aec6b09e035a93e2ff87064b8b6402dfab46f3"
+    },
+    "assets/icons/orbit-glow-neon-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "98ff480ff2e6dff6810826225cc5ee3a705b58ce91b1c5d47e62b66ada9eef40",
+      "pngSha256": "a2f7dc045ec5d155e9055decfa85f0bf9c8f5344b7e3b86eecbf162cc5b1d03e"
+    },
+    "assets/icons/orbit-glow-neon-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "ee7d44ec83bd11652a1c3a5cfce4c18f1d058e44b89a2e1d12ca14b8907d8850",
+      "pngSha256": "8b2d5ffa81315ca8d0a4196357a014fd956ae5d6ce510c9613d129bd919954d1"
+    },
+    "assets/icons/orbit-glow-neon-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "7ddc82c3bf5384433db1a1c303c0751394c5000d0ab77c630cf28e4f4e3ebbe0",
+      "pngSha256": "84d9b9381ac65f28ad04ba8dc7f3db27677f239b5a1526a8e7467a593c4714e7"
+    },
+    "assets/icons/orbit-glow-orbittail-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "f067a3fd3c5906702148414589f0ff718a518c1acb2c2f3972a0b8d2a7de357a",
+      "pngSha256": "e88185a3c2052c020c73d1504fe9d51d8f081249bc399effd52c679c3473d807"
+    },
+    "assets/icons/orbit-glow-orbittail-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "aabe5532d9f179d65c1ac881fc77ae8fe029c8f985ea3c34d28548e00972a186",
+      "pngSha256": "d1ce53e48cd5b03de20aa44a3b28e9065f52e8a4652d46df35bffb23a6cd6ff9"
+    },
+    "assets/icons/orbit-glow-orbittail-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "4bd1007131cbf5e2ab4bd24d740a361036697ef007f059f5736857a3909ed2f2",
+      "pngSha256": "0eb8942d25cf14678848139a299af85edf08a6d219070e03bc2d32b1e65c6b5e"
+    },
+    "assets/icons/orbit-glow-orbittail-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "1a50cb24cce2de173e4fdf17fac33763d28fa7648697432b8022da322e8408e0",
+      "pngSha256": "eaf0b880ba8cdb97f6ad475f70c7052ae1670630dfb08c147ae10d729d7d82b5"
+    },
+    "assets/icons/orbit-glow-orbittail-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "f18f6848926b209c37b318619730adc34d08e07c44e64946a323a6ca7eb38e57",
+      "pngSha256": "32c28229900e3e5c5dc0b1043d72e1b74022875ac47a89ca514262f38ecca614"
+    },
+    "assets/icons/orbit-glow-orbittail-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "e63ad3bb90b43b8fa742b6d05699804aea5fe08c73c0ecaba0e09653c6711dba",
+      "pngSha256": "5700f3b2a9ab9d237348b72c16bb2325c317e2952c8a03f6fe8130e258d776b0"
+    },
+    "assets/icons/orbit-glow-orbittail-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "4b58acf019b3bfcdb6380a3688c1b58c62ee37a0396cebc29c0b65f342a81eca",
+      "pngSha256": "6030d7af81dbb4b17e6974cc7e8b8577e76124db475823e806bbff9a802cd297"
+    },
+    "assets/icons/orbit-glow-orbittail-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "72c9a30c047d636ef696f19d7a13ca552114f02ed075aefb27359cac279e481e",
+      "pngSha256": "9be09daa05126c59f186e5bbd134b31fdc2b86921ad54dcb67194f8c814ecb37"
+    },
+    "assets/icons/orbit-glow-pinarc-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "f86c01b9042c7d9c9b00a3b0c2731a910adc1cd8dbda25c3636ae4bbf39830b8",
+      "pngSha256": "a958795a2576176c6498e085f40f516c275876e476f746fa214743ad84f708ce"
+    },
+    "assets/icons/orbit-glow-pinarc-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "77923f20eb2d17b3958f3edc135e1b37d005dbd5f80964e16b85f6b7f7d4ae32",
+      "pngSha256": "465f7cee514a4781029ba413a3134271880b136afd16b55e5d04fc4b5755c417"
+    },
+    "assets/icons/orbit-glow-pinarc-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "a5a8225619f57082bf4de6097c9f4c78916be83e42e86cf6434ed9b3ec73e5f2",
+      "pngSha256": "45311281f0d7ae3dc5880e612f2c4e1d51fbd8607fedfe2ebc7dc8ae4a3cb7df"
+    },
+    "assets/icons/orbit-glow-pinarc-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "710e318962871488606cef0d44162ea1041d2b8d253dfb1a603ec63b2059a56c",
+      "pngSha256": "c0747e7ff94664c401346de6331839fb77e97bca7f2668fce6676eb4765109b0"
+    },
+    "assets/icons/orbit-glow-pinarc-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "1d46b1836186d9082e239fec0f9be7f6ffac9e471733868cd1ccda379e24428a",
+      "pngSha256": "1a2e9d205532cd610f27e497aa06b9fe9cd3657f2fecd40b485d011327ac9074"
+    },
+    "assets/icons/orbit-glow-pinarc-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "b203b396b738a83784bb2b634b6fc781c60849e9c8ad0fd2b6da2ec9431d78b8",
+      "pngSha256": "4aca79d47018f4503c3faf176c6e5e3a76c14721a24e24bf9f44823ea54b9892"
+    },
+    "assets/icons/orbit-glow-pinarc-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "a9fa87969e36943320c5368512674aa95bc39fba35a66156bbcd87030ae80289",
+      "pngSha256": "aeb4ea4732b3a14267c9c17479bcd11f5267de88f6c2e0aacc122ad973d87955"
+    },
+    "assets/icons/orbit-glow-pinarc-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "ada566a2c4a58ef0fc313be8892b655bd1687cbca64f02d577b8d39939ac0ea8",
+      "pngSha256": "38fa39dd9652b630ba2aef39f82f7b8b936fda3c1cc68402449f45d2189f554b"
+    },
+    "assets/icons/orbit-glow-pinchase-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "df1bd073b7fa669f2a15a41f9de50c22262d71d5a628846c067187fd92dc4b3c",
+      "pngSha256": "c5e768887b33eb9419615b2c5cfb3e21383c96b945e2e611111781029a631f70"
+    },
+    "assets/icons/orbit-glow-pinchase-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "2c604a8129f36c087a0bf9dfb10d1e853320c1cebdf6ae86491d7fa8093951ee",
+      "pngSha256": "55968e7dc5e9a87eb78d7d245585a71323987b288dbdf91b4e0acd1e8fe7db99"
+    },
+    "assets/icons/orbit-glow-pinchase-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "874334490e3893fb18b98ef1ad2dd5d7ebe4b0d73d3ea16889c28f2495dfff5b",
+      "pngSha256": "008c2f61b135f03bb082e17d56e7ae437557b13b1892036af7239708bced7a4d"
+    },
+    "assets/icons/orbit-glow-pinchase-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "f6bf99f3f5a808eb3e2975f336cf5835dba61f238cc9d0724a2a460ddf319d73",
+      "pngSha256": "251e9bc7b8c9dc6bcf0312e1d5ace8982a4fa1b2f63a2b2ce6c1590d4f628c07"
+    },
+    "assets/icons/orbit-glow-pinchase-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "131ea10251371e0722030527f1aab18b9a0d5d92c9a65bb7876e6cd721a1b100",
+      "pngSha256": "2e2374775cc23e2f505e902c894cc7887125cacbd277f5ab88e761cbbb3f39d3"
+    },
+    "assets/icons/orbit-glow-pinchase-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "64e7eb08de908182c173198108b165f4e2c380f19e45d2ae6650f6717ca1c5a3",
+      "pngSha256": "ba53ec4b544fd0995c3219df0d44635da10a761fa4bfb53e117186a1752edc36"
+    },
+    "assets/icons/orbit-glow-pinchase-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "3e356939f8d1cda53767122c032a8fc7fdf49dc7eb0c10d2a6616a6fd26f94da",
+      "pngSha256": "0c68f4272ee48ca06c5aed97da39d4cb4403665191dbd3729b89677f7b8546a2"
+    },
+    "assets/icons/orbit-glow-pinchase-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "03f5d9d3917fbc8e10d4012d1147de1635bfa1f277822241b69e4a901d069633",
+      "pngSha256": "6e60882788d9643b9cfac30c31326cabe5555ef08256d68b650948881cdfcbb0"
+    },
+    "assets/icons/orbit-glow-pincomet-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "858b953b56a5a008f8c89813b91cdad5b5d84b81af4e84d4a5168c2100be62e9",
+      "pngSha256": "0e41490f99ac020fcd51a08e038c3ee13ce903807ac8f60bfa057b70e7c718ac"
+    },
+    "assets/icons/orbit-glow-pincomet-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "2184fdfc3353ba3356ca06ad4317daf107b51d5d699d9794817ac767693575cc",
+      "pngSha256": "fb2619bdfd0a47b990a6a1ba52874f7823fda05dba5d02eed29c214dab14c7b4"
+    },
+    "assets/icons/orbit-glow-pincomet-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "ee6578370e12a1c708c59de2ed42b44bbb24717bcb7ef1f4b664a9650c4c61b4",
+      "pngSha256": "ebce0ebe9dd37e47787d28f3701eb8639c3a434f468e59c7d3ec8c21ca47c26d"
+    },
+    "assets/icons/orbit-glow-pincomet-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "5474e13f3ea2eaf618c35b12a6fad3d99e6941e9cf6f7ce479299f675014299e",
+      "pngSha256": "d5266d439e80ac4e9a85ff146e9437d2b251db9ff283340f48fafa848040c28d"
+    },
+    "assets/icons/orbit-glow-pincomet-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "bd2d59f979b8afdd45779ca5f6ad58c64434ff40c008ebe50bb27dc3aa89d83e",
+      "pngSha256": "fc5ac4e5a394f06f297ba95ba0c68c7e898873f9d6c33ce4d1854249a451d74a"
+    },
+    "assets/icons/orbit-glow-pincomet-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "51841393f299fb385b220c3292891c368a820792f41f0bef836391f55bd96d7b",
+      "pngSha256": "bcbeba76fe45bd4f0d1ced80864389dabc715abae6a13ce44d6001215e19733b"
+    },
+    "assets/icons/orbit-glow-pincomet-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "8008e10677e766bc7f08f6c75d5236a0dfa7ebac0eeb52786f0629e8da81e146",
+      "pngSha256": "f1cf369c2cf036fde7e92134c494521159bf5b8d7df84e46da9523f4ca811dab"
+    },
+    "assets/icons/orbit-glow-pincomet-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "6ad485d3b30ad2ef7112ff7a6ec8efb6736095c6820dc1ce076975b540197d01",
+      "pngSha256": "14dc1f1eaec583d1433f23537d6158d6b40c9c18a7e823c287405db83f3bc663"
+    },
+    "assets/icons/orbit-glow-pinneon-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "923aadb3a138bf0886207d68e7c4d551623e3b10114204ee5386da61dff47c59",
+      "pngSha256": "af8cfc58fc55127089002f1f5c461e0e2e449c1e41bff3ad8c13f4d77d35047b"
+    },
+    "assets/icons/orbit-glow-pinneon-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "5abb56d36b8ae603ec6540f9a81338bd733b68d91f86adf8c4d330779ea69ae6",
+      "pngSha256": "ec89d6a7d13354c3f507e91e2e73a3a5404c13a5e81912fb2c8b5bee01e9b114"
+    },
+    "assets/icons/orbit-glow-pinneon-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "a7d4885545e336ffad61add0bceafa06ab4aba188a8f86f3ed2142c4a7d45850",
+      "pngSha256": "bedb1c93d38ef8850c233d2f7c0febf45779d8d2ff18437320121010f7edf4f6"
+    },
+    "assets/icons/orbit-glow-pinneon-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "bd1897e15b4cf792910f12641cf410b171aac3d2557c8d6d6a0547d1ff9027a8",
+      "pngSha256": "3831178ac2511d5d56b35bca30183fc6bacd8bba5c6e9eb29b4cba46800cee74"
+    },
+    "assets/icons/orbit-glow-pinneon-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "bd0c26cb04310d9968d486500f938daac1d5dae656192cfaceb97702f58c8d6a",
+      "pngSha256": "b2b5cc33c1fc16a1dc3ba2a0a2db4d31360fbdf02b668043e634888a1bea3a27"
+    },
+    "assets/icons/orbit-glow-pinneon-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "640e830df66707e2a309d5075ced47156b1e1fa881fd94282933bf65aeebddb2",
+      "pngSha256": "1129202840c1012fd5b1a1a144cf7e1cf2cc7dd561f4b6dc08497403f853499a"
+    },
+    "assets/icons/orbit-glow-pinneon-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "99f1b4a4034863a2e7719d5680f608abe75f31dd7b48e1c1d62d0b0f8570ea55",
+      "pngSha256": "80c41eafdebe69743afc9f1b316af45bc91b6c460d57fcad161dff8de6652f25"
+    },
+    "assets/icons/orbit-glow-pinneon-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "49b5c8a68543329bc009384cad2c07b84eb88867d4e44f81c86acdb44377c5c8",
+      "pngSha256": "1bf6980c4bae9094adff0a124026f8ee98418729f5e4d1be185065d51d153328"
+    },
+    "assets/icons/orbit-glow-pinstrobe-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "aae4fdaa191f5be4bed6028608c00878a0aa4f78bd719c68819edc95e3ea5b90",
+      "pngSha256": "7049f8b1914fc04c6990a3a7a4fc8b47e5c3dcbc1aff5fc3e92855076852c40e"
+    },
+    "assets/icons/orbit-glow-pinstrobe-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "ebc3fc223e31eaaf79d84aa3c103dcbcecaba3f640f93f1d2e7e728435bc0d07",
+      "pngSha256": "7efa3931b70a425b7dd4e79344236394b382266ece231c4fcace8ee57160e491"
+    },
+    "assets/icons/orbit-glow-pinstrobe-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "2505b74ff745b062f5d03f2b40699f01b8d77254338cbd161ae2ecedc153f22f",
+      "pngSha256": "84ba6bb1b25e3ea49928b792ce6c91a1c0c35c8a69e891b50356b989bf6dbddc"
+    },
+    "assets/icons/orbit-glow-pinstrobe-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "8567ff54a796e97c5841aca1a330a02316e077fa91363e4eb7d6755f6e44b21d",
+      "pngSha256": "d7448aab58d0f2586a931f836b1271efb7007b5dc7ac65978db1a6d931c37282"
+    },
+    "assets/icons/orbit-glow-pinstrobe-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "955845c438270341c5149545c4a788f17f0b3b3b24187f9a9cddbafb43ccae8a",
+      "pngSha256": "7a5e2bb2382c946e0901bde9a7695d1e4f7e1fb538ae54c920bc664bf10c7b1a"
+    },
+    "assets/icons/orbit-glow-pinstrobe-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "b7994b1edd833c8b0573b22ccbd6f521751332fc4c1536b15d3297fdccbaad94",
+      "pngSha256": "ae3648680915041da0ec09ecbad1681ae03445345163a2e2292b70fb1950e0c5"
+    },
+    "assets/icons/orbit-glow-pinstrobe-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "bfb323d7539798758484003f475d6c93a68d3a795a8e7a4981f7f71e964ed91e",
+      "pngSha256": "f070f6424173f1e3ce9d0ab8626699ab685b02890aa07312aab68b5a809ccc2f"
+    },
+    "assets/icons/orbit-glow-pinstrobe-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "f52e6d8323cf361f4bcc833f82ac705359b901731921670d2cd4b4288ff91943",
+      "pngSha256": "f10cd5154da0c8e79c93b6814cf1a14ea05b836a900355a9dcbe80ad1badbe21"
+    },
+    "assets/icons/orbit-glow-pinswirl-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "6d4ffa3311d2c6a903da5ed5f4fa2c28c3fde51ef5024a63d843843ec167a8f2",
+      "pngSha256": "14e0f607c63d611850612f7aa1894d28e26287ef2254b9dff2ca5a697881792f"
+    },
+    "assets/icons/orbit-glow-pinswirl-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "65287823dfc4b2d28d9c091f6aedd00e7617d6347823904268f7f0dc3fdcedeb",
+      "pngSha256": "2098763a6d24c9e11fafc746463d7cc74264e472a9ad759e9399812ac7e0848b"
+    },
+    "assets/icons/orbit-glow-pinswirl-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "1a7d8cae369f9c62ed0826a4d58fb157803a32db99ebb7f7f8f06ee3f967943e",
+      "pngSha256": "45109d42ae01c3f70c07c9d1f266d98aa96390cd48f3d739072b2f438a6d4558"
+    },
+    "assets/icons/orbit-glow-pinswirl-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "421599eaafc6e291f33936a66c6a99fc727dcb43ed1a36765a6beadf4f11ee48",
+      "pngSha256": "8f128c88ec35e584eb0490d300829b33c491dd7f5595187260af5d74c2b69e16"
+    },
+    "assets/icons/orbit-glow-pinswirl-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "5824ecdb865d3999284f1bd5d6a7434cd863eaaf0fccb69049897c66aa136b50",
+      "pngSha256": "48f6709a025ee0eea7d953ca9131e26d3e64e176b41b08e5d2b132946044d5fa"
+    },
+    "assets/icons/orbit-glow-pinswirl-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "2c021b8aeaedf8835737c9268e14c95eb78ff17a98eb84642acbae26cabdc78f",
+      "pngSha256": "8bc2e534e96548536b7eccf7f2eb096b230a4753a3a41d49049ac555e0f9a468"
+    },
+    "assets/icons/orbit-glow-pinswirl-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "76c69aee5b15d660a8c67aca83e63aea712b6778f241f8e3f16f93353ded1223",
+      "pngSha256": "76e8f89823f12132cd2d2207359cdabf9ab0bb6d8450d9a4ddec3a06b3858a99"
+    },
+    "assets/icons/orbit-glow-pinswirl-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "6986074bdb0270cdb1233fe40afd27df8480db84322c32b72db3185b6dd90ea1",
+      "pngSha256": "d3d5c08294ad84c32f12c69634adbffce066a4c436b367e28aa6cf88f160d5ce"
+    },
+    "assets/icons/orbit-glow-pinwave-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "d94fe20a59300708483454854de0373b861c78dbcc7e440549aa8e060bf5c00e",
+      "pngSha256": "bcb434c9e25bb48b602ba47353e766cdf1c16d0b6396951f4a8cc57d0f657ef8"
+    },
+    "assets/icons/orbit-glow-pinwave-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "a7dad861658d8a0f19e9f6f800bb8e611e507407b599162d57a48b3a1d871cc2",
+      "pngSha256": "c4a3bde5e1eb64ba33fad834545ed2af508d2cbb15f8972727e5b15d3078257c"
+    },
+    "assets/icons/orbit-glow-pinwave-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "c4f8a888c87969974f9127e5ca603630aa5cf47821ef2a654998c9f4095bd535",
+      "pngSha256": "2ea974c2e0f74808eb46a4ade0360182fcdab742ccc3c1dfe95223532eac90b6"
+    },
+    "assets/icons/orbit-glow-pinwave-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "a445ab3dd03ffdb5349c13d8efe834ce38bd4fecdb95d802e08bde7534b69226",
+      "pngSha256": "45319b9f7ee045b588662eee2a362ccc4917c255dbaa7a964495edf13cb99231"
+    },
+    "assets/icons/orbit-glow-pinwave-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "4419a9d81a92714c4e0f696b2f79ac72ba8e75876f972a4dcc98a6a82740fe09",
+      "pngSha256": "23ac62c17d618466ef12109e1821571ae9b65e93945d1eda585c6d1c25831e76"
+    },
+    "assets/icons/orbit-glow-pinwave-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "08f832accd6ba8d647fbb2e77567431067c2186dcdd9c4b7b7fdcc7033a48a3a",
+      "pngSha256": "718720ed933163bed36b7448a060ff40ddba00f48e9beb7b107e2bd0211d46f9"
+    },
+    "assets/icons/orbit-glow-pinwave-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "75b0513aa2d0b62b7ac1d0386f995b126e3ec3c51fd15fdeafb1421458f4c02b",
+      "pngSha256": "2f263dab14188e941beb4adbe3d15b9481f3513599bc135437b7311309417d61"
+    },
+    "assets/icons/orbit-glow-pinwave-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "e42b70df247906cdae1fe4ffb9b839587806ded3898ede820ddfbbcbf5d98d59",
+      "pngSha256": "2a62d613f26b54fab6c984141dd1aa35ec14e3bf3ee45ddb1a2c17cea6437f12"
+    },
+    "assets/icons/orbit-glow-polyexpand-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "bc161c779134eb1fa73b6475030449095916d5ad9f3f723552b1e3a64c1d4cf9",
+      "pngSha256": "8f2f625e0a8b54b2d7adc14cfdb843ae5ca438325da5fc6cd3146befc511dde4"
+    },
+    "assets/icons/orbit-glow-polyexpand-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "1c625a49e39922ab404cfb63e90cac1d766f9b0b89208dbb4b4672bdceb3c84b",
+      "pngSha256": "5daf6345ef7ee21997e46a035483c34c7205a6bea67cb3503545dffd39b55feb"
+    },
+    "assets/icons/orbit-glow-pulse-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "89088645ef5b396e49060475bfb03eaa3ea9eb2674d05e604b495a8501ee2d19",
+      "pngSha256": "683907ee6def70b7332e2524dc588efa024a48ba5b3e7e619337dbdf28621ff0"
+    },
+    "assets/icons/orbit-glow-pulse-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "3f7c4048f292704b3e5593a5089b01fafa45edbb2a6d862cf5954f672e7d2bf9",
+      "pngSha256": "26e6947584d9e5d8a146322911bf2cd917487801a99e5a87cc9bfd9878adec5e"
+    },
+    "assets/icons/orbit-glow-pulse-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "cc7c18d0b6fc1f16b1fa851556304ec7a1f3cce3bbdfc5c4f4f8d10e03fa6906",
+      "pngSha256": "efda711c8a4024f4478455894582bf0a8bc823e8d37188baf097c8c7b8207729"
+    },
+    "assets/icons/orbit-glow-pulse-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "371a5feddffc36b29d0a4c56588b00f0495b7c7d5669a0a25d55455dcafaa24a",
+      "pngSha256": "51266996ee421f1a8f0b98d5d679452e9039a2f70f6f074f7d8f6d8cb7d45a22"
+    },
+    "assets/icons/orbit-glow-pulse-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "163059be1adcb09213a7c552a449b877615b4acd887ab0e470bbb76dc474bd14",
+      "pngSha256": "f6df2ee8fb46d1a3f399597e674044a90e45cbc202e7f27207b843ecb99ed315"
+    },
+    "assets/icons/orbit-glow-pulse-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "a71e70f018530e1c895d6c53d18e818191feafe53286fc70eb81ce66c68db1a0",
+      "pngSha256": "7e22f50e646345859a4bf3ed583b21e5fde719b58f7febb1df62f126c2399a3b"
+    },
+    "assets/icons/orbit-glow-pulse-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "98d11a69ed4fc639be8124abcac4e778f26a3d448cef531030791c5064df16ab",
+      "pngSha256": "459c9c6fab3773ca7852c4e40052b99e07e7c81b6d2cbd15ede041edc32cf534"
+    },
+    "assets/icons/orbit-glow-pulse-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "8d600675fdef8c37eee0b8a86341b5373905d405ab9d5a1fac409808a3858f74",
+      "pngSha256": "ea2fd4fe70fdb576b43c5bc67bd1d28d1b5c345eaec173c52652859d0cd4e979"
+    },
+    "assets/icons/orbit-glow-pulsewave-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "06c12a3c1d794873358b44424747ff340e3cd110bc2573eaa0705d2e34d1cc17",
+      "pngSha256": "2f16d938f5267845706ff57b69797168fb218131820e78c52176a9927f6a51fb"
+    },
+    "assets/icons/orbit-glow-pulsewave-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "8b7214883ba1dfdeac87cf4df67322f036bad72d8c382796e6eeca234c48d611",
+      "pngSha256": "b8d823c85e9c26fba78164f3162c7a9e925b47fac0158b4df1e6dde750ba9c66"
+    },
+    "assets/icons/orbit-glow-pulsewave-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "9856def43b16ece704bb02962b230786fe065d8faed177ee6807ab220cf63d20",
+      "pngSha256": "921348bb7cb9dbda7fbcb7aa3fc0d854096ba8a5ac3f5c2ff842854ddd57535d"
+    },
+    "assets/icons/orbit-glow-pulsewave-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "785443a2ff35e4ca2366e325bbe4fadb024ff0ef70b9f07a7db9a285f267839d",
+      "pngSha256": "d61a356050b34506b89c676957c073db083eaa7d250fe86b90fa56014e7286ef"
+    },
+    "assets/icons/orbit-glow-pulsewave-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "b5e6a114d5ad5be2481943b352d8db3f333aeaa2054ea57513fbd06a00a91d3d",
+      "pngSha256": "038d9110d7c874acbfa3fb1d22c9776c3d58ee4423e1f44dbd8df2a59968e491"
+    },
+    "assets/icons/orbit-glow-pulsewave-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "cf629aa2702d9b39bbea5fa7c4ec923bffec802da526831613449b9092fefd2e",
+      "pngSha256": "255927190c0e11fde8cbd6a1ec6a54da57a7c479a7995d885ffbe6c522f703af"
+    },
+    "assets/icons/orbit-glow-pulsewave-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "555add3b2edacb52a031b81f068ad34d74be8c90d38a294b63732bcd73fd73a7",
+      "pngSha256": "47f4cadf80dedf71b9aacc7031af6eb6c47fc50b02ad58f7fa4732c96af433fb"
+    },
+    "assets/icons/orbit-glow-pulsewave-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "74f346f5d1ced25284c62e2086a23f1f34e372409063f01ba2bdbced76317e7c",
+      "pngSha256": "3624c7e0ca865ee0e69a3cd31d04a069a1544898e13175e7c6e9cc7ba78c0c92"
+    },
+    "assets/icons/orbit-glow-radar-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "905629e5a2ce17497121ae225f2fc6859b417a96bc1cfa9dc0485faf46429000",
+      "pngSha256": "e00d1403ca7ca7018459a2bc279287bfea946e3e845c2e600d2633154402508f"
+    },
+    "assets/icons/orbit-glow-radar-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "3e7b3fcfa4327b2fdeef177ecb9a11580ced309262a43788fbd6c05bd94124fe",
+      "pngSha256": "5789c461a6dca365651ed0ebb0dbba1690ae7d8662e25b380d4a5c5a72632bdd"
+    },
+    "assets/icons/orbit-glow-radar-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "935f846021631931ebadaa102793cf1178264fce8a52a8a9308b9e4bee62ab25",
+      "pngSha256": "c52107379c458bb4bbb14de609c6d2678f65b2412c7374da33192bc960d20cc1"
+    },
+    "assets/icons/orbit-glow-radar-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "a4e65c626630e27a4115872e74e3c1cb5643979f1d4f51f3a1481a71cef83a79",
+      "pngSha256": "756b5d3a99609069c00e043168d38bab51e2ab001857a407d9f219eb85e6d97a"
+    },
+    "assets/icons/orbit-glow-radar-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "d709da1b26e3abc627029742343b2a3da382b46483fa84a59c7fff5ca69d6576",
+      "pngSha256": "a5ffad3e78cdb51996b0cf1649ca61cf3d26768e0b5a9cb9240eedbbb24f8fe1"
+    },
+    "assets/icons/orbit-glow-radar-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "a4a673354eedb197138d871cc8fd6b2241314d74411c04f6337454dfdef81897",
+      "pngSha256": "eceffc9256b43901ab6446e5c736c5458b28fcb88924f096784d2a45362b19d8"
+    },
+    "assets/icons/orbit-glow-radar-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "36dad129ac412b18d2e07d94a13fb1f77c941a1ac0fa83c7b7bb458a37b5b621",
+      "pngSha256": "38a384b446b0223ef2ff5da9dc5d6f57dea9eef3c99b2efdf239a000ba2786a5"
+    },
+    "assets/icons/orbit-glow-radar-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "98ba1bdcc4d8002b6ee0a0288da02eb54076ca202e6a19d80310c64ef46c35bb",
+      "pngSha256": "4dcc5739a1e2d5e8279b5b27a0baa6e1eb43c440070af8294c12e3749056190e"
+    },
+    "assets/icons/orbit-glow-raywave-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "e69036cfbbeb888d102c354acf11e5c480b339ff26bbac9b0b7a810fa3483c1f",
+      "pngSha256": "99dc2f532941205e102e285702e6be2482be6fc36510b99589a046835f2957aa"
+    },
+    "assets/icons/orbit-glow-raywave-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "003235b4fe46d99f0b35a7e5640fc1c6f77bff7be087071288308e6783e94e85",
+      "pngSha256": "81889cc31b36b762c70dd2b3dd76e25cbb8ff6fa1a800f93352e07cb8bcb4752"
+    },
+    "assets/icons/orbit-glow-raywave-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "3d78a50091c007e8c33cfa5b539b950198bae5f1688ea82ad7c2fdbcc7c64df7",
+      "pngSha256": "1b11e32113b3372ccf5173441247b09d8380d619c37ac95a67e7e33ddd2dd28b"
+    },
+    "assets/icons/orbit-glow-raywave-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "50ab16a243476dbac099212339348184120dd0a58b02de6c0d9584e6d9919b7e",
+      "pngSha256": "fe4d46be5acde3fb504505ab351316cd3465e9a1a0d1692c16959a1f960efff1"
+    },
+    "assets/icons/orbit-glow-raywave-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "3590cebf3616333f0569c0cf43c79daf194778fd8c5429a2844420bcdf7b5667",
+      "pngSha256": "53f5ec3ea0e75b1b5170f1df381cd86b920d47e00e76e5553f162eea37fe21f6"
+    },
+    "assets/icons/orbit-glow-raywave-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "49348b55a6f7c65d53ddf5fac853d4eb02c542356dfb1f0ba73cacd994e8f813",
+      "pngSha256": "fddc1767155d0df28b412c48f1dad1bc692ef9d6530cc00e88526611791ffa40"
+    },
+    "assets/icons/orbit-glow-raywave-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "b5e49b725e8a8eeb592a855ad29503d2e431c08665df835827fe6e7d9f0c2532",
+      "pngSha256": "c55bbd675c8c548c81c0e764739b05167a2d4499487fe355782fe22774b48565"
+    },
+    "assets/icons/orbit-glow-raywave-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "273e8619039c3d449f687d192b75221da769d79709aa15144dc6c61c9886e629",
+      "pngSha256": "d76a29ddbf64607de69bb14f8ec2818bcbd36d32f3c497ff518849762cea56be"
+    },
+    "assets/icons/orbit-glow-reticle-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "85cfba9c6f643cb7a36dc4a0f1d21847d8435b753aacea1e4af3e176cc65bb43",
+      "pngSha256": "59ce5aa7f727bb2dcf4c9f88148d740bc1b0c0118ef5504b7e5e1cb5a8988025"
+    },
+    "assets/icons/orbit-glow-reticle-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "aa5074a79ff5315aed9c30e15d7ea10e46fa62ea9f8112e30b6941ef70cea7dd",
+      "pngSha256": "e2b2e3ae6f91ab131fdf5061ca2f0da418348425e9aa468f9b78272a5703d24a"
+    },
+    "assets/icons/orbit-glow-rimchase-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "e8c2999ca51d38a44bae2625dcbea359b7dbccf1b19ab250c5804d0d95fda427",
+      "pngSha256": "682e22a6e81a6a12b39c38488f67ac4a35ec700e6a211f21e08d8d7d5e2769a6"
+    },
+    "assets/icons/orbit-glow-rimchase-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "c99c778b07cadceac45d90824f2b8d7a45ab126d17793ad5dc327602df122704",
+      "pngSha256": "fb27a987a71f92bd677157dbc476f8def813157bfc18ed96d60ae7391f930aa7"
+    },
+    "assets/icons/orbit-glow-rimchase-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "f180639887d50565c5094da8f7620b905ddd91e2f91ef1444226c897b024bf44",
+      "pngSha256": "a88b52f1be1c6b66d9802a17c5eeb1f3faf36bbb5a4cff5c54672dd8cf5bd5ea"
+    },
+    "assets/icons/orbit-glow-rimchase-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "2887f26b50fabfe3cca61338996a947ed1530c9781c9c5a4dd1381345900f180",
+      "pngSha256": "ebce8110234ca3767ccea88de66703182bac2da0da60462ef263220c16729aa5"
+    },
+    "assets/icons/orbit-glow-rimchase-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "2999ce43b0983406ce9f665ef95b5569971398da1b82c7936785bf295215a091",
+      "pngSha256": "9e9e3689e8805c2700bdc9a13b7b2bb8fab23140ad8c5094d5a806310a5eea69"
+    },
+    "assets/icons/orbit-glow-rimchase-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "0796ec5898c91204d70dce577d8f50e8e3ca2ea8ea774e133890a8ab6afbfc18",
+      "pngSha256": "067c5d1b0f0299ce65eaafa47643264a4b47fc342b259618f26a051b8360edec"
+    },
+    "assets/icons/orbit-glow-rimchase-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "fd71268bc4fd22d01ec591cfd204e33600efac930b57df05bba538e820bec6cf",
+      "pngSha256": "6e4169272afd09c69f8b93e6dbae6823dac8e62ab6ce7bab2de4d05f8d70c8ca"
+    },
+    "assets/icons/orbit-glow-rimchase-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "46391c8887f6ed93af0056de7d9552ceb74c4745bea626a9b173da6c86c5b303",
+      "pngSha256": "b3deb594b46e6a259f4d2d6fa1cf16bbeb1368b66127d67bf9a161429321cc41"
+    },
+    "assets/icons/orbit-glow-ripplepair-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "b0438e11961e3ce79c3a100e8e43359a8fbcb83676d000670ac636e62782f0c2",
+      "pngSha256": "d0cab2d7415691dc421a90126a16b9556e2495517bb7a56ded9d63eb117f3cf2"
+    },
+    "assets/icons/orbit-glow-ripplepair-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "76504ecffc3770d958e37a050e4749fc82f801a97166315bf2af59ebf7d8c82c",
+      "pngSha256": "5bfaa481394ca44b32a8e9686c3828b025914bfbbf1a6fb915f7ac3986f077b9"
+    },
+    "assets/icons/orbit-glow-ripplepair-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "3a3130f88e553274ff091a62c2cf7a4816fedfca5ad045fbc8d4fb15fb78be1e",
+      "pngSha256": "aaceaae20742741ae8d2e8cd3c9ee8bc2295c584c54d44e2f22bd6a848826497"
+    },
+    "assets/icons/orbit-glow-ripplepair-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "e877b43001e68118a21b9521990695ebb276f7595ee4ee0d4552c5232253a29c",
+      "pngSha256": "c969fcf57ca20036a28b937e4ea138bf2461575c4466aba3503bfa9f7ac68422"
+    },
+    "assets/icons/orbit-glow-ripplepair-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "f29004e1accf949631786a268ddbddc66d298e470c08ad5851091b4989ad35fe",
+      "pngSha256": "84b24b246bef73220f395662b6bfd441cd35c2a6b478486ba5f6053cad51d9ab"
+    },
+    "assets/icons/orbit-glow-ripplepair-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "e3e81444f4b753cc7b12783158ea23c45dbd6ff17a3aba63d0044bb3b5382cc4",
+      "pngSha256": "43b78f7b9498023e50773650f558f5310033e7cc16cef178ad10763047c22d8d"
+    },
+    "assets/icons/orbit-glow-ripplepair-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "51d9e590569ebe208f7ac7f9d416477b0a4ddd0794e9b0a2a15ff32c0267e3c5",
+      "pngSha256": "5f9f3caa0177ea85f4a2b9f5a2eacf2a780675a01973e72c2d2dbf56a9699a97"
+    },
+    "assets/icons/orbit-glow-ripplepair-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "df8d1e2b48ad5c7039e50f59611ca26870668234c62d3d6c1718c4cd466fbbbf",
+      "pngSha256": "6966dee842dc0907e86583362fd63e9b0b9ff3f13f997eca537f3b78e226c558"
+    },
+    "assets/icons/orbit-glow-ripplewave-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "a7a23a89fc4cdc189e26f5a2e219ea98913e8cd52ad9ef7381f6563326910b0f",
+      "pngSha256": "522a008e304da771c9fff3e61b8f3b58c80d68a69fb7e0f35983b81780106aa8"
+    },
+    "assets/icons/orbit-glow-ripplewave-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "19faaa8c31538d4ed52ca7a4fd16ec069bbfcae4022a733342cddaa3ee0c5d34",
+      "pngSha256": "8406b977876682492ebc468befb52c00a621f3229bb47498210e575b0b8ae5c4"
+    },
+    "assets/icons/orbit-glow-slowswirl-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "1969601d02985cd755730fc077b50317f86706fa2b430edfeca1a74c22aab8f4",
+      "pngSha256": "e14c3ad25314560921b183bbb5f5ed6c2b416e0ffaaac31cc7f3cfbdeecc3698"
+    },
+    "assets/icons/orbit-glow-slowswirl-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "ee17a18735c4829add3395cb3d1290e7a532fb5629193165fe003d769c7d3029",
+      "pngSha256": "f78f4d3da77602b6c93614f57c3cfd88406b8a3db51f9e2d63ac10b41c419d84"
+    },
+    "assets/icons/orbit-glow-slowswirl-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "b6710e54f0f0b259bff6f83dd8ce4d95cf8208340d9773717de902e3ca89cb37",
+      "pngSha256": "d05041bd5adc78f3dbee5b30532c337bffd7a9487e4ca8cc2fdb1ab29026e1de"
+    },
+    "assets/icons/orbit-glow-slowswirl-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "4bf0033a69b56623bf25e31b5642c93fe2e484dee1e7be67ce70a668b37b7d05",
+      "pngSha256": "0655893016510c4a72a4bc3fc90bc6e2ea58ff965c6a62f1d83d7146adb4a0f6"
+    },
+    "assets/icons/orbit-glow-slowswirl-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "1c61cd9e43116324756fbcb8f1c65f3a63e55b2d1648e8dcbb9f40e0ada282f4",
+      "pngSha256": "717cd7da63325ffd99599dfd60e61e10bbcdb42d2405c9cb0c676815935d04dc"
+    },
+    "assets/icons/orbit-glow-slowswirl-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "59d78cb463ffe0e194c98a962b7de93e68581e977adc71d1c765c12e10f414d1",
+      "pngSha256": "731d040d270fe4d5ce0c04bc9db38e36c081150281f27812214849a99aa3e2ce"
+    },
+    "assets/icons/orbit-glow-slowswirl-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "55e3c29b6e3cfcca5122b0b84d0e67e770b5c62960bffa4b4715d618ebebd8fd",
+      "pngSha256": "2294fc784529f21a6b38655e0567670dd68dd87525ff116cad6fedd87409518d"
+    },
+    "assets/icons/orbit-glow-slowswirl-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "ed5c959b672f2dbffb91f5fc033af35f2482253c485647e4bc76d3aae1ea5bc2",
+      "pngSha256": "297f8b8a7003bd8232daef74d8f8aa56b03197359c06516bcac9f47ceb95aa17"
+    },
+    "assets/icons/orbit-glow-spin-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "c760dcd9ec8f7ffc8c12af46a3976cbe62b82db34d39220d38ff6f9c041772ba",
+      "pngSha256": "319ae139637eaaba77e82bf10a311de2ede55725f74184e002168e6604441715"
+    },
+    "assets/icons/orbit-glow-spin-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "0ef062dc3437715ab4313f4ab850bdc3ce6b455c100123849453495562e5f657",
+      "pngSha256": "0605790b688746862681f62995f7842d72a19c6073bb14b5d68b6e256ce7642c"
+    },
+    "assets/icons/orbit-glow-spin-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "6ae912640f67feb2a44b62425b3d1e0c75a5431bec1d42b70375d4c35086dfbe",
+      "pngSha256": "2f0bbdc7d0a7b1895a393c8ae79541894d38bdb77d1fbbc0ceb3ce09fe33d470"
+    },
+    "assets/icons/orbit-glow-spin-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "676784a3dcb7526230e4d0542c61c5da4baf7a78668ecc32260ca056fccf6a6a",
+      "pngSha256": "370ce981b70aacd4b84a2655bf69f30f67987d02040e017c9cc2655379a02dea"
+    },
+    "assets/icons/orbit-glow-spin-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "ed715103823c14f368f7996d019abb95e887e36b6650f0d0d8d7355df97be5a3",
+      "pngSha256": "5b87038a21b2fc9754464037816323f25b84872f5033a3d0956416fe66451f50"
+    },
+    "assets/icons/orbit-glow-spin-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "8be3dfe6c7b52e07e39da918bd946ffc5456c9228f182ea0d3f0435d181e6ae9",
+      "pngSha256": "62b23c64d5017a246d92f62f141d7d3399f8738e52602589a34964c7ab13b7d2"
+    },
+    "assets/icons/orbit-glow-spin-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "5bc7d898c7062bcce9cf56e143a6bdbe0d863f56da08359c5c236618160563cd",
+      "pngSha256": "5045abf41f5b15f52a9938a31200c8a30d9b283efb4075082482121c6dc19410"
+    },
+    "assets/icons/orbit-glow-spin-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "60b3b561899c2c47b44b3e0ee197147b1340e25d90226de7995369628508ab09",
+      "pngSha256": "dedb670895bfcb05c07b32b8ec29c8e4b2014a54abacf4126a9526b43b4146b3"
+    },
+    "assets/icons/orbit-glow-spiral2-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "422423cf58777c19a804e53fbed4bb5de937cafb7991a288af33771531d37764",
+      "pngSha256": "bbc8e4637f2bc0a9100cab25924e26bf177a2a2f43eee77040fddea34d5156bb"
+    },
+    "assets/icons/orbit-glow-spiral2-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "b935fe7cac540f1cea972bdf53ec3fe4eff5e38480b0999f2c7984793d31a85a",
+      "pngSha256": "2112e92a89e9cb8b20c730c9a3729e339ba6a14109669c49bf1d6759a6159126"
+    },
+    "assets/icons/orbit-glow-spiral2-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "c915dc05b1e97545dfd50144bedc1229f77b3a9a44bb4d6ecd92f77cf2a34b21",
+      "pngSha256": "0b7bc4a40d1ab2d860afb402c99c91807d8c5ff2b3f8b90bc4732260fd0cb9b8"
+    },
+    "assets/icons/orbit-glow-spiral2-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "fda2bfe3b660eea3e082257caf2de0394d44c384ba35ad9863fcf7353a781618",
+      "pngSha256": "ec7d2c55e1b993d214184e098269e1ba17ebfff7b830e0d9797865c2e5bb1ecf"
+    },
+    "assets/icons/orbit-glow-spiral2-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "2c11cff28b02749b10f9f5aa03d6f9137c6fbef8a2460a7f7e65430e563efec9",
+      "pngSha256": "b436741bd0b008d34a42d1f0e9653f67900d0c9b7c976be045fc26823d4edd75"
+    },
+    "assets/icons/orbit-glow-spiral2-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "8d5b8be1819ecda2c1c1f5ea63bf6636bb9d5ccced09102f1765376b4d07797a",
+      "pngSha256": "860d7cabb6a84fa7ddf2b8d03100d15f494c9ac884e54944c22afbbe4e773102"
+    },
+    "assets/icons/orbit-glow-spiral2-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "dd96574d3675755202dcd305c895425354960d5fb494063dd74d76cd47c8b5ac",
+      "pngSha256": "5a6704778e229a8fdaba53c8fd3c58a5dcb0f9ffeefc60d98948e99a35634dcd"
+    },
+    "assets/icons/orbit-glow-spiral2-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "a1bd4f05f01efb4c9ecbe238bad84d90c1b72a54ae1093d22aa72e673920a248",
+      "pngSha256": "47e3106afabaf56d8be732538f71ffb5497db93176aab414ac2d927bb3828bef"
+    },
+    "assets/icons/orbit-glow-strobe-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "7b518fbfcdea90847e76208257a2d44948f990dfadfc821332440dce666780a0",
+      "pngSha256": "9d2b949a92654951f99f8508443f2a29f4404d958b8ccc41d5f07e61b5e91ecd"
+    },
+    "assets/icons/orbit-glow-strobe-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "4831bd217600d0e5dcaa3b758fd769e12f0358cd91b1cdcd5fbd3434f1acf017",
+      "pngSha256": "d021828cef6ac03b43315946e6884b9c5bba708e12dc581589110431f18f6d47"
+    },
+    "assets/icons/orbit-glow-strobe-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "a76246c502b7755fcea56219e2bbf0d4b2a7ca86cf060e03f99d2ca0e9f4d2e3",
+      "pngSha256": "1dedec990d045c47322250531091f9539f1d77c7a23b382cca8e7c8ed4ff4658"
+    },
+    "assets/icons/orbit-glow-strobe-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "7130d81579096177aab5d78fe356f8959498287badc901c78442cb598f41b7d6",
+      "pngSha256": "b3b69cbda6ff38449d08dda43a61e954c8ece3dc821259bfb85b90eaf45bf250"
+    },
+    "assets/icons/orbit-glow-strobe-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "93e4f9011835378158ba971229ed72082aee1a61699d8b8de3c94d012e9c8c57",
+      "pngSha256": "f90dbb22f896a2fde4dc9fdf47d20fc2b3be3db048e682c2b470454ce4a485c4"
+    },
+    "assets/icons/orbit-glow-strobe-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "6fc04ba365371414b0b8bf812e9a82bddaa52c99027e457a44895df7a4d74ad0",
+      "pngSha256": "2fd9b3cbe38c5fcad32566fdea22a5482ae5d69f2ac8700b0b0a35ab988c76c1"
+    },
+    "assets/icons/orbit-glow-strobe-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "179cb36b5e83b0f44a48b457e2551d5c4bb70f53cddc9f368fa62a4e013435e4",
+      "pngSha256": "187c13f265f29fff703274c6c272e1316be35c3fa3a5d8fd94b8215acae7f010"
+    },
+    "assets/icons/orbit-glow-strobe-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "a563302bd7ea224d747493135f6e9c2a03c6d7a608b67cd360d1d0f18da55f9f",
+      "pngSha256": "df9a8bb8419e456870895cbd1917287f54cbc486bae29983d5b32d618bea4bda"
+    },
+    "assets/icons/orbit-glow-sweepfast-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "4f415388f2042019f5f95867dba71239ba030ee66c78448d00bd71eecb889535",
+      "pngSha256": "2db9734db7cccb4d26127a2bde855f846905d7add1179f4fde0ee66f5619e767"
+    },
+    "assets/icons/orbit-glow-sweepfast-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "ca23bc5d54535fce955efe87db6e2f864643cf8023401a921708ddd95df59171",
+      "pngSha256": "f02b0b9e88ae7dadecca1a9becd69015aff991aa6cc9ce3d6a0a6c296c71f847"
+    },
+    "assets/icons/orbit-glow-sweepfast-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "55c548a9c9d941e0aed26ead86f20909f4a28fb2993de975c760175b6b5d98da",
+      "pngSha256": "020ddf6b2d8079b4f9ecb54e9abedc587c7b431728cd4c5c594a9ed31e1157a4"
+    },
+    "assets/icons/orbit-glow-sweepfast-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "740773d8a85851c7543ef54033e2eed7e3eb7a1c1931b5f8dd4ec25ca2a54de6",
+      "pngSha256": "f5e0f030a7ad0167fabc20db1474c9b900655e1799743960a8ca47eceff8c054"
+    },
+    "assets/icons/orbit-glow-sweepfast-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "6f846799025875712ae3129eda22330c7441fbcb9169c5c2779aa780e8543b8c",
+      "pngSha256": "88baaf8083123c123023231218851ad4b8d80279921d98f9ce53062cf91eb5b3"
+    },
+    "assets/icons/orbit-glow-sweepfast-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "81b4dc16e998d6b9f77748fe72c4e3db3398d7eaf4f127667bf3a9501a3fa8fc",
+      "pngSha256": "aa1d3131d7a9dbca1562028c7ddf7095f3cba8c846545dbac18c690dc1456294"
+    },
+    "assets/icons/orbit-glow-sweepfast-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "fdc6a24dd45ebd80d4842da1248792490cbb47f48c49107cb47639432263b25f",
+      "pngSha256": "96a7a062792093575c855b4b6727be4bff2f34bb5606902dd3453258a89b3c77"
+    },
+    "assets/icons/orbit-glow-sweepfast-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "58a01f116f7d4d81d1168bfc9be06a40966d4811a2337bc62c2125491bceec0c",
+      "pngSha256": "0fc70d3dad23bb93946b3137980c63080e89ad79c6f9c552fd4370019764e844"
+    },
+    "assets/icons/orbit-glow-swirl-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "10a2ac73b9dee59d8db6e648ef492bffdd4a253158813338df964fdd1273d3a6",
+      "pngSha256": "56e891c3fcd87d0b74e42eabb66c71a21951e65b2ecde85997adff5dcd68779f"
+    },
+    "assets/icons/orbit-glow-swirl-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "b9dad957b689b85c8ea67ef8d6b14089d8847ee3d6a3738a7ee0d0cc808b9fb6",
+      "pngSha256": "ec122c9e0e0e230eb191e1a12c2e03b251f55d0c6a55200f2eaf00500377f7a1"
+    },
+    "assets/icons/orbit-glow-swirl-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "16fc1509a2850228b049b18568f02768e3ec17bd3af572e7cf3c3bc872c00fb0",
+      "pngSha256": "a986d52011c84cd5744ee61f8241962e5d6455f1d83607589a7f2335dec90bc0"
+    },
+    "assets/icons/orbit-glow-swirl-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "a458340b2d0e67388a6707eb67746f65906f6821b6a1fdbbebdd248ca66e53a9",
+      "pngSha256": "fdf1801353fee1cba848c4a39052ca2d2336c5272c99ae280205e98a2baf8cbc"
+    },
+    "assets/icons/orbit-glow-swirl-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "1b2150dbe2e97debb1bd49552c622688123d0383fb8486456f2bc5048631bd99",
+      "pngSha256": "56e32b370b13ba73df4dad4a4524c95b6320cfdaf3720f6f42aecf9ec0378de2"
+    },
+    "assets/icons/orbit-glow-swirl-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "f1f373eb7ba94dc4faf9f2cc82e065d5cfbd6726a0bc19f3d8c80341d7fbab1d",
+      "pngSha256": "402e0684f6ac6a119f56d70a29531f2e8a824c80f007dd54189b2e2dd28736a8"
+    },
+    "assets/icons/orbit-glow-swirl-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "17fbdf0636a34a1548db08fad6a1211a5220fa1e36a4771ca4921155dffeecf1",
+      "pngSha256": "0919e5aa9305b91411de430c651376b01868c48dbc832123f87896100fdc6c05"
+    },
+    "assets/icons/orbit-glow-swirl-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "860aeda98daae390bbf7bf49905e80bc72309605497bfdc9a849752606d04f4c",
+      "pngSha256": "67ea7d0d75319543f55b2d5cbefdda9d584404e3629c4075e9d952267a53a67b"
+    },
+    "assets/icons/orbit-glow-thinpulse-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "737a4e399df3473392441453805f7ab7e7023fcad6ce786c8c4abfdf0f87df93",
+      "pngSha256": "85e329956ba2efdb066504f6035e33131633a26a62257f995850b779e0056b96"
+    },
+    "assets/icons/orbit-glow-thinpulse-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "0646d7fabd346f592a9a660c3e61504986b0a5fc527099a1d27c5179ec5ef105",
+      "pngSha256": "8672044c76512d29b193ea8c34d6760354912233af8ca588074e533a7a360cfb"
+    },
+    "assets/icons/orbit-glow-thinpulse-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "a33242e85df7e5b314fc379934f8b32675e8a932081c1d5ac95b20473058c7fc",
+      "pngSha256": "821909f579abf874e1e3d2ea5d042b4c05eac23c3d75a3c74455f28a40f34d5a"
+    },
+    "assets/icons/orbit-glow-thinpulse-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "154ea4debcfd2deffd624f45e2d3efec3819068a3141b32b527bd4439bb749c4",
+      "pngSha256": "62add15d00773a646604f92e5daa2179540688b8091fcc330ff95659255c84d7"
+    },
+    "assets/icons/orbit-glow-thinpulse-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "77275091b3cfc1d007cb6a48ca397acb21443294a57d7abf292cde4daa226daa",
+      "pngSha256": "fafbeb1c620404dc0dc7fc1c0f7cf15086178e4aec38b7fbb116e9197fd42080"
+    },
+    "assets/icons/orbit-glow-thinpulse-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "bccbab16a73055c6dc8b5f0ca6c2e539ce61fdba92ab9c4d76b82dccc758d06e",
+      "pngSha256": "c38d891be9c8f4a186d0fcab6422d86bb9c7fd6611e4d8faab82fdf70b99c6ef"
+    },
+    "assets/icons/orbit-glow-thinpulse-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "853d91264ca3f5f71aa44946e828f28191acf93a72499f6b5146bb13077532a7",
+      "pngSha256": "458750765ce962860ba5cee8cf7fdf62ddbd9fd6581c0c89a49e4fa0a8263670"
+    },
+    "assets/icons/orbit-glow-thinpulse-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "4af2202ed59bbfa268ddb147797bb73db9859b20f933e65a473b94d0b95226d8",
+      "pngSha256": "3f18e66a7684e5cb66339e5e69355ec670b4b0138e89a5b8208f7bf2f1819c26"
+    },
+    "assets/icons/orbit-glow-tracer-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "a26ee08e3672249ca9e794685e2ccd1d6c06c156179f9d67a2fe78c0178c10d0",
+      "pngSha256": "c816411b0f60938bc46c7646423fcd5be31c5e9e30a149fa35dfd4bfbeca08ee"
+    },
+    "assets/icons/orbit-glow-tracer-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "82002ee2f3bee6aa5b60f9d6e38df0ab9f74c3a6deb71ced4d1fed34511993d8",
+      "pngSha256": "b75ab97f0ffbce6bea6a4a6aa26c26f1fccb254023791c895045a0905bbf9c27"
+    },
+    "assets/icons/orbit-glow-tracer-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "533a5449e106519f6a66c39ca9d232bdf831d759304a7da7d4f64098f05ebca4",
+      "pngSha256": "f57529cd020005e2f41cad26a3c9d195e7e825240773ee32f4eede2a0d2469ab"
+    },
+    "assets/icons/orbit-glow-tracer-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "e2939aaccbf92335597dc8139f7f62a82ff83182a9ed0fec62d42a2a2350c189",
+      "pngSha256": "2ba54fa7aedc9898ed693f7fadf1a4e1ad7504f1132459ab15342704ecda6913"
+    },
+    "assets/icons/orbit-glow-tracer-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "119aa1ba14e111e57f84c609d45049021b787a868d4e6f671d45a2a0c8a1ae61",
+      "pngSha256": "5c3add273390d31269a91e5b9292b587a178164727c64d87a796912cd69f3970"
+    },
+    "assets/icons/orbit-glow-tracer-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "ce0b781b8ac7758f2488aca1fb6c90bc38d383379328362f45e1be8d1e3bba63",
+      "pngSha256": "0722af50d9574ebefc1db509d26e7c73ebd4e5de52b189c73da337ce0f42c4f8"
+    },
+    "assets/icons/orbit-glow-tracer-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "39720b9e17c79d304cf1d166b03b70c4b9a7c86110057ba04e64bca3c5abaac2",
+      "pngSha256": "ecefe378ebeb349c4c9cab548290bf7e6fb8e4c98b6667af4f107b5ba2360a4b"
+    },
+    "assets/icons/orbit-glow-tracer-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "6e77e342cde2a388fb90ecaf53109c1bfec20a53973c4c68fbc5dbe34196e85b",
+      "pngSha256": "7605492ce7cf3265fe3b7cae24a944eaa8981cf7c40661821ecea5935ed58b78"
+    },
+    "assets/icons/orbit-glow-twincomet-loop-round.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "ad28f6008b366d88c3933c6d67f12b8d1ff933dc0d156431328533a3a1de4ce8",
+      "pngSha256": "c60db0fb50ea8062bb417ca86cdeddb02f320213c0da2c8706872d52badce3e0"
+    },
+    "assets/icons/orbit-glow-twincomet-loop-round-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "37efc4f8d5a5e064b79a3a16dbf5801d98beb617547dffb00f4a720dc6c25c2d",
+      "pngSha256": "516c827e253c0c351ab4f7785585244424e5b8a035c457d4b5e8182b8e1fe7c6"
+    },
+    "assets/icons/orbit-glow-twincomet-loop-soft.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "471161a2b80a530798069819929e652493ffaf3944ecac44d46c5bf71e8361b7",
+      "pngSha256": "c8f75aae996db49f637cd70750397d6f2eaba783c192341e9c49b6502035a55c"
+    },
+    "assets/icons/orbit-glow-twincomet-loop-soft-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "1c8d9e997409330822113913a83c8b7247607abd264ff84b23f28f1348f2f665",
+      "pngSha256": "eec5370568d2a1c25ebac178f40cdc82672767a8dd57959f6f08cccd16f5e5eb"
+    },
+    "assets/icons/orbit-glow-twincomet-loop-softer.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "63deea4f4a33d29cd8053eac2b588ef5bf01d20649ec2e930f6130a46fe2ba4b",
+      "pngSha256": "9c314fb5980a23cdad5c0fec49fdf11c6a15b0904c7a7292fc822c4581810637"
+    },
+    "assets/icons/orbit-glow-twincomet-loop-softer-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "69b6dce3b5197525dbb1675fcc06f87327d3a64eb682c830bcf53afc9d0dc667",
+      "pngSha256": "3106f00c89493fcf055d3b56650a3e68b62ce57f509e659cba5f54d00f931413"
+    },
+    "assets/icons/orbit-glow-twincomet-loop-square.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "a6527b35f0c6f5abd9cf5dd208b5f2e6765b3fc45a4b397a9d1ac3371fe98bcc",
+      "pngSha256": "c84e4ed84837997654f5c1b1323ef17bebd0f4cc47b4a553899b117c74ed43a8"
+    },
+    "assets/icons/orbit-glow-twincomet-loop-square-core.png": {
+      "width": 640,
+      "height": 768,
+      "sha256": "8ffa395cbaf7eb28b4cbe7a26b9882f01fc9e4d7f6dff3c6ff060a5ab3464ca8",
+      "pngSha256": "55b15b7f141809caea706dc8f3079acd3884c16549fb82330e22243e4486422b"
+    },
+    "assets/fills/orbit-003-satin-valley.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "dbe210a697618236b8360e721a2c6f55afb44ad2a3baa49e54560d4fb5ec54d2",
+      "pngSha256": "f3ccc3774bf2253bef53d5164303cbb3708a55ebb0a2fee9b4d379ad321043ee"
+    },
+    "assets/fills/orbit-005-satin-horizon.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "f2fdca5f52671dbe5b08ae4e217373de9f60b43d2a834cd8851e62eb52ce1398",
+      "pngSha256": "29a31b6a54b31b2e09eea3f05fd48b504522e65dcd6f31f22f4a1bb8d2e829f2"
+    },
+    "assets/fills/orbit-008-satin-cove.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "21ab34d59f91fde521cb97c18bd6324984b2e1feae46412b5f64a125720a1db5",
+      "pngSha256": "c799c8ec270caf845a6f516b9f95b486de561b70a3426c0ffb5aa070251eea33"
+    },
+    "assets/fills/orbit-012-glass-ribbon.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "ebf8fc1c3a6195e682eac5a9a837ac274efb4cd0e31f64cf3f247819e2184209",
+      "pngSha256": "068cfaf6ad20e21c7d73603f8eedcc4c99a3a9dbbfd5a287726f2042edb9dd26"
+    },
+    "assets/fills/orbit-016-glass-oblique.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "ddd31cf6ae85cbc66b2fa12f69edc8a87aa5d080fc95c49eb9706326cd275579",
+      "pngSha256": "801de2c2237b43d4def5c2849a74eb6a35da77b38264ada62f4d0149cd130f7f"
+    },
+    "assets/fills/orbit-037-ceramic-saddle.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "15a4d1805fd766b9d890cd1e114ba7aeaf804832e8d8c5fa48fa9283083b799a",
+      "pngSha256": "511c69f733eaed152cb19ee816a8d30a49f8143bf0a7ac0aeaee87162a4e614a"
+    },
+    "assets/fills/orbit-188-celestial-aurora-veil.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "013acbe48f1196e4df926f3594463ffe587ab4c0ea4319ca4ead51cb1c0f5271",
+      "pngSha256": "a1047e86f383a76560d6f0fa3f146156dbd6080de591ecf5cef55979bf58e9b5"
+    },
+    "assets/fills/orbit-201-raised-crown-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "a5d9d07c0d9c3c157ef480978c7772064bb5413e1249548f9f41c15243c6ccb7",
+      "pngSha256": "d383bbb0a5385b4f7256e8a6dcf0af97d1b7f18567533d66592f6d69085fe63f"
+    },
+    "assets/fills/orbit-206-raised-high-crown-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "6dc54eaf5c8894cf71608b06c9d51ad7155c9d9043357ca42f27698869628781",
+      "pngSha256": "edff74d61e69287c45f435412cda213199ae6828085f7f0eae17593d0e6914d5"
+    },
+    "assets/fills/orbit-211-raised-broad-crown-polished.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "3b95386fd97111ca21efe1d3e0838ab007629d581bb5acd184fb847432f24680",
+      "pngSha256": "4caddf5028282cbda85e720e3774ae756f202c68ccf4f43b1e1bdddc749625af"
+    },
+    "assets/fills/orbit-216-raised-low-crown-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "33cd609cad3bad2732c1724766fd5c978bc14b8cf1176f100f3bee471166ac7d",
+      "pngSha256": "d7e4936172eb6d661478d91108c1367c0e80acaf30404ee4d5eba54bb5a41989"
+    },
+    "assets/fills/orbit-217-raised-offset-crown-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "6d485edfa384993397868e7a83bfae0edc15429096f1ebcac7258817c1689528",
+      "pngSha256": "a3ae78804bd4dc0a979025cfeb3aa6681bb6397d0e4cd7c476f3f9682e961011"
+    },
+    "assets/fills/orbit-221-pillow-soft-shoulder-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "06b2ee032c70b39456d1d7747f4d99cda39ed6b51ff8dfab8c896f50b7b5d108",
+      "pngSha256": "5a7afd4903ce5f8c512c3dcd0e555d47c4989d299e8a1781a77a8731ba7a35d5"
+    },
+    "assets/fills/orbit-227-pillow-square-shoulder-polished.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "00ec7ec0fabf8c4bd5607e11a0fee23c44f9d4b10cbbd89249ca04afe767da11",
+      "pngSha256": "d2f89b10423268b71e085eb0397ba0400a9271c4c8629ae22dbb819001080831"
+    },
+    "assets/fills/orbit-232-pillow-broad-pillow-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "ec2a6b616ff8d45365612536a9ef8a0d1c78f9c975b1e82ec9ee76daf1863419",
+      "pngSha256": "773d686831354139e3eb83471315514392a4bbee901427356c08e07f0bb3799c"
+    },
+    "assets/fills/orbit-234-pillow-low-pillow-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "e3a139e03d8210af1ead05c78361937d10e80f01defa56512b894cb739ede3f1",
+      "pngSha256": "76d376b8e9c8778ee419775523d1aadeacbe41867c37f1f72ebecfa1467179b4"
+    },
+    "assets/fills/orbit-240-pillow-satin-pillow-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "92f0b25b359abe8ac204fc59d56531b4c5f9bdb9b1df4ab18d65b7394ce8ae31",
+      "pngSha256": "f2990f44b802d524e0bb46e3eb0c96b184a0234d33c1862ed66eb99c481ecdbe"
+    },
+    "assets/fills/orbit-244-bevel-fine-bevel-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "da538c8f58e20dbcd56b7d5d91e960eab8ffe086b3564b06859e900dfffa9204",
+      "pngSha256": "7cf3862bb269207d27f30ba2b4c240592550426ba131fa694b3e23765e30fad8"
+    },
+    "assets/fills/orbit-245-bevel-wide-bevel-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "521633acf5a7134976276d96b1f2917e39611beb73dd9149e21af78fafedb1cd",
+      "pngSha256": "63450de4e4f789613ea4edbc62976a9116b4c3e50bec137b0e0a6b82ac4d8431"
+    },
+    "assets/fills/orbit-252-bevel-upper-bevel-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "90d02db1530a38b5f17e8977f796d19aeddb53781d76b61977f9557f34fc25eb",
+      "pngSha256": "aab83ce559ac78dfee2fc9d9440f905553960d1d28b058b5866131429e637ae6"
+    },
+    "assets/fills/orbit-256-bevel-lower-bevel-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "d1957e1df4a38423e0486aa9221fe4c0e357c03caa826099d5692b25824bae51",
+      "pngSha256": "dec6761ee4811741b5d472a9dc4f2f17e2de12bb6b05fba98d7e1321e88603fc"
+    },
+    "assets/fills/orbit-259-bevel-double-bevel-polished.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "36db31cc6e40570ae0c9b538762c2061c284e998e4c56b4e4e73e6ef5f6fcfe4",
+      "pngSha256": "615610a6ec7d3e3e77188812150a0270ead899f4d0ed5e49b71bf3b8fbbe9c4c"
+    },
+    "assets/fills/orbit-261-valley-shallow-valley-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "dddf5dc5bf482e8c108e50c2cb4976b72d0b0a7c3070ec01a91fdcb0b2331688",
+      "pngSha256": "18c544b8559406936bfb190f9241e6b06c4f4a2e9a533fe70b06c8ce1dfde556"
+    },
+    "assets/fills/orbit-267-valley-deep-valley-polished.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "0e0f4f917c4c65e7f58a2fd80c36f59306acfdf9ae78017a8c14319ec71f981e",
+      "pngSha256": "eaec2260f8d79e2754618778c4e2d0213b2ce04d5f8efccc1a8c1124a04228e9"
+    },
+    "assets/fills/orbit-270-valley-upper-valley-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "450e265f97c959070709c92763118d8f9bdbb17b6133a4d08d706432aaf4b878",
+      "pngSha256": "564644fa29a7eaa2a03b4171ff50e5a7685c58d0fc13e7f0315cce79c4fdaee6"
+    },
+    "assets/fills/orbit-275-valley-lower-valley-polished.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "0777e2b51d137bce5c304dc3cb717ce07ce9a9550c72110aec944470e3b09958",
+      "pngSha256": "f35ebaddfc5804fe452c5fcd5d8af522f8ba0ae35e8114200f52400368596403"
+    },
+    "assets/fills/orbit-278-valley-wide-valley-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "dfa7913af75426a0b1c7047b45bdbf4518705c1a9c4d26d7c830eb9e39ae1036",
+      "pngSha256": "21d863e7e8e901e3b0ca6f0a17df2e49ceaafb027f5d61719679f8ab4c221cc4"
+    },
+    "assets/fills/orbit-283-horizon-high-horizon-polished.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "6a21e9c196302f84a823ed5794733b02c207cba6141ec980de04c35239d1ec8b",
+      "pngSha256": "2cc98469a2c8f980ba46be90383ef72e258c2e41e52d043b7fea3db59776268b"
+    },
+    "assets/fills/orbit-286-horizon-mid-horizon-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "9c922628521b51d6c46d1ea7a308d8937a0d9c811d20c4e95f4364e93e2e327d",
+      "pngSha256": "465275b6acf363aee049a97d38b1c8237d9f3b86f68bac014d4af958a816de31"
+    },
+    "assets/fills/orbit-292-horizon-low-horizon-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "a011e1ea27ffaaccc7651ffe12091f40b58f1c9ae2077a7c4af3637e611ab7ea",
+      "pngSha256": "cb638b05a5b167d89dcbf64500aa8c554e8e476c081eaca8e159ca852a053384"
+    },
+    "assets/fills/orbit-294-horizon-soft-horizon-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "2b99a555b506f1dc6ad45e7d238a95efda20140bb8183a75e64a817c450ba934",
+      "pngSha256": "afd8f5d919490447355a5601307b49f8c7cf9fa15af713b5c8548239f5edfb42"
+    },
+    "assets/fills/orbit-300-horizon-offset-horizon-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "a63ba19c137d56b30848894c33f05b65f502b03dff1ff540723d2465e729cd65",
+      "pngSha256": "47b1967693f1724ef84ab4bfe5c342acbf39e528b52a686e5e361b2463b1fbfe"
+    },
+    "assets/fills/orbit-301-cove-shallow-cove-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "37c513e406a767c74e0763a5fab61c0be0dcc2f23741f3336ec10786a661112e",
+      "pngSha256": "79ec8ad162c0a896ae14cb53100ff0d3f9943266804ae315ebba802c872aff0d"
+    },
+    "assets/fills/orbit-307-cove-deep-cove-polished.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "34f9ca04c7e3ef978061a7b2e0a96fbcc2c93aa7d7e3c2c25921c6bdfe95ff82",
+      "pngSha256": "fb10951c2bceb1ad87fa2b41e0c917c8141f7ca82e0f3cd495d08c82ab7988fb"
+    },
+    "assets/fills/orbit-312-cove-wide-cove-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "20acb07c70015c2835a1ebea78d4f1c80d7ec314dfc0dacf3581160e46761180",
+      "pngSha256": "0513150f453a55796fd1a8af72bafb9d9fe46521166aa5844477913c72c133bb"
+    },
+    "assets/fills/orbit-315-cove-upper-cove-polished.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "96640525608c7dfcaa2bedd2bedf6e872db2e06143d20e9aa270e7d9b6b50205",
+      "pngSha256": "fdacfb5b99307f2684e88b0d04725431ea988fe2a9e61eac6d748db29cf17a44"
+    },
+    "assets/fills/orbit-317-cove-asymmetric-cove-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "446585b65485e539a329a6abb9532877be4643b85cb358369f8fed5a6aa7d0a1",
+      "pngSha256": "e81df7fec3ab166a8600ae14ae38e91a6fa7863a60f6219c27b53cb7258e5714"
+    },
+    "assets/fills/orbit-322-ribbon-high-ribbon-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "dc2f6d0ebb34865cda6e1709884a21f2070647b379ea1109efbff293adefd190",
+      "pngSha256": "7a5c52a29f43beea09ef4c4ab88643705dcffb0fc3d4cf3b8f0ee26eb1c49a37"
+    },
+    "assets/fills/orbit-325-ribbon-upper-ribbon-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "a8fa0020dc18ec4af91b77afc2f8be2655b9f83c4577841a627bc584a2d7c811",
+      "pngSha256": "c2f58a6a15dde4cbd3e62c9e09deaa9462da1e4755544b4eb1079a0a88de939f"
+    },
+    "assets/fills/orbit-330-ribbon-mid-ribbon-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "ede6b1d62d9b479412d7291992eea1c0ce8ef530c87c4d27efc986b1276a6477",
+      "pngSha256": "94b487222bb584aa840052cd83c99bade2e6998ab3ef02f0a0d7dfab82a9c7be"
+    },
+    "assets/fills/orbit-334-ribbon-low-ribbon-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "9ee0672adde5129ea8021829681c10a099215d95f93139f8842f452068534aa3",
+      "pngSha256": "1d8e68ff2687e27cb594badc6f2ea79ed3579360485d7b60f0948c57de3f4aa5"
+    },
+    "assets/fills/orbit-337-ribbon-lower-ribbon-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "6b1bc2d8e8f23319dce28e4c520851fd2d55fa29ae32ba58968c4e5fafd325bd",
+      "pngSha256": "6a11f224e10c788fde2cd7f532e6169d2491e4c1959cebcb51f10e3d7fbe9a40"
+    },
+    "assets/fills/orbit-344-oblique-rising-light-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "9a603529910f3e6b5872c8f85d16c7c7f57efbb129c4a9e3f0cfbaf55251500e",
+      "pngSha256": "29f30a00f4d0e62ae37e90ed49d788d535eeb749bdec40cc0efce6a0f275879c"
+    },
+    "assets/fills/orbit-347-oblique-falling-light-polished.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "85ed8ad93fe032573284a7f530202f962f46ec09c587b889420f1ddea4ee3158",
+      "pngSha256": "4f4753ddfa90ef4a26ba9dcfa0824d5c6f09e9c1387e44da2db825d2f4dc63ae"
+    },
+    "assets/fills/orbit-350-oblique-gentle-slant-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "ca9b8f8eaa2daaed55ee53ced40d1ad6947f374b1e7e328712cf210885bd1aec",
+      "pngSha256": "a769676c10afece71c0884309df58d22f9da5e07bf50a3e5cdcc7953183aa51d"
+    },
+    "assets/fills/orbit-354-oblique-steep-slant-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "47594d311e3c15f6c7c87c78bfa6f8d7a3c6304439b56fe2f1e79e2b92f8e30e",
+      "pngSha256": "e2533c0be8987be8d4cb9c230db8fb62ab5c4a14a2a57bc5e64656dc5c7cfe26"
+    },
+    "assets/fills/orbit-357-oblique-crossed-shoulder-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "a43da2135e254b0523dea889176f2a3f9afe6c4daf7cb1cf30e72d8ffb48adbf",
+      "pngSha256": "750d0c24614f0b43030a360b8cee3247948ee4a34738caa00163c81e54a7c8ca"
+    },
+    "assets/fills/orbit-361-saddle-shallow-saddle-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "6918dd6bf037b43bf691032ab194c3a0a9ec19da126a9472be6e39ee6abc35e1",
+      "pngSha256": "723d9561a41b7b33faa0f323f672dd527dbd0f7062c9093149a834fcd4cc24d9"
+    },
+    "assets/fills/orbit-366-saddle-deep-saddle-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "736a052755692e07c7c9f12b37a2356db82dc816cb70e518592d243f0f91fae8",
+      "pngSha256": "6fcce3cb91833d9c921f277e13cfca476414a91c12fd6dd23e3aa84fd22eedb3"
+    },
+    "assets/fills/orbit-372-saddle-high-saddle-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "c48cc0562ca2e589229b0d59356d6c57a58583c30b602b7d32c38029771cda68",
+      "pngSha256": "e1b914a5ac1f532397776a4552ed79a52952b6b489ad503248715ed3cb98d28c"
+    },
+    "assets/fills/orbit-375-saddle-low-saddle-polished.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "d820753ccc1bbd450f1456697c823da48c1304d654390e3fdf2067fef4c8cb9f",
+      "pngSha256": "3a275fc9ac1350d163665bfc0cc76a485c159eea401496bd84cc2191427f4af2"
+    },
+    "assets/fills/orbit-379-saddle-offset-saddle-polished.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "ce2cdd3e013508c5baf6b9bac1ccec6bb3db6f0248e42070351f2925e0d58112",
+      "pngSha256": "c24bb23a7530ebeccf1268847d9ef94d9585276b41e28b6eb292f486588f5eb9"
+    },
+    "assets/fills/orbit-384-lens-round-lens-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "b73bf115a20cf629bfcbe0823e5667f6a9a9efc23aa0b99d8becaa8de65414b9",
+      "pngSha256": "ae8ee31613f6f2723c1708f0e385cebbf3e43c3811b400078612c47a7d90fcc8"
+    },
+    "assets/fills/orbit-387-lens-flat-lens-polished.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "bf988b279903835d4cdaaadd1b548ec6f9aae34394a3027d2914febe130463bb",
+      "pngSha256": "7dbee0c8fad42bbe25bf46ba930b058882a0b16c3e17d33ddf4dd72ca799fef2"
+    },
+    "assets/fills/orbit-389-lens-upper-lens-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "ac4069358167ad25423b8db542befcb00977b57cdc17e5f2b6a4275bd61c0e2e",
+      "pngSha256": "cf509b9b8a20b1d5f5af0acbf461cb8ffa7f14391cd3e220c4a47f3bd2ede63f"
+    },
+    "assets/fills/orbit-393-lens-lower-lens-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "7d100e4e1ca45c5701f932e89da197033353ef8d2bb087ebfc56ad1120fad45b",
+      "pngSha256": "8f012ff6ab1e549471d3fa22667023f4a0f342669b13620f1abd6b26e284867b"
+    },
+    "assets/fills/orbit-397-lens-long-lens-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "ec8a23fa8451ae940a755faa90bb89e02c0981d041c5cdcf0acb3e212a104e59",
+      "pngSha256": "793c8f9dab3c040696fa1c3b7a3f7b8a312e2e43da6fd33d4f6159ad3e740a9c"
+    },
+    "assets/fills/orbit-402-enamel-fine-glaze-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "966001fc30ec83de43a4e7385471aea76c5bc1a06efc24fa17143083c43d6ac0",
+      "pngSha256": "1a23b9a3a18cf897f0402b5a2cf59af80e35057e6c8f9e84cd3e93ed5afd979a"
+    },
+    "assets/fills/orbit-408-enamel-broad-glaze-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "bc1b721b2c7b41b71c96d1f334dfc02473e62dfea04dc3040945aed663a2d8f5",
+      "pngSha256": "7a8f45e83b612d82ca103bc3f8fad8c718e242ef5a39cd7e0abf552832a2d2b4"
+    },
+    "assets/fills/orbit-411-enamel-upper-glaze-polished.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "b228c57d462d6c8b0a8ad5e54dc1a53e5136ceae02b9793191f9cceeed5ba324",
+      "pngSha256": "9a8c2cbb344e50e952cf6d6828da5e375064ea3fe392435d5fff64ad513dd467"
+    },
+    "assets/fills/orbit-415-enamel-low-glaze-polished.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "2fafdd8057385ba80c538d99ab728f711c7c020e899fb84b3af1fdc137c3e9aa",
+      "pngSha256": "59a6b26594641a76a8185225efb05a05453e82d850427ae7dc771d671ada4010"
+    },
+    "assets/fills/orbit-420-enamel-pearl-glaze-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "67abba954998e81eaa52d97a9f04dbabd7806ed9ed6a762c33ebf01597b7661d",
+      "pngSha256": "dd1305767d56a5f10b36c0fd7a2535a00ea7465f3254237290cbe8a9a2cf725f"
+    },
+    "assets/fills/orbit-424-twin-light-close-lights-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "2a506decbe8115cdb1ff9d51b667e6d3e4a6e4d24c5e1beccf91cd777610cc0f",
+      "pngSha256": "fcc6f31ab6db8a28351e4afc108f135e3ac5ea8ccbd57af90ee6c8b20738747b"
+    },
+    "assets/fills/orbit-426-twin-light-wide-lights-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "c0154df5e21169c81f10526e656a69c96bd81d0695a1c0f499d2544b0ee5921b",
+      "pngSha256": "c85a9bacc803f3016f8dca70f17c7c51046f033c76611e75512e77cc1061b0c1"
+    },
+    "assets/fills/orbit-432-twin-light-upper-lights-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "0e8c1b14a248b997e37cb4a9f3d36c7672004774ff068771678a2729b445076d",
+      "pngSha256": "3e5b305e5ae3b39feff5c795a68e4c302042edd0347dac142cc0eaa1668209c7"
+    },
+    "assets/fills/orbit-433-twin-light-lower-lights-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "efc48311d72c57cb4e0932312bc6239d40e90c8854c5bcf192b1ef18501ff14a",
+      "pngSha256": "45774acb9005f7a862c07f74376cee5fd7d6e1d5cacc8cbdfd8783708ee2b58b"
+    },
+    "assets/fills/orbit-438-twin-light-unequal-lights-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "92241a4c411cb9912de991eac133cafd2ac74a1b105bc37432c05b470e4b11b6",
+      "pngSha256": "7e1b5c39d0e312de1f41d408da8f149d0552923f56a0959cca3ef1fbe1c42d5b"
+    },
+    "assets/fills/orbit-443-underlight-low-glow-polished.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "524bea36f4dbfaebabf567d7e0994d0ed2fefa8a5c6a94dda39cee7c9085e11d",
+      "pngSha256": "8cf28988313eab2e76056bd17a5aa628dcbe03154fd6eaef21585bffe5cbeceb"
+    },
+    "assets/fills/orbit-448-underlight-wide-glow-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "0bf10532b5ec190b9d5580ad6722a248ed9a9e00dba67f37d8089962e121bd12",
+      "pngSha256": "087dd10b03dfc08c6028999d8270189ec7fd26a05e68c3602b2bb9d97f02eb96"
+    },
+    "assets/fills/orbit-449-underlight-raised-glow-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "800333c189927dd3cc6fd68103006994a65224e960ad2749f483a1f20a2466bc",
+      "pngSha256": "918f3ba4b090ea636bd444118f9e4932ba7f553182ca5efacf8a11be2adea39a"
+    },
+    "assets/fills/orbit-456-underlight-sharp-glow-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "c5f1e434bd41f2c3c1068089e32558370f027d17615cdd04784a0ba4fafa94b5",
+      "pngSha256": "b14c78551cb515eba6a1ffcc66ec913c1ff0f7d4dc8b3e971f1345b48fff1224"
+    },
+    "assets/fills/orbit-458-underlight-soft-glow-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "cb9f90a6ef4db10ae81d152c7565b370787f3970268fc8ee4bb530073f33be5e",
+      "pngSha256": "efd6863c059217bca01901761a613d5fa74c56891504a6c6f98798244e389fd6"
+    },
+    "assets/fills/orbit-464-edge-light-fine-rim-sculpted.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "f344679a4f6a8e18faac431911175ad529d737d23c3d91f9723a882d0b5b80e7",
+      "pngSha256": "3cbb7db40fbf6230ed33c2609e253119abc37c0708b252ab15c931521302be11"
+    },
+    "assets/fills/orbit-466-edge-light-wide-rim-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "fbeba0c0ee23c1598668d615aed59328b394939a2ba2fb764a5ee10ea65d2073",
+      "pngSha256": "a7cc3cfbf77a4e8a7fcefd8fe93e5ce61f38ed182eb0bf206a08791cc3c2963c"
+    },
+    "assets/fills/orbit-471-edge-light-top-rim-polished.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "efe9e66958dfc4eeebd0b9d60177b4eb4bb48ba95c9e1c8328c64909c3ed6d0a",
+      "pngSha256": "e5337dd348242cf524d3c65758ec4da9e0be14e1f5308de8524e4eb1c81cc062"
+    },
+    "assets/fills/orbit-474-edge-light-bottom-rim-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "aa31362740b32a8453fd9c98d71ec6a3b144b4fcdac255c8a0ed2f87929e656f",
+      "pngSha256": "ec6103ae32308a5ec002429966337c69717c13adfafa86a65f8b549a714a4f70"
+    },
+    "assets/fills/orbit-477-edge-light-balanced-rim-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "036d1143664d343f7eedc70bd636726ce2240a6f55f44cc93f20459a0ec3a5e5",
+      "pngSha256": "d81143c691f4e1d8237a98bf76d427a9d5bc739772dd9c0c6b556ccba612b49e"
+    },
+    "assets/fills/orbit-483-veil-quiet-veil-polished.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "d4ccc65815ac207dec598514df48117b122de9620740ff14c94ec4a5e498ca0b",
+      "pngSha256": "ae0e29088bd2a1bd04c8d1d59b1d9ccfc8d841032da60b82b3fa97dac10e24ef"
+    },
+    "assets/fills/orbit-485-veil-rising-veil-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "5a36ef6d3590f6d963318531db888f5d77d0a0416f73a0038d2568397f896f05",
+      "pngSha256": "5e2e72952efcb2ef596807e80f71eb046d6497820083ad6cfac0a2ef41645b77"
+    },
+    "assets/fills/orbit-490-veil-falling-veil-studio.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "5c59b1a8fd00450507375b9d01363613d42e8a0ef04351934b231963792877b7",
+      "pngSha256": "d32f3445b5e97fe8f30c66fd4df15e2f06813704436cdaedab63708868cb05e7"
+    },
+    "assets/fills/orbit-495-veil-wide-veil-polished.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "d5499617f7be4b780cfeb12a8ac8e54e1ab83b61d2fba09f73a404d14db4263a",
+      "pngSha256": "0e3ab1b2df6617a36c0ca42490f43ab4d9e67729581dbed8f75d95ebfd9f371c"
+    },
+    "assets/fills/orbit-497-veil-layered-veil-soft.png": {
+      "width": 256,
+      "height": 64,
+      "sha256": "4afe18a8fe7f5fd0c30e2b6732b773b181d0ee05bf5d80a24c8dbb502f004616",
+      "pngSha256": "65899846e533a162b1cef257437e215dacd35a133a76aac4bb39a4b91bbd397d"
+    },
+    "assets/dispels/dispel-pinneon-40-chamfer.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "bb6a6c601d0b5b6e27650e84c1e002dcdebfec98a9b16fbe143d75bbe520e3a3",
+      "pngSha256": "56e67483d9445f66ace285c4709c9b616239c25632a3bc3507c01cf6c3d63adb"
+    },
+    "assets/dispels/dispel-pinneon-40-chamfer-large.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "65c3ade4c5880a79835cfac24aebc36a2c58ead7e34cd0ab751b00fdcaea603e",
+      "pngSha256": "3764cd90e29e22d15a57dbf62e21e36851bdfe0ef1d90338a613ea90ad4076a6"
+    },
+    "assets/dispels/dispel-pinneon-40-chamfer-small.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "7ab57cead15c8be078bd17aa4d5cebeaeba628c378f1a306665ade2ca91f653d",
+      "pngSha256": "2480c61025a892c0c11f6ca87d7798537b142b9771c6667a2642507ec782e3ab"
+    },
+    "assets/dispels/dispel-pinneon-40-round.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "ea66063df0f76c6c8dbb51704827351d2ac395bb815f52b17efa409783922160",
+      "pngSha256": "bff4a68d367410791bee4ef39a972b273c53e5392627219e4e415539138caaba"
+    },
+    "assets/dispels/dispel-pinneon-40-round-large.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "7d8f1173a705729d91fe76ea956970e26ce5bfef3b21ee35fcabdb35f1a6a3a2",
+      "pngSha256": "0cece6af5461f73a02768323c4a208aa9222b2e7bc9fc5461fcdfe4f89d5e8bf"
+    },
+    "assets/dispels/dispel-pinneon-40-soft.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "464cc6524711749f9b6a816462da87373ca72b89370cf2c14784d116e21b2c36",
+      "pngSha256": "6e0f6f029aecdc16ba5da9466627293410f8b94a6c9bf6a56b283d1faf69774e"
+    },
+    "assets/dispels/dispel-pinneon-40-soft-large.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "d60f8f0b6112679191b80a20d3b3332b79c568cd319c9a6d2689a83bde15a19f",
+      "pngSha256": "f4a7d4d7d250794e053cfb474220085bc0e8e4a2c484d5a429ce351e5f435f41"
+    },
+    "assets/dispels/dispel-pinneon-40-soft-small.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "7dd7160e5f17ed01eecfbd606e4136ff0dc36a0db86f98133e540dfb16432f8a",
+      "pngSha256": "b5060011f286bf1d6b15f165996b1b2a2ed534da3da3090a01fa588251238dd8"
+    },
+    "assets/dispels/dispel-pinneon-40-softer.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "eb67d32b96406d61d658d4c903b95807c506754469fa60bf9eff423ad348783b",
+      "pngSha256": "bb41e4cd7a31d437e2a043a48d2101f3ee5cb053b9f973359f0fe013f6e01179"
+    },
+    "assets/dispels/dispel-pinneon-40.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "c6f2226464c0c28535fd1421e68ca8453643d15f75ff8dd8eed2d80e112d9a6a",
+      "pngSha256": "33d95ef860369414de922c2a2166f836efca2099ac99158f60330a2619917879"
+    },
+    "assets/dispels/dispel-pinneon-25-chamfer.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "af959c146cdc0ec338d16a8d03bfac0867729945dd70cbc6a45503f9a43c2b03",
+      "pngSha256": "2133dcb04b54b7a222b163a1aa7cde9f3e1f5aa2284f693c7fbc407eaa964b86"
+    },
+    "assets/dispels/dispel-pinneon-25-chamfer-large.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "0c7fac975d881cdbad08f2353c24fed232b1dda3571a843e403d32e447aa1d91",
+      "pngSha256": "53819fabb402d2b5f176164a017dc9a8bd7bf8958ff2783708425d6a1bab4627"
+    },
+    "assets/dispels/dispel-pinneon-25-chamfer-small.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "35250d9c1d8fd7aa81b362fac7254413a64700945301dfb995c7d4bd95f098e8",
+      "pngSha256": "96a863ad5d59ab4f05744370e67dc6dd166cdee70476642123dfb3bd06d38e47"
+    },
+    "assets/dispels/dispel-pinneon-25-round.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "f6229f694690f03e6239054cfd8978024857a9fd95f136baaa1bc87e4f56675a",
+      "pngSha256": "ddd523c36e5753e2c94cfd4d835bf67da1af7cbb4d4e3d19dd46fbf2ef1ce6cc"
+    },
+    "assets/dispels/dispel-pinneon-25-round-large.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "1594a8aad879f39784d2f5a1f3cea018d7bc0bdddd4fd85d0a28bd95dfe97403",
+      "pngSha256": "510248c48fe8a7af5f0b054d13a5983e009cb05a931e7c77a587a1e9a8d56a5a"
+    },
+    "assets/dispels/dispel-pinneon-25-soft.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "7b9651a0466272041b1a047269798626b6433c4dbc38f54b285e13aa85dc833c",
+      "pngSha256": "7b2ed882de706b0c002331fc7219454a9eb24ff05d25bd605c120a2d442d91ad"
+    },
+    "assets/dispels/dispel-pinneon-25-soft-large.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "8ad5b9f8686fcba23a56ff99c1d4899e1549e3f8a01445bfdafd7fdeb71dfb45",
+      "pngSha256": "cdbb8777f39b88b21f08585a03ae8e6bf23b54ba479675d7b1cbbaeba9fdb3b7"
+    },
+    "assets/dispels/dispel-pinneon-25-soft-small.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "93627c0905f58869be90a21c56ad469dea1d0fe477b8cc59cae30bdf77c4e8a5",
+      "pngSha256": "e30736884ff5d752b425aa4e585a9241512e36b44c0cffa6eea1d5e745d1aaa1"
+    },
+    "assets/dispels/dispel-pinneon-25-softer.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "cfcd69f416b435e32b915a91b970fe8340f9f43e3bfba5253260f8b714ff5c4a",
+      "pngSha256": "63b66634ff3c2beb03f292acc674cd604f9a28a0ab902e2fbcfd1a94bce3ec63"
+    },
+    "assets/dispels/dispel-pinneon-25.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "5dd885093533c4cbf2713e0ad48f9c9bc72e40df5f73c6f834be8953307e99b8",
+      "pngSha256": "f413b274e01cccc63377f11765f8df5c128bb0de586a1d93f58df7e2f3d85106"
+    },
+    "assets/dispels/dispel-tracer-40-chamfer.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "1098de1e0245c40f3ce98704bea09e277451134edeac540db5c7dd78b241624f",
+      "pngSha256": "4db180c470a9aa37397c891ab011a9316b894271e46763276686c8db417f7733"
+    },
+    "assets/dispels/dispel-tracer-40-chamfer-large.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "93f4fd46113f883d8b94b29f76bf36a3c988a48eb774b2889b17bb5192289d10",
+      "pngSha256": "556bbc5692dba1d2fa936c18ab3e2342abcd42565afecd8f13fc618ba3639dfa"
+    },
+    "assets/dispels/dispel-tracer-40-chamfer-small.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "98e023c58085e04acddda91e2353148d75c640c37877fdbee5720c05583c445c",
+      "pngSha256": "8837b9686d7228c9409f91ebec597d95181450db692ab9f7d216aed4cc630dcf"
+    },
+    "assets/dispels/dispel-tracer-40-round.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "e86535c2ec2128753a097c59e4317c7ae1fb935b9e63506fce8c87b4a2a7407a",
+      "pngSha256": "c940da65e15423fc21cd6f1a8608f7cabb87ca6ba59e48336ab8a21073bf1464"
+    },
+    "assets/dispels/dispel-tracer-40-round-large.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "7f92f8b6281ccc1d0e0f667df5334d9343a5d031d01abb79b85335955dc2f5f7",
+      "pngSha256": "ac816791f77de31354b2bffa5536c91a14ae2b094905909a8ed1a856c40bd105"
+    },
+    "assets/dispels/dispel-tracer-40-soft.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "869f946650493be04b4c7c1605a0eb3ca02b55cc5b9af31023a7328d35a75338",
+      "pngSha256": "5f0488f6eb89d1ddbfe5197d9d08691f441c2b87076b90b8f0e1bdab3e2f3234"
+    },
+    "assets/dispels/dispel-tracer-40-soft-large.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "d2604c2f6b55419bcd9eebbea2d84e710a7a4d6c1fabe0086ec8467440c29579",
+      "pngSha256": "4b72f9116d6114519fc32f3d5b61a3c233c2efaa9f8187b46e87ec9c4496a4ff"
+    },
+    "assets/dispels/dispel-tracer-40-soft-small.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "4a82f5181c7ed9e43c05b1b6214a7e8e8cf6729b77e00d0a2730deda3f466fab",
+      "pngSha256": "cedad228c9d7677800cb0e34d912f103b8c19986e16bfc409fdc3a590a170f24"
+    },
+    "assets/dispels/dispel-tracer-40-softer.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "0237432a267d89056e7ccd0d906308f958c01940844598d70c79315fe1d3ce3f",
+      "pngSha256": "534badf55cdaed717aa7ab764e7dba0176534e63e4713f5a7755e189c7892a22"
+    },
+    "assets/dispels/dispel-tracer-40.png": {
+      "width": 1280,
+      "height": 384,
+      "sha256": "87127d3e9bafe4fdfa3d33e963739e54c1e1620cc107405e90c2dd08d55cee86",
+      "pngSha256": "35e0e9b81420f3a2a5d37068a8426230f8cbdd4180334cf2aeacfd67b9a27cfa"
+    },
+    "assets/dispels/dispel-tracer-25-chamfer.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "0aa6ae9815ab462c649470daaae86351f1bb7ebda493a7f212c615c96aafa297",
+      "pngSha256": "c0ca47e82f2f6f107edf411fdf19853811cbcaff87d4263ed99c5946d4ca8628"
+    },
+    "assets/dispels/dispel-tracer-25-chamfer-large.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "e0a160ea4ff32b4dcfd46815d33dc1ae914eaaf1d90ef4d3bf5c82cb8839952c",
+      "pngSha256": "7ed1d52a96cc5661a75f810004ee5018a600311bbb45cfd47cb73183a45dedea"
+    },
+    "assets/dispels/dispel-tracer-25-chamfer-small.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "814cbcdf2dd90452b9cdb9f54326b0b43d49640ee685624f86017209cdecdf68",
+      "pngSha256": "f6bcba40c313d94c5850d413384b6c37f4761e88c9771eb218854492baca366b"
+    },
+    "assets/dispels/dispel-tracer-25-round.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "cacb10612e4002307fcf5a604f8b272265efb711386606ca8adf19ef8625e4f8",
+      "pngSha256": "b64cb8b364d4a9e1cd1cbd9654b5fbfc53ec939d680ea5b03d2e3e5fb12e8042"
+    },
+    "assets/dispels/dispel-tracer-25-round-large.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "712d0cf5c943163423ac24ecf6c26c8d3eb87d08560be7ca530d429d539705a4",
+      "pngSha256": "410e66718a398521a62748b8977c5dd5c8f6599159a94236209dd1e2be3f2017"
+    },
+    "assets/dispels/dispel-tracer-25-soft.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "2d16bee64111e72f24a824247d822bd67c70941d07501eb80ec8963efa06452b",
+      "pngSha256": "b473f3a5fb5bc14def67307a0361df0a0a669db0b23465be2bf29ac876f7800f"
+    },
+    "assets/dispels/dispel-tracer-25-soft-large.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "3a948445dda13f3438b9478a736a8d8c16c9d37b5efd08fcd79f173567d7971c",
+      "pngSha256": "6b479473f188bfb9dc0bd8c0c1962715502ef4ae76c2a423c110b09e42ed7dfb"
+    },
+    "assets/dispels/dispel-tracer-25-soft-small.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "c556c6e4a0e8d98b7e063adb4f91dfa476fb40d41722b0434f938e9d275995a9",
+      "pngSha256": "98b063756a0514b59350f083f7f2d4f1bbe4fd6005620fac15b6fbd619d21b0d"
+    },
+    "assets/dispels/dispel-tracer-25-softer.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "33da6ea267d81d73ef265021b4fe4dda087e8a023301fe40457ebee1c25ec8c9",
+      "pngSha256": "dd19e292f4224d259e843c74603c2518200fa14e8574c618ef6e4614bf011de5"
+    },
+    "assets/dispels/dispel-tracer-25.png": {
+      "width": 800,
+      "height": 384,
+      "sha256": "e55ca1e90174cd7e2ea6add56ad5a5a95e39e4790323bd9bc05fe5cce98ec329",
+      "pngSha256": "b946ceeb73fe8a1d6a896bf63e95283065c5056ea4fbe6c7e43957124944c9c4"
+    }
+  },
+  "inputs": {
+    "Register.lua": "d407ebde83f75df65efc456d030b976b8b2047fd004485b83905211086f92a26",
+    "RegisterStatusBars.lua": "d033856bf45217acc06e3acec5f3ef965dd328c3bebd67f36fb63a7429d16731",
+    "LibOrbitGlow-1.0.lua": "b4a0a5e201ebf83b8c06dcfa2a79585968b2c8e86990607cf07eed008211848f",
+    "StatusBarGlows.lua": "405ffdc9b965d29333711c70517406c3bb4a0d763eb7cb9ec2e36cb8c59b2d2a"
+  }
+}
