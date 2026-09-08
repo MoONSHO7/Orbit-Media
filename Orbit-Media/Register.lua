@@ -1,4 +1,5 @@
-local BASE = "Interface\\AddOns\\Orbit-Glow-Pack\\Textures\\orbit-glow-"
+local addonName = ...
+local BASE = "Interface\\AddOns\\" .. addonName .. "\\Textures\\orbit-glow-"
 
 local function Resolver(name)
     return function(phase, shape, suffix)
@@ -72,7 +73,7 @@ local function Register()
             cols = 5,
             frames = 30,
             shapes = SQUARE_ONLY[name] and SQUARE or ALL_SHAPES,
-            source = "Orbit-Glow-Pack",
+            source = "Orbit-Media",
         })
     end
     return true

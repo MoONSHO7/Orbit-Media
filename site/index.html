@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Preview Orbit-Media icon glows, status-bar textures and borders, and LibOrbitGlow dispel glows.">
+  <meta name="theme-color" content="#101216">
+  <title>Orbit: Media — Glows, status bars & borders</title>
+  <link rel="icon" href="orbit.png">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="gallery.js"></script>
+</head>
+<body>
+  <a class="skip" href="#gallery">Skip to gallery</a>
+  <header class="masthead wrap">
+    <a class="brand" href="#"><img src="orbit.png" alt="" width="32" height="32"><span>ORBIT<span class="brand-sub"> / MEDIA</span></span></a>
+    <nav aria-label="Resources"><a href="docs/media.html">Documentation ↗</a><a class="download" href="https://www.curseforge.com/wow/addons/orbit-pack-glows">CurseForge ↗</a></nav>
+  </header>
+  <main class="wrap">
+    <h1 class="sr-only">Orbit: Media gallery</h1>
+    <section id="gallery" aria-labelledby="gallery-title">
+      <nav class="categories" aria-label="Artwork categories">
+        <button class="category selected" data-category="icons" aria-pressed="true"><span>01</span> Icon glows <b id="icons-count">40</b></button>
+        <button class="category" data-category="dispels" aria-pressed="false"><span>02</span> Dispel glows <b id="dispels-count">2</b></button>
+        <button class="category" data-category="fills" aria-pressed="false"><span>03</span> Status-bar art <b id="fills-count">82</b></button>
+        <button class="category" data-category="borders" aria-pressed="false"><span>04</span> Nine-slice borders <b id="borders-count">7</b></button>
+      </nav>
+      <div class="section-heading"><div><p class="eyebrow" id="source-label">ORBIT-MEDIA</p><h2 id="gallery-title">Icon glows</h2><p id="description">Animated outlines and radial effects registered with LibOrbitGlow.</p></div><span id="result-count" aria-live="polite"></span></div>
+      <div class="toolbar">
+        <label class="search"><span aria-hidden="true">⌕</span><input type="search" id="search" placeholder="Find a glow…" aria-label="Search artwork"></label>
+        <fieldset class="color-controls"><legend class="sr-only">Preview color</legend><span class="control-label">COLOR</span>
+          <button class="swatch selected" data-tint="#80cfbe" style="--swatch:#80cfbe" aria-label="Mint" aria-pressed="true"></button>
+          <button class="swatch" data-tint="#85bfff" style="--swatch:#85bfff" aria-label="Blue" aria-pressed="false"></button>
+          <button class="swatch" data-tint="#e7bd80" style="--swatch:#e7bd80" aria-label="Gold" aria-pressed="false"></button>
+          <button class="swatch" data-tint="#da95ae" style="--swatch:#da95ae" aria-label="Rose" aria-pressed="false"></button>
+          <button class="swatch" data-tint="#ffffff" style="--swatch:#ffffff" aria-label="White" aria-pressed="false"></button>
+          <input type="color" id="tint" value="#80cfbe" aria-label="Custom preview color">
+        </fieldset>
+        <div class="animation-controls"><label class="control-label" for="speed">SPEED</label><select id="speed"><option value="0.25">¼×</option><option value="0.5">½×</option><option value="1" selected>1×</option><option value="2">2×</option></select><button class="play" id="play" aria-pressed="true">Pause motion</button></div>
+      </div>
+      <div class="options" id="icon-controls"><label>Icon corners <select id="icon-shape"><option value="square">Square</option><option value="soft">Soft</option><option value="softer">Softer</option><option value="round">Round</option></select></label><span class="option-note">Radial effects fit every corner style.</span></div>
+      <div class="options" id="dispel-controls" hidden>
+        <label>Contour <select id="contour"><option value="square">Square</option><option value="rounded" selected>Rounded</option><option value="chamfer">Chamfer</option></select></label>
+        <label>Corner size <input id="radius" type="range" min="0" max="30" value="8"><output for="radius" id="radius-value">8</output></label>
+        <label>Bar shape <select id="aspect"><option value="4">Wide · 4:1</option><option value="2.5">Compact · 2.5:1</option></select></label>
+        <label>Artwork <select id="dispel-shape"><option value="auto">Match contour</option><option value="square">Square</option><option value="soft-small">Soft small</option><option value="soft">Soft</option><option value="soft-large">Soft large</option><option value="softer">Softer</option><option value="round">Round</option><option value="round-large">Round large</option><option value="chamfer-small">Chamfer small</option><option value="chamfer">Chamfer</option><option value="chamfer-large">Chamfer large</option></select></label>
+      </div>
+      <div class="options" id="fill-controls" hidden><label>Collection <select id="family"><option value="all">All collections</option></select></label><label>Fill amount <input id="fill" type="range" min="0" max="100" value="72"><output for="fill" id="fill-value">72%</output></label><label>Corners <select id="fill-corner"><option value="0">Square</option><option value="5" selected>Soft</option><option value="10">Softer</option><option value="14">Round</option></select></label></div>
+      <div class="options" id="border-controls" hidden>
+        <label>Width <input id="border-width" type="range" min="48" max="360" step="4" value="280"><output for="border-width" id="border-width-value">280</output></label>
+        <label>Height <input id="border-height" type="range" min="48" max="160" step="4" value="100"><output for="border-height" id="border-height-value">100</output></label>
+        <label>Border scale <input id="border-scale" type="range" min="50" max="150" step="5" value="100"><output for="border-scale" id="border-scale-value">100%</output></label>
+        <label>Chamfer artwork <select id="border-artwork"><option value="native">Native nine-slice</option><option value="sharedmedia">SharedMedia export</option></select></label>
+      </div>
+      <div id="load-error" role="alert" hidden></div>
+      <div id="cards" class="grid icons"></div>
+      <p id="empty" class="empty" hidden>No matches. Try another name or collection.</p>
+      <p class="gallery-note" id="gallery-note">Previewed from the current artwork. Color and blending may look slightly different in-game.</p>
+    </section>
+    <section class="integration" aria-labelledby="integration-title"><h2 id="integration-title">Addon integration</h2><div class="integration-copy"><p>Orbit-Media registers icon glows with LibOrbitGlow, and status-bar textures and borders with LibSharedMedia. Orbit is not required.</p><p>Tracer and Pin Neon dispel glows are included with LibOrbitGlow. Consuming addons supply their own contours and masks.</p><a href="docs/glows.html#status-bar-glows">Glow API ↗</a><a href="docs/media.html">Media documentation ↗</a></div></section>
+  </main>
+  <footer class="wrap"><span>© MoONSHO7 · Orbit: Media</span><div><a href="MEDIA-LICENSE.txt">Media license</a><a href="LIBRARY-LICENSE.txt">LibOrbitGlow · MIT</a><a href="https://github.com/MoONSHO7/Orbit-Media">GitHub ↗</a></div></footer>
+  <div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>
