@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore Orbit: Media's animated icon glows and status-bar textures, plus LibOrbitGlow's dispel outlines. Preview colors, corners, motion and fill levels.">
+  <meta name="description" content="Explore Orbit: Media's animated icon glows, status-bar textures and nine-slice borders, plus LibOrbitGlow's dispel outlines. Preview colors, corners, sizes and motion.">
   <meta name="theme-color" content="#101216">
-  <title>Orbit: Media — Glows & status-bar artwork</title>
+  <title>Orbit: Media — Glows, status bars & borders</title>
   <link rel="icon" href="orbit.png">
   <link rel="stylesheet" href="style.css">
   <script type="module" src="gallery.js"></script>
@@ -20,7 +20,7 @@
     <div class="hero">
       <div><p class="eyebrow"><span class="live-dot"></span> THE ARTWORK COLLECTION</p>
       <h1>A brighter<br><span>point of view.</span></h1>
-      <p class="lede">Animated glows. Sculpted status bars. Find the right finish for your interface, then make it your own.</p>
+      <p class="lede">Animated glows. Sculpted status bars. Detailed borders. Find the right finish for your interface, then make it your own.</p>
       <p class="independent">Made for World of Warcraft. Works with compatible addons — Orbit optional.</p></div>
       <div class="hero-art" aria-hidden="true"><div class="orbital orbital-a"></div><div class="orbital orbital-b"></div><div class="hero-mark">O<span>RBIT</span></div><span class="art-label">LIGHT · TEXTURE · MOTION</span></div>
     </div>
@@ -29,6 +29,7 @@
         <button class="category selected" data-category="icons" aria-pressed="true"><span>01</span> Icon glows <b id="icons-count">40</b></button>
         <button class="category" data-category="dispels" aria-pressed="false"><span>02</span> Dispel glows <b id="dispels-count">2</b></button>
         <button class="category" data-category="fills" aria-pressed="false"><span>03</span> Status-bar art <b id="fills-count">82</b></button>
+        <button class="category" data-category="borders" aria-pressed="false"><span>04</span> Nine-slice borders <b id="borders-count">7</b></button>
       </nav>
       <div class="section-heading"><div><p class="eyebrow" id="source-label">ORBIT-MEDIA</p><h2 id="gallery-title">A signal that stands out.</h2><p id="description">Animated icon outlines and radial effects for procs, auras and active abilities.</p></div><span id="result-count" aria-live="polite"></span></div>
       <div class="toolbar">
@@ -51,6 +52,12 @@
         <label>Artwork <select id="dispel-shape"><option value="auto">Match contour</option><option value="square">Square</option><option value="soft-small">Soft small</option><option value="soft">Soft</option><option value="soft-large">Soft large</option><option value="softer">Softer</option><option value="round">Round</option><option value="round-large">Round large</option><option value="chamfer-small">Chamfer small</option><option value="chamfer">Chamfer</option><option value="chamfer-large">Chamfer large</option></select></label>
       </div>
       <div class="options" id="fill-controls" hidden><label>Collection <select id="family"><option value="all">All collections</option></select></label><label>Fill amount <input id="fill" type="range" min="0" max="100" value="72"><output for="fill" id="fill-value">72%</output></label><label>Corners <select id="fill-corner"><option value="0">Square</option><option value="5" selected>Soft</option><option value="10">Softer</option><option value="14">Round</option></select></label></div>
+      <div class="options" id="border-controls" hidden>
+        <label>Width <input id="border-width" type="range" min="48" max="360" step="4" value="280"><output for="border-width" id="border-width-value">280</output></label>
+        <label>Height <input id="border-height" type="range" min="48" max="160" step="4" value="100"><output for="border-height" id="border-height-value">100</output></label>
+        <label>Border scale <input id="border-scale" type="range" min="50" max="150" step="5" value="100"><output for="border-scale" id="border-scale-value">100%</output></label>
+        <label>Chamfer artwork <select id="border-artwork"><option value="native">Native nine-slice</option><option value="sharedmedia">SharedMedia export</option></select></label>
+      </div>
       <div id="load-error" role="alert" hidden></div>
       <div id="cards" class="grid icons"></div>
       <p id="empty" class="empty" hidden>No matches. Try another name or collection.</p>

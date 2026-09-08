@@ -1855,6 +1855,75 @@
       "image": "assets/fills/orbit-497-veil-layered-veil-soft.png"
     }
   ],
+  "borders": [
+    {
+      "id": "media:steel",
+      "name": "Steel",
+      "registeredName": "Orbit Steel",
+      "source": "Orbit-Media",
+      "kind": "edge",
+      "image": "assets/borders/orbit-edge-steel.png",
+      "cornerSize": 16
+    },
+    {
+      "id": "media:notch",
+      "name": "Notch",
+      "registeredName": "Orbit Notch",
+      "source": "Orbit-Media",
+      "kind": "edge",
+      "image": "assets/borders/orbit-edge-notch.png",
+      "cornerSize": 16
+    },
+    {
+      "id": "media:ornate",
+      "name": "Ornate",
+      "registeredName": "Orbit Ornate",
+      "source": "Orbit-Media",
+      "kind": "edge",
+      "image": "assets/borders/orbit-edge-ornate.png",
+      "cornerSize": 16
+    },
+    {
+      "id": "media:glow",
+      "name": "Glow",
+      "registeredName": "Orbit Glow",
+      "source": "Orbit-Media",
+      "kind": "edge",
+      "image": "assets/borders/orbit-edge-glow.png",
+      "cornerSize": 16
+    },
+    {
+      "id": "media:bolt",
+      "name": "Bolt",
+      "registeredName": "Orbit Bolt",
+      "source": "Orbit-Media",
+      "kind": "edge",
+      "image": "assets/borders/orbit-edge-bolt.png",
+      "cornerSize": 16
+    },
+    {
+      "id": "media:cross",
+      "name": "Cross",
+      "registeredName": "Orbit Cross",
+      "source": "Orbit-Media",
+      "kind": "edge",
+      "image": "assets/borders/orbit-edge-cross.png",
+      "cornerSize": 16
+    },
+    {
+      "id": "media:chamfer-shadow",
+      "name": "Chamfer Shadow",
+      "registeredName": "Orbit Chamfer Shadow",
+      "source": "Orbit-Media",
+      "kind": "slice",
+      "image": "assets/borders/orbit-edge-chamfer-shadow.png",
+      "cornerSize": 12,
+      "nativeImage": "assets/borders/orbit-chamfer-shadow.png",
+      "sliceMargin": 96,
+      "sourceSize": 512,
+      "outset": 4
+    }
+  ],
   "assets": {
     "assets/icons/orbit-glow-arcs4-loop-round.png": {
       "width": 640,
@@ -4124,6 +4193,54 @@
       "sha256": "4afe18a8fe7f5fd0c30e2b6732b773b181d0ee05bf5d80a24c8dbb502f004616",
       "pngSha256": "65899846e533a162b1cef257437e215dacd35a133a76aac4bb39a4b91bbd397d"
     },
+    "assets/borders/orbit-edge-steel.png": {
+      "width": 256,
+      "height": 32,
+      "sha256": "c1babfeb35b3aa98d70cf2904a34b829b03ba5829f496a4d5999afea74aaac4f",
+      "pngSha256": "63e51629292aba14ab3510e88a259dfbaa294bcf5b659f74bec68d14387b560f"
+    },
+    "assets/borders/orbit-edge-notch.png": {
+      "width": 256,
+      "height": 32,
+      "sha256": "7dcc987758c5681363c5f6eb79fa88f05feae6556edd5d681ef543e1d580f38e",
+      "pngSha256": "4f97f16b5f81aa506d4f49dce31d47c669382423db26d26f93dbcb4d2fa70e4b"
+    },
+    "assets/borders/orbit-edge-ornate.png": {
+      "width": 256,
+      "height": 32,
+      "sha256": "e3a249870d43f5e6983d1ac6ecdc2020fbe573817bbab001a677961ba5164b93",
+      "pngSha256": "4cc5d114a18056247333d058ce760dd87f0de734801fbb109bc1329271344873"
+    },
+    "assets/borders/orbit-edge-glow.png": {
+      "width": 256,
+      "height": 32,
+      "sha256": "802535b44730929e6a3c0f9191d3d441a6b119c5d6e029c02178c5928e696202",
+      "pngSha256": "a1235d5211dfa81bff26e73d46637bdc377bb7fa776748a8819f3648f2be6d9c"
+    },
+    "assets/borders/orbit-edge-bolt.png": {
+      "width": 256,
+      "height": 32,
+      "sha256": "31114c8b900168fc82433c9e8eedbc191d789b4abd1c253b5110afe5f0ad42a2",
+      "pngSha256": "d373a267f88ee6e12e24f89fb26ed62828c0a37c6fa38b9f1efca9a3f34b8acf"
+    },
+    "assets/borders/orbit-edge-cross.png": {
+      "width": 256,
+      "height": 32,
+      "sha256": "1e92ec99be3fe5f12921ead093c69c348c6b1d1c08d9f317fafef198cf1ad81a",
+      "pngSha256": "2b590d75f2347b21deaad1053017bc808e3795596df8eab0d0281d6f40a2c623"
+    },
+    "assets/borders/orbit-edge-chamfer-shadow.png": {
+      "width": 1024,
+      "height": 128,
+      "sha256": "6200d4b5e221fe556b6838b157e757e9387e9376049449f893bc6a8d297911ce",
+      "pngSha256": "9394ea21b531fef4188a6ac4742525afb92dc1b54284d1bddccd46c9b1a7228f"
+    },
+    "assets/borders/orbit-chamfer-shadow.png": {
+      "width": 512,
+      "height": 512,
+      "sha256": "a75cfc7ec020bde950bb3a8f1b1c321ece6a248e79488cf4151e9728b89a3f43",
+      "pngSha256": "02824c0b7458808c6592105f9bce8b3cd0c7b689ddc196291c1c9784a546246c"
+    },
     "assets/dispels/dispel-pinneon-40-chamfer.png": {
       "width": 1280,
       "height": 384,
@@ -4368,6 +4485,8 @@
   "inputs": {
     "Register.lua": "d407ebde83f75df65efc456d030b976b8b2047fd004485b83905211086f92a26",
     "RegisterStatusBars.lua": "d033856bf45217acc06e3acec5f3ef965dd328c3bebd67f36fb63a7429d16731",
+    "Borders.lua": "db3e9a2c5f1ee0dc05a0f940fb97df401b40270a30506e898685acda6e9f137c",
+    "RegisterBorders.lua": "67e2ea1e26d25dd075fb8cbff446f5cf327f6c5bb18cba2227886a58d7451476",
     "LibOrbitGlow-1.0.lua": "b4a0a5e201ebf83b8c06dcfa2a79585968b2c8e86990607cf07eed008211848f",
     "StatusBarGlows.lua": "405ffdc9b965d29333711c70517406c3bb4a0d763eb7cb9ec2e36cb8c59b2d2a"
   }
