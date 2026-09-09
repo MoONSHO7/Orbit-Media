@@ -33,12 +33,18 @@ Other addons continue using this standalone export and own their mask, edge size
 The two layouts are not interchangeable: a square texture-slice asset cannot be used as a Backdrop edge file.
 
 `Register.lua` independently registers all 40 glow names immediately if LibOrbitGlow exists, or waits for
-ADDON_LOADED in the same way. All 296 glow textures retain their bytes, shapes and registry names.
+ADDON_LOADED in the same way. Existing glow textures and registry names remain unchanged.
 Their BLEND body and ADD core share a 5-column, 6-row, 30-frame atlas with 128px cells and straight alpha.
-36 perimeter designs supply square/soft/softer/round; four radial designs supply square only.
+36 perimeter designs supply square/soft/softer/round/chamfer; four radial designs supply square only.
+Rounded outlines also ship soft-small, soft-large, softer-large, round-large and round-full at
+6.25%, 18.75%, 30%, 43.75% and 50% radii. Consumers choose the nearest available contour for the icon size;
+the last two keep small Round icons curved through the corners instead of using the 40-unit reference bake.
+Chamfer follows straight 45-degree cuts at 5/40 of the icon side, retaining each design's timing and layers.
+Workspace `.scripts/make-glow-pack.py` and `make-fine-edge-flipbooks.py` share `glow_chamfer.py` geometry;
+`glow_rounded.py` owns their radius ladder. `GLOW_SHAPES` and `--glows-only --shapes` restrict regeneration.
 
 `.pkgmeta` packages the inner addon as Orbit-Media. CurseForge project ID 1586459 remains attached to releases.
-Only runtime Lua, the TOC, icon, eight border TGAs, 296 glow TGAs and 82 status-bar TGAs ship.
+Only runtime Lua, the TOC, icon, eight border TGAs, 728 glow TGAs and 82 status-bar TGAs ship.
 Border authoring scripts, selections and proof galleries remain in workspace `output/orbit-borders/`.
 `site/` owns the separate GitHub Pages gallery. Its builder reads the current Lua registrations and exports browser PNGs
 from this pack and the sibling LibOrbitGlow checkout; website files are excluded from the addon package.

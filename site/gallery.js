@@ -1,7 +1,7 @@
 const $ = (id) => document.getElementById(id);
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const state = { category: 'icons', tint: '#80cfbe', playing: !reducedMotion.matches, speed: 1,
-  shape: 'square', contour: 'rounded', radius: 8, aspect: 4, explicit: 'auto', fill: 72,
+  shape: 'square', iconSize: 40, contour: 'rounded', radius: 8, aspect: 4, explicit: 'auto', fill: 72,
   corner: 5, family: 'all', borderWidth: 280, borderHeight: 100, borderScale: 100, borderArtwork: 'native',
   query: '', revision: 0, time: 0 };
 const descriptions = {
@@ -13,6 +13,9 @@ const descriptions = {
 const images = new Map();
 const borderStrips = new WeakMap();
 const observedCards = new WeakMap();
+const iconRadii = { soft: 5, softer: 10, round: 14 };
+const iconFractions = { square: 0, 'soft-small': 1 / 16, soft: 5 / 40, 'soft-large': 3 / 16,
+  softer: 10 / 40, 'softer-large': 12 / 40, round: 14 / 40, 'round-large': 7 / 16, 'round-full': 1 / 2 };
 let catalog, cards = [], toastTimer, priorTime = performance.now();
 
 function error(message) {
@@ -74,7 +77,17 @@ function contourFor(definition, width, height) {
 
 function selection(entry) {
   if (entry.kind === 'icons') {
-    const shape = state.shape in entry.def.shapes ? state.shape : 'square';
+    let shape = state.shape in entry.def.shapes ? state.shape : 'square';
+    if (state.shape in iconRadii) {
+      const fraction = Math.min(iconRadii[state.shape] / state.iconSize, .5);
+      let bestDistance = Infinity;
+      for (const [candidate, radius] of Object.entries(iconFractions)) {
+        const distance = Math.abs(fraction - radius);
+        if (candidate in entry.def.shapes && distance <= bestDistance) {
+          shape = candidate; bestDistance = distance;
+        }
+      }
+    }
     return { sources: entry.def.shapes[shape], shape };
   }
   if (entry.kind === 'fills') return { sources: [entry.def.image], shape: '' };
@@ -185,13 +198,13 @@ function render(entry, frame) {
   if (entry.kind === 'icons') {
     const side = Math.min(logicalWidth, logicalHeight) * 0.58;
     const x = (logicalWidth - side) / 2, y = (logicalHeight - side) / 2;
-    const corner = { square: 0, soft: .125, softer: .25, round: .35 }[state.shape] * side;
-    outline(context, x, y, side, side, 'rounded', corner);
+    const corner = (state.shape === 'chamfer' ? .125 : (iconRadii[state.shape] || 0) / state.iconSize) * side;
+    outline(context, x, y, side, side, state.shape === 'chamfer' ? 'chamfer' : 'rounded', corner);
     const surface = context.createLinearGradient(0, y, 0, y + side);
     surface.addColorStop(0, '#273234'); surface.addColorStop(1, '#151e23');
     context.fillStyle = surface; context.fill();
     context.strokeStyle = '#7d938129'; context.lineWidth = 1; context.stroke();
-    const effect = side * 1.35;
+    const effect = side * 1.4;
     if (entry.layers) {
       sprite(context, entry.layers[0], frame, entry.def, (logicalWidth - effect) / 2, (logicalHeight - effect) / 2, effect, effect);
       context.globalCompositeOperation = 'lighter';
@@ -313,6 +326,7 @@ function refresh() {
   $('empty').hidden = count !== 0;
   $('result-count').textContent = `${count} / ${cards.length} ${state.category === 'borders' ? 'borders' : state.category === 'fills' ? 'textures' : 'glows'}`;
   $('radius-value').textContent = state.radius;
+  $('icon-size-value').textContent = state.iconSize;
   $('fill-value').textContent = `${state.fill}%`;
   $('border-width-value').textContent = state.borderWidth;
   $('border-height-value').textContent = state.borderHeight;
@@ -380,7 +394,7 @@ async function boot() {
     state.tint = button.dataset.tint; $('tint').value = state.tint; refresh();
   });
   for (const [id, key, cast] of [
-    ['tint', 'tint', String], ['speed', 'speed', Number], ['icon-shape', 'shape', String],
+    ['tint', 'tint', String], ['speed', 'speed', Number], ['icon-shape', 'shape', String], ['icon-size', 'iconSize', Number],
     ['contour', 'contour', String], ['radius', 'radius', Number], ['aspect', 'aspect', Number],
     ['dispel-shape', 'explicit', String], ['fill', 'fill', Number], ['fill-corner', 'corner', Number], ['family', 'family', String],
     ['border-width', 'borderWidth', Number], ['border-height', 'borderHeight', Number],

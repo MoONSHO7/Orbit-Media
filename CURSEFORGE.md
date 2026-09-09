@@ -8,7 +8,7 @@ Orbit is optional. Compatible addons supply LibOrbitGlow or LibSharedMedia and e
 ## What's included
 
 - **Icon glows:** 40 looping designs, including Tracer, Pin Neon, Halo, Comet and radial effects. Perimeter designs include
-  Square, Soft, Softer and Round variants. The four radial designs work with every corner style.
+  Square, Soft, Softer, Round and Chamfered variants. The four radial designs work with every corner style.
 - **Status-bar artwork:** 82 grayscale fills across 15 collections and seven original favorites. Tint them to match your UI;
   your addon controls the fill amount, border and mask.
 - **Borders:** Orbit Steel, Notch, Ornate, Glow, Bolt, Cross and Chamfer Shadow, registered through LibSharedMedia.

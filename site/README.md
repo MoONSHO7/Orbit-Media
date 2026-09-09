@@ -11,7 +11,9 @@ Open directly on the category tabs. Keep labels factual and focus on artwork, co
 ## Implementation
 `build.py` reads the actual Lua registrations in an isolated Lua 5.1 runtime and converts their TGA assets to lossless PNG.
 `index.html`, `style.css` and `gallery.js` consume the resulting `catalog.json`; visible cards load their selected assets
-and animate the native 30-frame loops. Dispel contour matching uses the pack's registered geometry.
+and animate the native 30-frame loops. Icon size selects the closest registered rounded sheet for the 5/10/14-unit
+border radii, including near-circular and circular outlines on small icons. The magnified preview uses LibOrbitGlow's
+1.4 scale. Chamfered retains straight 12.5% cuts; radial designs reuse square. Dispels use registered contour geometry.
 The browser preserves source alpha and multiplies source RGB by tint before BLEND/ADD composition.
 Border previews read `Borders.lua` plus real SharedMedia registration: six original edge strips and both Chamfer Shadow
 exports. The edge renderer follows Blizzard's `Backdrop.lua` UV guards, piece order, rotation and repeat coordinates;

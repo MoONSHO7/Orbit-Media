@@ -38,7 +38,7 @@
         </fieldset>
         <div class="animation-controls"><label class="control-label" for="speed">SPEED</label><select id="speed"><option value="0.25">¼×</option><option value="0.5">½×</option><option value="1" selected>1×</option><option value="2">2×</option></select><button class="play" id="play" aria-pressed="true">Pause motion</button></div>
       </div>
-      <div class="options" id="icon-controls"><label>Icon corners <select id="icon-shape"><option value="square">Square</option><option value="soft">Soft</option><option value="softer">Softer</option><option value="round">Round</option></select></label><span class="option-note">Radial effects fit every corner style.</span></div>
+      <div class="options" id="icon-controls"><label>Icon corners <select id="icon-shape"><option value="square">Square</option><option value="soft">Soft</option><option value="softer">Softer</option><option value="round">Round</option><option value="chamfer">Chamfered</option></select></label><label>Icon size <input id="icon-size" type="range" min="16" max="96" step="2" value="40"><output for="icon-size" id="icon-size-value">40</output></label><span class="option-note">Magnified preview. Rounded glows follow the icon size; radial effects fit every corner style.</span></div>
       <div class="options" id="dispel-controls" hidden>
         <label>Contour <select id="contour"><option value="square">Square</option><option value="rounded" selected>Rounded</option><option value="chamfer">Chamfer</option></select></label>
         <label>Corner size <input id="radius" type="range" min="0" max="30" value="8"><output for="radius" id="radius-value">8</output></label>

@@ -13,7 +13,18 @@ end
 -- Radial emanation designs have no border ring, so one square bake fits every corner style
 -- and the library's shape fallback keeps them on -square.
 local SQUARE_ONLY = { embers = true, polyexpand = true, reticle = true, ripplewave = true }
-local ALL_SHAPES = { square = true, soft = true, softer = true, round = true }
+local ALL_SHAPES = {
+    square = true,
+    ["soft-small"] = true,
+    soft = true,
+    ["soft-large"] = true,
+    softer = true,
+    ["softer-large"] = true,
+    round = true,
+    ["round-large"] = true,
+    ["round-full"] = true,
+    chamfer = true,
+}
 local SQUARE = { square = true }
 
 local GLOWS = {

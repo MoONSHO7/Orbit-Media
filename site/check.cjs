@@ -42,6 +42,35 @@ const path = require('node:path');
     assert.equal(await page.locator('canvas').first().evaluate(canvas => canvas.toDataURL()), frame, 'Pause must hold a frame');
     await page.getByRole('button', {name: 'Gold', exact: true}).click();
     await page.waitForFunction(previous => document.querySelector('canvas').toDataURL() !== previous, frame);
+    await page.locator('#icon-shape').selectOption('chamfer');
+    for (let index = 0; index < 40; index += 4) {
+      await page.locator('.art-card').nth(index).scrollIntoViewIfNeeded();
+      await page.waitForLoadState('networkidle');
+    }
+    await page.evaluate(() => scrollTo(0, 0));
+    await page.waitForLoadState('networkidle');
+    assert.equal(await page.locator('.art-card[data-shape="chamfer"]').count(), 36);
+    assert.equal(await page.locator('.art-card[data-shape="square"]').count(), 4);
+    await screenshot('desktop-icons-chamfer');
+    await page.locator('#play').click();
+    const chamferFrame = await page.locator('canvas').first().evaluate(canvas => canvas.toDataURL());
+    await page.waitForFunction(previous => document.querySelector('canvas').toDataURL() !== previous, chamferFrame);
+    await page.locator('#play').click();
+    await page.locator('#icon-shape').selectOption('round');
+    await page.locator('#search').fill('pinneon');
+    for (const [style, size, expected] of [
+      ['round', 24, 'round-full'], ['round', 32, 'round-large'], ['round', 40, 'round'],
+      ['round', 48, 'softer-large'], ['softer', 24, 'round-large'], ['softer', 56, 'soft-large'],
+      ['soft', 80, 'soft-small'], ['soft', 40, 'soft'],
+    ]) {
+      await page.locator('#icon-shape').selectOption(style);
+      await page.locator('#icon-size').fill(String(size));
+      await page.waitForLoadState('networkidle');
+      assert.equal(await page.locator('.art-card:visible').getAttribute('data-shape'), expected);
+      assert.equal(await page.locator('#icon-size-value').textContent(), String(size));
+      if (style === 'round' && size === 24) await screenshot('desktop-icons-round-small');
+    }
+    await page.locator('#icon-size').fill('40');
     await page.locator('#icon-shape').selectOption('round');
     await page.locator('#search').fill('embers');
     await page.waitForLoadState('networkidle');
