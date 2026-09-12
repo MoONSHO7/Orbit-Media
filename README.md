@@ -47,7 +47,7 @@ Workspace `.scripts/make-glow-pack.py` and `make-fine-edge-flipbooks.py` share `
 Only runtime Lua, the TOC, icon, eight border TGAs, 728 glow TGAs and 82 status-bar TGAs ship.
 Border authoring scripts, selections and proof galleries remain in workspace `output/orbit-borders/`.
 `site/` owns the separate GitHub Pages gallery. Its builder reads the current Lua registrations and exports browser PNGs
-from this pack and the sibling LibOrbitGlow checkout; website files are excluded from the addon package.
+from this pack and `../Orbit-Libs/LibOrbitGlow/LibOrbitGlow-1.0`; website files are excluded from the addon package.
 
 ## Gotchas
 - Enable Orbit-Media and remove the obsolete Orbit-Glow-Pack installation when updating manually.
@@ -65,6 +65,6 @@ from this pack and the sibling LibOrbitGlow checkout; website files are excluded
 
 ## References
 [Repository](https://github.com/MoONSHO7/Orbit-Media), [Orbit](https://github.com/MoONSHO7/Orbit),
-[LibOrbitGlow](https://github.com/MoONSHO7/LibOrbitGlow), [gallery build and deployment](site/README.md).
+[LibOrbitGlow](https://github.com/MoONSHO7/Orbit-Libs/tree/LibOrbitGlow-1.8/LibOrbitGlow), [gallery build and deployment](site/README.md).
 Workspace `output/orbit-borders/media-release/verify_shared.py` checks the real SharedMedia libraries with Orbit absent.
 Workspace `output/orbit-status-textures/qa/media-check.py` verifies every status-bar file and real SharedMedia registration.

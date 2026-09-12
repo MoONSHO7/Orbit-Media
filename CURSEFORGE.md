@@ -28,4 +28,4 @@ to be reselected. Disable the separate Orbit-StatusTextures preview addon if ins
 Retail 12.1.0. Media copyright MoONSHO7; redistribution requires permission.
 
 **[Documentation and integration details](https://github.com/MoONSHO7/Orbit-Media#readme)** ·
-**[LibOrbitGlow API](https://github.com/MoONSHO7/LibOrbitGlow#readme)**
+**[LibOrbitGlow API](https://github.com/MoONSHO7/Orbit-Libs/tree/LibOrbitGlow-1.8/LibOrbitGlow#readme)**

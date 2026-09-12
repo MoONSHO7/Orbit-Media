@@ -191,7 +191,7 @@ def build_docs(library, output):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--library", type=Path, default=REPO.parent / "LibOrbitGlow/LibOrbitGlow-1.0")
+    parser.add_argument("--library", type=Path, default=REPO.parent / "Orbit-Libs/LibOrbitGlow/LibOrbitGlow-1.0")
     parser.add_argument("--output", type=Path, default=SITE / "dist")
     args = parser.parse_args()
     build(args.library.resolve(), args.output.resolve())

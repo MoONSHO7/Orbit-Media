@@ -22,7 +22,7 @@ The same build renders the current media, library and gallery READMEs into `dist
 with the artwork snapshot. Cached PNGs are reused only while both source and export hashes match.
 
 From the repository root, run `python -m pip install -r site/requirements.txt`, then `python site/build.py`.
-The default library input is the sibling `../LibOrbitGlow/LibOrbitGlow-1.0`; override it with `--library PATH`.
+The default library input is `../Orbit-Libs/LibOrbitGlow/LibOrbitGlow-1.0`; override it with `--library PATH`.
 Serve `site/dist` with `python -m http.server 8766 --bind 127.0.0.1 --directory site/dist`.
 `node site/check.cjs` runs the optional Playwright browser checks against that server (requires Playwright and a browser).
 `python site/publish.py` reviews the generated file list; `--publish` creates and pushes a website-only commit to the existing
@@ -40,4 +40,4 @@ Never switch the live addon checkout or push `main` to deploy the site. `dist` i
 - The addon packager excludes this directory. The gallery does not alter or redistribute library runtime code.
 
 ## References
-[Orbit-Media](../README.md), [LibOrbitGlow](https://github.com/MoONSHO7/LibOrbitGlow), [live gallery](https://moonsho7.github.io/Orbit-Media/).
+[Orbit-Media](../README.md), [LibOrbitGlow](https://github.com/MoONSHO7/Orbit-Libs/tree/LibOrbitGlow-1.8/LibOrbitGlow), [live gallery](https://moonsho7.github.io/Orbit-Media/).

@@ -5,8 +5,8 @@
 ## OptionalDeps: LibSharedMedia-3.0, LibOrbitGlow-1.0
 ## Author: MoONSHO7
 ## Version: @project-version@
-## Group: Orbit
-## Category: Orbit UI
+## Group: Orbit-Media
+## Category: |cffA78BFAOrbit Suite|r
 
 ## X-Part-Of: Orbit
 ## X-License: All Rights Reserved
