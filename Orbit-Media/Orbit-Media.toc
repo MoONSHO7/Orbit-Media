@@ -1,4 +1,4 @@
-## Interface: 120100
+## Interface: 120100, 120105, 16001
 ## Title: Orbit: Media
 ## IconTexture: Interface\AddOns\Orbit-Media\Orbit.png
 ## Notes: SharedMedia status bars, borders and animated LibOrbitGlow media. Works independently of Orbit.
