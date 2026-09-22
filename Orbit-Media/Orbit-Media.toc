@@ -10,7 +10,7 @@
 
 ## X-Part-Of: Orbit
 ## X-License: All Rights Reserved
-## X-Category: Interface Enhancements
+## X-Category: Interface Enhancements - Artwork
 ## X-Curse-Project-ID: 1586459
 
 Borders.lua

@@ -9,7 +9,7 @@ Supply optional artwork to any compatible addon without bundling a rendering eng
 Orbit retains Pixel, Soft, Softer, Round, Chamfer and their masks without this pack.
 
 Install the pack and select its artwork in a compatible addon's glow, status-bar or border settings.
-[Browse the interactive gallery](https://moonsho7.github.io/Orbit-Media/) for all 40 icon glows, 82 status-bar fills and
+[Browse the interactive gallery](https://moonsho7.github.io/Orbit-Media/) for the published artwork. The working pack has 40 icon glows, 102 status-bar fills and
 seven resizable nine-slice borders, plus LibOrbitGlow's two baseline dispel outlines. The dispel assets belong to LibOrbitGlow.
 
 ## Implementation
@@ -18,12 +18,15 @@ seven resizable nine-slice borders, plus LibOrbitGlow's two baseline dispel outl
 Bolt, Cross and Chamfer Shadow. It registers immediately when the library exists; otherwise an ADDON_LOADED
 listener waits for any consumer to load SharedMedia, registers once and removes itself. No Orbit API is called.
 
-`RegisterStatusBars.lua` registers 82 grayscale 256x64 status-bar fills from `StatusBars/` with the
+`RegisterStatusBars.lua` registers 102 grayscale 256x64 status-bar fills from `StatusBars/` with the
 same immediate/deferred SharedMedia pattern. Each of 15 styles keeps all five types, with one randomly
 selected finish per type; seven original favourites also remain. In-game names omit review IDs and
 finish labels, such as `Orbit Satin Valley` and `Orbit Raised Crown`; filenames retain their provenance.
 Workspace `output/orbit-status-textures/orbit-media-selection.json` fixes the 75 choices for future
-imports. Full authoring studies remain there; only the 82 selected TGA exports ship.
+imports. Twenty `Orbit Rustic ...` fills recreate the unit-frame concept materials with broad highlights,
+recessed lower edges and restrained wear. Their authoring source and PNG/TGA pairs live in workspace
+`output/unit-frame-status-textures-20260922/`; the importer retains these alongside the original 82 exports.
+Only the selected TGA exports ship; the consumer supplies all tint, masks, text and borders.
 
 Six original edge files remain byte-for-byte unchanged. Chamfer Shadow ships a 1024x128 standard Backdrop
 edge-file export for LSM and the approved 512x512 texture for integrations that read the optional catalog.
@@ -44,7 +47,7 @@ Workspace `.scripts/make-glow-pack.py` and `make-fine-edge-flipbooks.py` share `
 `glow_rounded.py` owns their radius ladder. `GLOW_SHAPES` and `--glows-only --shapes` restrict regeneration.
 
 `.pkgmeta` packages the inner addon as Orbit-Media. CurseForge project ID 1586459 remains attached to releases.
-Only runtime Lua, the TOC, icon, eight border TGAs, 728 glow TGAs and 82 status-bar TGAs ship.
+Only runtime Lua, the TOC, icon, eight border TGAs, 728 glow TGAs and 102 status-bar TGAs ship.
 Border authoring scripts, selections and proof galleries remain in workspace `output/orbit-borders/`.
 `site/` owns the separate GitHub Pages gallery. Its builder reads the current Lua registrations and exports browser PNGs
 from this pack and `../Orbit-Libs/LibOrbitGlow/LibOrbitGlow-1.0`; website files are excluded from the addon package.

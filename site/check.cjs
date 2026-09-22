@@ -111,8 +111,10 @@ const path = require('node:path');
     await screenshot('desktop-chamfer');
 
     await category('fills');
-    assert.equal(await page.locator('.art-card').count(), 82);
+    assert.equal(await page.locator('.art-card').count(), 102);
     await screenshot('desktop-fills');
+    await page.locator('#family').selectOption('Rustic');
+    assert.equal(await page.locator('.art-card:visible').count(), 20);
     await page.locator('#family').selectOption('Raised');
     assert.equal(await page.locator('.art-card:visible').count(), 5);
     await page.locator('#search').fill('high');

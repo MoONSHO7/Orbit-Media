@@ -14,7 +14,7 @@ SITE = Path(__file__).resolve().parent
 REPO = SITE.parent
 FAMILIES = (
     "Raised", "Pillow", "Bevel", "Valley", "Horizon", "Cove", "Ribbon", "Oblique",
-    "Saddle", "Lens", "Enamel", "Twin Light", "Underlight", "Edge Light", "Veil",
+    "Saddle", "Lens", "Enamel", "Twin Light", "Underlight", "Edge Light", "Veil", "Rustic",
 )
 NAMES = {
     "arcs4": "Four Arcs", "comet2": "Twin Comets", "cometdual": "Dual Comet",
