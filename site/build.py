@@ -97,7 +97,8 @@ def build(library, output):
         return path
 
     lua = lua_library()
-    lua.execute(read(addon / "Register.lua"), "Orbit-Media")
+    addon_private = lua.table()
+    lua.execute(read(addon / "Register.lua"), "Orbit-Media", addon_private)
     icons = []
     for key, definition in sorted(lua.globals().lib.glows.items()):
         shapes = {}
@@ -111,7 +112,7 @@ def build(library, output):
                       "shapes": shapes, "rows": definition.rows, "cols": definition.cols,
                       "frames": definition.frames, "duration": 1})
 
-    lua.execute(read(addon / "RegisterStatusBars.lua"), "Orbit-Media")
+    lua.execute(read(addon / "RegisterStatusBars.lua"), "Orbit-Media", addon_private)
     fills = []
     for _, definition in lua.globals().captured.items():
         if definition.kind != "statusbar":
@@ -123,8 +124,9 @@ def build(library, output):
         fills.append({"id": source.stem, "name": label, "registeredName": definition.name,
                       "family": family, "source": "Orbit-Media", "image": export(source, "fills")})
 
-    lua.execute(read(addon / "Borders.lua"), "Orbit-Media")
-    lua.execute(read(addon / "RegisterBorders.lua"), "Orbit-Media")
+    lua.execute(read(addon / "Catalog.lua"), "Orbit-Media", addon_private)
+    lua.execute(read(addon / "Borders.lua"), "Orbit-Media", addon_private)
+    lua.execute(read(addon / "RegisterBorders.lua"), "Orbit-Media", addon_private)
     registered_borders = {entry.name: entry.path for _, entry in lua.globals().captured.items()
                           if entry.kind == "border"}
     borders = []

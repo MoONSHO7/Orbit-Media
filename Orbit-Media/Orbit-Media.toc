@@ -1,7 +1,7 @@
 ## Interface: 120100, 120105, 16001
 ## Title: Orbit: Media
 ## IconTexture: Interface\AddOns\Orbit-Media\Orbit.png
-## Notes: SharedMedia status bars, borders and animated LibOrbitGlow media. Works independently of Orbit.
+## Notes: Shared media, HUD artwork and cast-completion sequences. Works independently of Orbit.
 ## OptionalDeps: LibSharedMedia-3.0, LibOrbitGlow-1.0
 ## Author: MoONSHO7
 ## Version: @project-version@
@@ -13,7 +13,10 @@
 ## X-Category: Interface Enhancements - Artwork
 ## X-Curse-Project-ID: 1586459
 
+Catalog.lua
 Borders.lua
+HUDArtwork.lua
+CastCompletion.lua
 RegisterBorders.lua
 RegisterStatusBars.lua
 Register.lua

@@ -1,32 +1,41 @@
 # Orbit: Media
 
 ## Description
-SharedMedia status-bar textures, borders and animated LibOrbitGlow textures. Orbit is not required.
+SharedMedia textures, HUD artwork, cast-completion sequences and animated LibOrbitGlow textures. Orbit is not required.
 Previously Orbit-Glow-Pack; the CurseForge project ID and all glow keys are unchanged.
 
 ## Purpose
-Supply optional artwork to any compatible addon without bundling a rendering engine or requiring Orbit.
-Orbit retains Pixel, Soft, Softer, Round, Chamfer and their masks without this pack.
+Supply optional artwork to compatible addons without a rendering engine or Orbit dependency. Orbit retains Pixel, Soft, Softer, Round, Chamfer and their masks without this pack.
 
-Install the pack and select its artwork in a compatible addon's glow, status-bar or border settings.
-[Browse the interactive gallery](https://moonsho7.github.io/Orbit-Media/) for the published artwork. The working pack has 40 icon glows, 102 status-bar fills and
-seven resizable nine-slice borders, plus LibOrbitGlow's two baseline dispel outlines. The dispel assets belong to LibOrbitGlow.
+Install the pack and select its artwork in a compatible addon's glow, status-bar, border, HUD or cast settings.
+[Browse the interactive gallery](https://moonsho7.github.io/Orbit-Media/) for the glow, status-bar and border collection.
+The pack has 40 icon glows, 102 status-bar fills and seven resizable borders; LibOrbitGlow owns two baseline dispel outlines.
 
 ## Implementation
-`Borders.lua` publishes the frozen `OrbitMedia` border catalog before registration runs.
-`RegisterBorders.lua` registers seven names through LibSharedMedia-3.0: Orbit Steel, Notch, Ornate, Glow,
-Bolt, Cross and Chamfer Shadow. It registers immediately when the library exists; otherwise an ADDON_LOADED
-listener waits for any consumer to load SharedMedia, registers once and removes itself. No Orbit API is called.
+`Catalog.lua` publishes the read-only `OrbitMedia.catalogApiVersion = 1` API with data-only `Get` and `Enumerate`
+methods. It freezes copied records, rejects duplicate keys/cycles and builds deterministic snapshots during registration.
+Consumer reads are immutable and allocation-free; consumers own rendering, masks, placement, lifecycle and settings.
+Legacy `apiVersion = 1` and the frozen `borders` array remain unchanged.
 
-`RegisterStatusBars.lua` registers 102 grayscale 256x64 status-bar fills from `StatusBars/` with the
-same immediate/deferred SharedMedia pattern. Each of 15 styles keeps all five types, with one randomly
-selected finish per type; seven original favourites also remain. In-game names omit review IDs and
-finish labels, such as `Orbit Satin Valley` and `Orbit Raised Crown`; filenames retain their provenance.
-Workspace `output/orbit-status-textures/orbit-media-selection.json` fixes the 75 choices for future
-imports. Twenty `Orbit Rustic ...` fills recreate the unit-frame concept materials with broad highlights,
-recessed lower edges and restrained wear. Their authoring source and PNG/TGA pairs live in workspace
-`output/unit-frame-status-textures-20260922/`; the importer retains these alongside the original 82 exports.
-Only the selected TGA exports ship; the consumer supplies all tint, masks, text and borders.
+Pack files register through Orbit-Media's private addon namespace during file load, before consumers snapshot a catalog.
+Keys are unique within each media type and remain the saved-setting identity. `Get(mediaType, key)` returns one frozen
+record; `Enumerate(mediaType)` returns a cached frozen array ordered by `order`, provider and key. HUD records carry
+`leftPath`, `rightPath`, `aspectRatio` and `randomEligible`; cast records carry CAST/CHANNEL `frames`, `frameStarts`,
+`holdDuration` and `fadeDuration`. Labels expose
+an optional consumer localization key plus a plain fallback.
+
+`Borders.lua` registers the seven border records in the general catalog and populates the legacy border array.
+`RegisterBorders.lua` registers seven names through LibSharedMedia-3.0. It registers immediately when available;
+otherwise an ADDON_LOADED listener waits for a consumer to load SharedMedia and registers once. No Orbit API is called.
+
+`HUDArtwork.lua` registers 14 paired `hud-artwork` records. Thrall, Kael'thas and Gul'dan preserve their reversed filename mapping; consumers own slots and selection.
+
+`CastCompletion.lua` registers four styles and 148 loose full-UV TGAs so consumers can retain stable masks while owning playback and presentation.
+
+`RegisterStatusBars.lua` registers 102 grayscale 256x64 fills with the same SharedMedia pattern. Fifteen styles keep
+five types with one selected finish per type; seven favourites remain. Published names omit review IDs and finishes.
+`output/orbit-status-textures/orbit-media-selection.json` fixes the 75 choices. Twenty `Orbit Rustic ...` fills recreate
+the unit-frame materials; sources live in `output/unit-frame-status-textures-20260922/`. Consumers own tint and masks.
 
 Six original edge files remain byte-for-byte unchanged. Chamfer Shadow ships a 1024x128 standard Backdrop
 edge-file export for LSM and the approved 512x512 texture for integrations that read the optional catalog.
@@ -46,15 +55,17 @@ Chamfer follows straight 45-degree cuts at 5/40 of the icon side, retaining each
 Workspace `.scripts/make-glow-pack.py` and `make-fine-edge-flipbooks.py` share `glow_chamfer.py` geometry;
 `glow_rounded.py` owns their radius ladder. `GLOW_SHAPES` and `--glows-only --shapes` restrict regeneration.
 
-`.pkgmeta` packages the inner addon as Orbit-Media. CurseForge project ID 1586459 remains attached to releases.
-Only runtime Lua, the TOC, icon, eight border TGAs, 728 glow TGAs and 102 status-bar TGAs ship.
-Border authoring scripts, selections and proof galleries remain in workspace `output/orbit-borders/`.
-`site/` owns the separate GitHub Pages gallery. Its builder reads the current Lua registrations and exports browser PNGs
-from this pack and `../Orbit-Libs/LibOrbitGlow/LibOrbitGlow-1.0`; website files are excluded from the addon package.
+`.pkgmeta` packages the inner addon under CurseForge project 1586459 with runtime Lua, the TOC, icon, eight border, 728
+glow, 102 status-bar, 28 HUD and 148 cast TGAs. Authoring stays in `output/`; `site/` is excluded
+from the addon.
 
 ## Gotchas
 - Enable Orbit-Media and remove the obsolete Orbit-Glow-Pack installation when updating manually.
 - Neither library is bundled or required as a hard dependency; compatible consumers supply the library they use.
+- Catalog records are immutable data. The registration door is addon-private; consumers cannot inject render callbacks
+  or mutate another consumer's UI.
+- Pack files must register before a consumer snapshots the catalog; there is no runtime UI invalidation. Snapshot
+  construction stays in the private registration path because `Enumerate` runs in the consumer and must be read-only.
 - Status-bar fills are opaque grayscale and accept runtime tint; the consumer owns masks, borders and fill amount.
 - Restart WoW fully after adding new loose textures; name changes only require a reload. Previously selected
   numbered or finish-labelled status-bar names must be reselected under their new names in the consuming addon.
@@ -68,6 +79,7 @@ from this pack and `../Orbit-Libs/LibOrbitGlow/LibOrbitGlow-1.0`; website files 
 
 ## References
 [Repository](https://github.com/MoONSHO7/Orbit-Media), [Orbit](https://github.com/MoONSHO7/Orbit),
-[LibOrbitGlow](https://github.com/MoONSHO7/Orbit-Libs/tree/LibOrbitGlow-1.8/LibOrbitGlow), [gallery build and deployment](site/README.md).
+[LibOrbitGlow](https://github.com/MoONSHO7/Orbit-Libs/tree/LibOrbitGlow-1.8/LibOrbitGlow), [gallery](site/README.md).
 Workspace `output/orbit-borders/media-release/verify_shared.py` checks the real SharedMedia libraries with Orbit absent.
-Workspace `output/orbit-status-textures/qa/media-check.py` verifies every status-bar file and real SharedMedia registration.
+Workspace `output/orbit-status-textures/qa/media-check.py` verifies every status-bar file, both artwork catalogs and real
+SharedMedia registration.
