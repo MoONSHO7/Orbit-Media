@@ -11,8 +11,8 @@ Keep large decorative assets outside Orbit while allowing compatible HUD hosts t
 localized Orbit label key, aspect ratio, random-selection eligibility and both external-addon paths. Consumers own frame
 creation, placement, scaling, masks, menus and saved settings; the provider never creates or mutates their UI.
 
-The twenty-eight uncompressed 1024-square RGBA TGAs cover Xal'atath, Arator, Sylvanas, Arthas as the Lich King,
-Thrall, Jaina, Illidan, Kael'thas, Gul'dan, Alexstrasza and the cinematic Night Elf, Dwarf Hunter, Forsaken Warlock and
+The thirty uncompressed 1024-square RGBA TGAs cover Xal'atath, Arator, Sylvanas, Arthas as the Lich King,
+Thrall, Jaina, Illidan, Kael'thas, Gul'dan, Alexstrasza, Whitemane and the cinematic Night Elf, Dwarf Hunter, Forsaken Warlock and
 Tauren. Their 1254-square masters fit proportionally inside a 16px export margin with straight alpha and edge bleed.
 Each left-facing texture is an exact horizontal mirror of its right-facing counterpart.
 
@@ -21,6 +21,7 @@ Each left-facing texture is an exact horizontal mirror of its right-facing count
   that facing, so their descriptor paths deliberately cross left and right.
 - Preserve the approved pixels and transparent RGB bleed. Black RGB behind transparent pixels can create filtered seams.
 - Texture dimensions do not establish character scale; composition and head/torso prominence must stay matched.
+- Whitemane holds her staff in the image-right far hand; the opposite texture mirrors that pose. Preserve the lower fades.
 - Tyrande remains retired. Saved keys not present in the catalog are consumer-owned and should remain dormant.
 - New loose files require a full client restart before WoW can discover them; catalog-only changes need a reload.
 
@@ -36,3 +37,4 @@ Orbit `Plugins/Datatexts/README.md` owns the HUD placement and settings contract
 - `output/hud-main-characters-20260923/`
 - `output/jaina-hud-lighting-20260923/`
 - `output/hud-sculpted-set-20260923/`
+- `output/whitemane-portrait-20260926/`

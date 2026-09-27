@@ -143,6 +143,16 @@ local artwork = {
         leftPath = BASE .. "alexstrasza-left.tga",
         rightPath = BASE .. "alexstrasza-right.tga",
     },
+    {
+        key = "Whitemane",
+        labelKey = "PLU_DT_ARTWORK_WHITEMANE",
+        label = "Whitemane",
+        order = 15,
+        aspectRatio = 1,
+        randomEligible = true,
+        leftPath = BASE .. "whitemane-left.tga",
+        rightPath = BASE .. "whitemane-right.tga",
+    },
 }
 
 Catalog:Register("hud-artwork", artwork)

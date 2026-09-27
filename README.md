@@ -28,7 +28,7 @@ an optional consumer localization key plus a plain fallback.
 `RegisterBorders.lua` registers seven names through LibSharedMedia-3.0. It registers immediately when available;
 otherwise an ADDON_LOADED listener waits for a consumer to load SharedMedia and registers once. No Orbit API is called.
 
-`HUDArtwork.lua` registers 14 paired `hud-artwork` records. Thrall, Kael'thas and Gul'dan preserve their reversed filename mapping; consumers own slots and selection.
+`HUDArtwork.lua` registers 15 paired `hud-artwork` records. Thrall, Kael'thas and Gul'dan preserve their reversed filename mapping; consumers own slots and selection.
 
 `CastCompletion.lua` registers four styles and 148 loose full-UV TGAs so consumers can retain stable masks while owning playback and presentation.
 
@@ -56,7 +56,7 @@ Workspace `.scripts/make-glow-pack.py` and `make-fine-edge-flipbooks.py` share `
 `glow_rounded.py` owns their radius ladder. `GLOW_SHAPES` and `--glows-only --shapes` restrict regeneration.
 
 `.pkgmeta` packages the inner addon under CurseForge project 1586459 with runtime Lua, the TOC, icon, eight border, 728
-glow, 102 status-bar, 28 HUD and 148 cast TGAs. Authoring stays in `output/`; `site/` is excluded
+glow, 102 status-bar, 30 HUD and 148 cast TGAs. Authoring stays in `output/`; `site/` is excluded
 from the addon.
 
 ## Gotchas
