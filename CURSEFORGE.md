@@ -1,10 +1,10 @@
 # Orbit: Media
 
-Optional artwork for World of Warcraft addons: **40 animated icon glows, 102 status-bar textures, seven border styles,
+Optional artwork for World of Warcraft addons: **40 animated icon glows, 102 status-bar textures,
 14 paired HUD ornaments and four cast-completion styles**. Orbit is optional. Library-backed
 consumers supply LibOrbitGlow or LibSharedMedia; catalog-aware consumers read the immutable artwork descriptors directly.
 
-**[Browse the interactive gallery](https://moonsho7.github.io/Orbit-Media/)** to try the glow, status-bar and border
+**[Browse the interactive gallery](https://moonsho7.github.io/Orbit-Media/)** to try the glow and status-bar
 collection with colors, corners, animation speeds and fill levels.
 
 ## What's included
@@ -13,7 +13,6 @@ collection with colors, corners, animation speeds and fill levels.
   Square, Soft, Softer, Round and Chamfered variants. The four radial designs work with every corner style.
 - **Status-bar artwork:** 102 grayscale fills across 15 collections and seven original favorites. Tint them to match your UI;
   your addon controls the fill amount, border and mask.
-- **Borders:** Orbit Steel, Notch, Ornate, Glow, Bolt, Cross and Chamfer Shadow, registered through LibSharedMedia.
 - **HUD artwork:** 14 Warcraft character ornaments with paired left/right textures and stable catalog keys.
 - **Cast completion:** Starlight, Arcane, Surge and Aurora cast/channel sequences with provider-owned timing descriptors.
 

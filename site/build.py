@@ -124,24 +124,6 @@ def build(library, output):
         fills.append({"id": source.stem, "name": label, "registeredName": definition.name,
                       "family": family, "source": "Orbit-Media", "image": export(source, "fills")})
 
-    lua.execute(read(addon / "Catalog.lua"), "Orbit-Media", addon_private)
-    lua.execute(read(addon / "Borders.lua"), "Orbit-Media", addon_private)
-    lua.execute(read(addon / "RegisterBorders.lua"), "Orbit-Media", addon_private)
-    registered_borders = {entry.name: entry.path for _, entry in lua.globals().captured.items()
-                          if entry.kind == "border"}
-    borders = []
-    for _, definition in sorted(lua.globals().OrbitMedia.borders.items()):
-        registered_path = registered_borders[definition.label]
-        border = {"id": definition.key, "name": definition.label.removeprefix("Orbit "),
-                  "registeredName": definition.label, "source": "Orbit-Media", "kind": definition.kind,
-                  "image": export(source_path(registered_path, "Borders", addon), "borders"),
-                  "cornerSize": definition.cornerSize or 16}
-        if definition.kind == "slice":
-            border.update(nativeImage=export(source_path(definition.edgeFile, "Borders", addon), "borders"),
-                          sliceMargin=definition.sliceMargin, sourceSize=definition.sourceSize,
-                          outset=definition.outset)
-        borders.append(border)
-
     engine = read(library / "LibOrbitGlow-1.0.lua")
     version = int(re.search(r'MINOR_VERSION\s*=\s*(\d+)', engine)[1])
     lua.globals().lib.minorVersion = version
@@ -161,10 +143,10 @@ def build(library, output):
                         "frames": definition.frames, "duration": definition.duration,
                         "overhang": definition.overhang, "coreAlpha": definition.coreAlpha})
 
-    catalog = {"icons": icons, "dispels": dispels, "fills": fills, "borders": borders, "assets": assets, "inputs": inputs}
+    catalog = {"icons": icons, "dispels": dispels, "fills": fills, "assets": assets, "inputs": inputs}
     (output / "catalog.json").write_text(json.dumps(catalog, indent=2) + "\n", encoding="utf-8")
     build_docs(library, output)
-    print(f"Built {len(icons)} icon glows, {len(dispels)} dispel glows, {len(fills)} status-bar fills, {len(borders)} borders.")
+    print(f"Built {len(icons)} icon glows, {len(dispels)} dispel glows, {len(fills)} status-bar fills.")
     print(f"{len(assets)} lossless PNG assets, {sum(p.stat().st_size for p in output.rglob('*') if p.is_file()) / 1024**2:.2f} MiB.")
     print(output)
 

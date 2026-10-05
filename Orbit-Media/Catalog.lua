@@ -1,6 +1,5 @@
 local addonName, addon = ...
 local catalogs = {}
-local legacyBorders = {}
 local EMPTY_SNAPSHOT = table.freeze({})
 
 local function IsStableIdentifier(value)
@@ -176,7 +175,7 @@ addon.Catalog = table.freeze({
 OrbitMedia = table.freeze({
     apiVersion = 1,
     catalogApiVersion = 1,
-    borders = legacyBorders,
+    borders = EMPTY_SNAPSHOT,
     Get = Get,
     Enumerate = Enumerate,
 })

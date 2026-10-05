@@ -127,42 +127,10 @@ const path = require('node:path');
     assert.equal(await page.locator('#fill-value').textContent(), '100%');
     await page.locator('#fill').fill('72');
 
-    await category('borders');
-    assert.equal(await page.locator('.art-card').count(), 7);
-    assert.equal(await page.locator('.animation-controls').isVisible(), false);
-    await page.getByRole('button', {name: 'White', exact: true}).click();
-    await screenshot('desktop-borders');
-    const borderFrame = await page.locator('canvas').first().evaluate(canvas => canvas.toDataURL());
-    await page.locator('#border-width').fill('360');
-    await page.waitForFunction(previous => document.querySelector('canvas').toDataURL() !== previous, borderFrame);
-    assert.equal(await page.locator('#border-width-value').textContent(), '360');
-    await page.locator('#border-height').fill('160');
-    await page.locator('#border-scale').fill('150');
-    await screenshot('desktop-borders-large');
-    await page.locator('#search').fill('chamfer');
-    await page.waitForLoadState('networkidle');
-    assert.equal(await page.locator('.art-card:visible').count(), 1);
-    assert.equal(await page.locator('.art-card:visible').getAttribute('data-shape'), 'slice');
-    await screenshot('desktop-border-chamfer-native');
-    await page.locator('.art-card:visible .copy').click();
-    assert.equal(await page.evaluate(() => window.copiedText), 'Orbit Chamfer Shadow');
-    await page.locator('#border-artwork').selectOption('sharedmedia');
-    await page.waitForLoadState('networkidle');
-    assert.equal(await page.locator('.art-card:visible').getAttribute('data-shape'), 'edge');
-    await screenshot('desktop-border-chamfer-sharedmedia');
-    await page.locator('#border-width').fill('48');
-    await page.locator('#border-height').fill('48');
-    await page.locator('#search').fill('');
-    await page.waitForLoadState('networkidle');
-    await screenshot('desktop-borders-small');
-    await page.locator('#border-width').fill('280');
-    await page.locator('#border-height').fill('100');
-    await page.locator('#border-scale').fill('100');
-    await page.locator('#border-artwork').selectOption('native');
-
+    assert.equal(await page.locator('[data-category="borders"]').count(), 0);
     for (const width of [390, 320]) {
       await page.setViewportSize({width, height: 844});
-      for (const kind of ['icons', 'dispels', 'fills', 'borders']) {
+      for (const kind of ['icons', 'dispels', 'fills']) {
         await category(kind);
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${kind} overflow at ${width}`);
         if (width === 390) await screenshot('mobile-' + kind);
@@ -171,8 +139,8 @@ const path = require('node:path');
     await page.goto(base + '/docs/media.html', {waitUntil: 'networkidle'});
     assert.match(await page.locator('h1').textContent(), /Orbit: Media/);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
-    await page.goto(base + '/docs/glows.html#status-bar-glows', {waitUntil: 'networkidle'});
-    assert.equal(await page.locator('#status-bar-glows').count(), 1);
+    await page.goto(base + '/docs/glows.html#implementation', {waitUntil: 'networkidle'});
+    assert.equal(await page.locator('#implementation').count(), 1);
     assert.equal(await page.getByText('/orbitglow', {exact: true}).count(), 0);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
     await page.setViewportSize({width: 1440, height: 1050});
@@ -180,7 +148,7 @@ const path = require('node:path');
     await page.goto(base + '/#dispels', {waitUntil: 'networkidle'});
     assert.equal(await page.locator('.art-card').count(), 2);
     await page.goto(base + '/#borders', {waitUntil: 'networkidle'});
-    assert.equal(await page.locator('.art-card').count(), 7);
+    assert.equal(await page.locator('.art-card').count(), 40);
     assert.equal(await page.locator('#load-error').isVisible(), false);
     assert.deepEqual(errors, []);
 
@@ -193,7 +161,7 @@ const path = require('node:path');
     await failure.goto(base, {waitUntil: 'networkidle'});
     assert.equal(await failure.locator('#load-error').isVisible(), true);
     await failure.close();
-    console.log('PASS: registered catalogs, pause, tint, corners, source-based contour parity, both aspect variants, copy, search, fill controls, resizable borders and both Chamfer exports, responsive layouts, documentation, deep links, reduced motion, load errors.');
+    console.log('PASS: registered catalogs, pause, tint, corners, source-based contour parity, both aspect variants, copy, search, fill controls, responsive layouts, documentation, deep links, reduced motion, load errors.');
     console.log('Screenshots: ' + output);
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

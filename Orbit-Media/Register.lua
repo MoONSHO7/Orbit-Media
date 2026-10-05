@@ -24,6 +24,8 @@ local ALL_SHAPES = {
     ["round-large"] = true,
     ["round-full"] = true,
     chamfer = true,
+    notch = true,
+    blade = true,
 }
 local SQUARE = { square = true }
 

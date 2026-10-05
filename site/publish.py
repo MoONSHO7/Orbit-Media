@@ -33,8 +33,7 @@ def publish(do_publish):
     if remote != local:
         raise RuntimeError("gh-pages changed upstream. Review the newer branch before publishing.")
     print(f"Website only: {len(names)} files; {len(catalog['icons'])} icon glows, "
-          f"{len(catalog['dispels'])} dispel glows, {len(catalog['fills'])} status-bar fills, "
-          f"{len(catalog['borders'])} borders.")
+          f"{len(catalog['dispels'])} dispel glows, {len(catalog['fills'])} status-bar fills.")
     print(f"Parent: {remote}")
     print(f"Active checkout: {git('branch', '--show-current')}")
     if not do_publish:

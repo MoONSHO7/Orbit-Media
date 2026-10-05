@@ -2,16 +2,14 @@ const $ = (id) => document.getElementById(id);
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const state = { category: 'icons', tint: '#80cfbe', playing: !reducedMotion.matches, speed: 1,
   shape: 'square', iconSize: 40, contour: 'rounded', radius: 8, aspect: 4, explicit: 'auto', fill: 72,
-  corner: 5, family: 'all', borderWidth: 280, borderHeight: 100, borderScale: 100, borderArtwork: 'native',
+  corner: 5, family: 'all',
   query: '', revision: 0, time: 0 };
 const descriptions = {
   icons: ['ORBIT-MEDIA', 'Icon glows', 'Animated outlines and radial effects registered with LibOrbitGlow.'],
   dispels: ['LIBORBITGLOW', 'Dispel glows', 'Tracer and Pin Neon, with contour and aspect-ratio controls.'],
   fills: ['ORBIT-MEDIA · LIBSHAREDMEDIA', 'Status-bar textures', 'Grayscale fills registered with LibSharedMedia.'],
-  borders: ['ORBIT-MEDIA · LIBSHAREDMEDIA', 'Nine-slice borders', 'Corner size stays fixed when the frame is resized.'],
 };
 const images = new Map();
-const borderStrips = new WeakMap();
 const observedCards = new WeakMap();
 const iconRadii = { soft: 5, softer: 10, round: 14 };
 const iconFractions = { square: 0, 'soft-small': 1 / 16, soft: 5 / 40, 'soft-large': 3 / 16,
@@ -91,10 +89,6 @@ function selection(entry) {
     return { sources: entry.def.shapes[shape], shape };
   }
   if (entry.kind === 'fills') return { sources: [entry.def.image], shape: '' };
-  if (entry.kind === 'borders') {
-    const native = entry.def.nativeImage && state.borderArtwork === 'native';
-    return { sources: [native ? entry.def.nativeImage : entry.def.image], shape: native ? 'slice' : 'edge' };
-  }
   const { variant, shape } = contourFor(entry.def, 60 * state.aspect, 60);
   return { sources: [variant.shapes[shape]], shape, variant };
 }
@@ -105,7 +99,6 @@ async function prepare(entry) {
   entry.selected = selected;
   entry.card.dataset.shape = selected.shape;
   entry.detail.textContent = entry.kind === 'fills' ? entry.def.family
-    : entry.kind === 'borders' ? `${entry.def.registeredName} · ${selected.shape === 'slice' ? 'Native slice' : 'SharedMedia'}`
     : entry.kind === 'dispels' ? `${selected.shape} · ${state.aspect}:1` : entry.def.id;
   if (key === entry.resourceKey) return;
   entry.resourceKey = key;
@@ -140,49 +133,6 @@ function sprite(context, atlas, frame, definition, x, y, width, height) {
     fw, fh, x, y, width, height);
 }
 
-function slicedBorder(context, atlas, margin, corner, x, y, width, height) {
-  const sourceX = [0, margin, atlas.width - margin, atlas.width];
-  const sourceY = [0, margin, atlas.height - margin, atlas.height];
-  const targetX = [x, x + corner, x + width - corner, x + width];
-  const targetY = [y, y + corner, y + height - corner, y + height];
-  for (let row = 0; row < 3; row++) for (let column = 0; column < 3; column++) {
-    context.drawImage(atlas, sourceX[column], sourceY[row],
-      sourceX[column + 1] - sourceX[column], sourceY[row + 1] - sourceY[row],
-      targetX[column], targetY[row], targetX[column + 1] - targetX[column], targetY[row + 1] - targetY[row]);
-  }
-}
-
-function edgeBorder(context, atlas, edge, x, y, width, height) {
-  // Backdrop.lua: L/R/T/B/TL/TR/BL/BR, with 1/16-cell guards and vertically repeated edge UVs.
-  const cell = atlas.width / 8, guard = cell / 16, inner = cell - 2 * guard;
-  if (!borderStrips.has(atlas)) {
-    borderStrips.set(atlas, Array.from({length: 4}, (_, index) => {
-      const column = document.createElement('canvas'); column.width = inner; column.height = atlas.height;
-      column.getContext('2d').drawImage(atlas, index * cell + guard, 0, inner, atlas.height, 0, 0, inner, atlas.height);
-      return column;
-    }));
-  }
-  for (let corner = 0; corner < 4; corner++) {
-    context.drawImage(atlas, (corner + 4) * cell + guard, guard, inner, inner,
-      x + (corner % 2 ? width - edge : 0), y + (corner > 1 ? height - edge : 0), edge, edge);
-  }
-  const strip = (index, length, left, top, horizontal) => {
-    if (length <= 0) return;
-    const start = atlas.height / 16;
-    const span = (length / edge - 1 / 8) * atlas.height;
-    context.save(); context.translate(left, top);
-    if (horizontal) context.rotate(Math.PI / 2);
-    const pattern = context.createPattern(borderStrips.get(atlas)[index], 'repeat-y');
-    pattern.setTransform(new DOMMatrix([edge / inner, 0, 0, length / span, 0, -start * length / span]));
-    context.fillStyle = pattern; context.fillRect(0, 0, edge, length);
-    context.restore();
-  };
-  strip(0, height - 2 * edge, x, y + edge, false);
-  strip(1, height - 2 * edge, x + width - edge, y + edge, false);
-  strip(2, width - 2 * edge, x + width - edge, y, true);
-  strip(3, width - 2 * edge, x + width - edge, y + height - edge, true);
-}
-
 function render(entry, frame) {
   const logicalWidth = entry.preview.clientWidth, logicalHeight = entry.preview.clientHeight;
   if (!logicalWidth || !logicalHeight) return;
@@ -210,19 +160,6 @@ function render(entry, frame) {
       context.globalCompositeOperation = 'lighter';
       sprite(context, entry.layers[1], frame, entry.def, (logicalWidth - effect) / 2, (logicalHeight - effect) / 2, effect, effect);
     }
-  } else if (entry.kind === 'borders') {
-    const fit = Math.min(1, (logicalWidth - 36) / 360, (logicalHeight - 36) / 160);
-    const frameWidth = state.borderWidth * fit, frameHeight = state.borderHeight * fit;
-    const x = (logicalWidth - frameWidth) / 2, y = (logicalHeight - frameHeight) / 2;
-    const edge = entry.def.cornerSize * state.borderScale / 100 * fit;
-    if (entry.layers) {
-      if (entry.selected.shape === 'slice') {
-        slicedBorder(context, entry.layers[0], entry.def.sliceMargin, edge, x, y, frameWidth, frameHeight);
-      } else edgeBorder(context, entry.layers[0], edge, x, y, frameWidth, frameHeight);
-    }
-    context.fillStyle = '#8b969e'; context.font = '10px Consolas, monospace';
-    context.textAlign = 'center'; context.textBaseline = 'middle';
-    if (frameWidth > 95) context.fillText(`${state.borderWidth} × ${state.borderHeight}`, logicalWidth / 2, logicalHeight / 2);
   } else {
     const baseWidth = entry.kind === 'dispels' ? 60 * state.aspect : 280;
     const baseHeight = entry.kind === 'dispels' ? 60 : 34;
@@ -277,7 +214,7 @@ function notify(message) {
 
 async function copy(entry) {
   let value;
-  if (entry.kind === 'fills' || entry.kind === 'borders') value = entry.def.registeredName;
+  if (entry.kind === 'fills') value = entry.def.registeredName;
   else if (entry.kind === 'icons') value = entry.def.id;
   else {
     const contour = state.contour === 'square' ? '{ kind = "square" }'
@@ -295,7 +232,7 @@ function createCard(definition, kind) {
   card.dataset.id = definition.id;
   const preview = document.createElement('div'); preview.className = 'preview';
   const canvas = document.createElement('canvas'); canvas.setAttribute('role', 'img');
-  canvas.setAttribute('aria-label', `${definition.name} ${kind === 'borders' ? 'nine-slice border' : kind === 'fills' ? 'status-bar texture' : 'animated glow'} preview`);
+  canvas.setAttribute('aria-label', `${definition.name} ${kind === 'fills' ? 'status-bar texture' : 'animated glow'} preview`);
   preview.append(canvas);
   const meta = document.createElement('div'); meta.className = 'card-meta';
   const title = document.createElement('h3'); title.className = 'card-name'; title.textContent = definition.name;
@@ -324,13 +261,10 @@ function refresh() {
     }
   }
   $('empty').hidden = count !== 0;
-  $('result-count').textContent = `${count} / ${cards.length} ${state.category === 'borders' ? 'borders' : state.category === 'fills' ? 'textures' : 'glows'}`;
+  $('result-count').textContent = `${count} / ${cards.length} ${state.category === 'fills' ? 'textures' : 'glows'}`;
   $('radius-value').textContent = state.radius;
   $('icon-size-value').textContent = state.iconSize;
   $('fill-value').textContent = `${state.fill}%`;
-  $('border-width-value').textContent = state.borderWidth;
-  $('border-height-value').textContent = state.borderHeight;
-  $('border-scale-value').textContent = `${state.borderScale}%`;
   $('radius').disabled = state.contour === 'square' || state.explicit !== 'auto';
   $('contour').disabled = state.explicit !== 'auto';
   for (const button of document.querySelectorAll('.swatch')) {
@@ -340,23 +274,21 @@ function refresh() {
 }
 
 function changeCategory(category, updateHash = true) {
-  if (!Object.hasOwn(descriptions, category)) return;
+  if (!Object.hasOwn(descriptions, category)) category = 'icons';
   observer.disconnect();
   state.category = category; state.query = ''; $('search').value = '';
   const details = descriptions[category];
   $('source-label').textContent = details[0]; $('gallery-title').textContent = details[1]; $('description').textContent = details[2];
-  $('search').placeholder = category === 'borders' ? 'Find a border…' : category === 'fills' ? 'Find a texture…' : 'Find a glow…';
+  $('search').placeholder = category === 'fills' ? 'Find a texture…' : 'Find a glow…';
   for (const button of document.querySelectorAll('.category')) {
     const selected = button.dataset.category === category;
     button.classList.toggle('selected', selected); button.setAttribute('aria-pressed', selected);
   }
   $('icon-controls').hidden = category !== 'icons'; $('dispel-controls').hidden = category !== 'dispels';
-  $('fill-controls').hidden = category !== 'fills'; $('border-controls').hidden = category !== 'borders';
-  document.querySelector('.animation-controls').hidden = category === 'fills' || category === 'borders';
+  $('fill-controls').hidden = category !== 'fills';
+  document.querySelector('.animation-controls').hidden = category === 'fills';
   $('gallery-note').textContent = category === 'dispels'
     ? 'Included with LibOrbitGlow. The contour chooses the closest baked outline; an explicit artwork choice takes priority. Your addon owns its masks.'
-    : category === 'borders'
-      ? 'Corners stay fixed as the frame grows. SharedMedia edges repeat; native slice edges stretch. White shows the original artwork. Your addon owns padding and masks.'
       : 'Previewed from the current artwork. Color and blending may look slightly different in-game.';
   cards = catalog[category].map(definition => createCard(definition, category));
   $('cards').className = `grid ${category}`; $('cards').replaceChildren(...cards.map(entry => entry.card));
@@ -375,7 +307,7 @@ function tick(now) {
   if (state.playing && !document.hidden) state.time += elapsed * state.speed;
   for (const entry of cards) {
     if (!entry.visible || entry.card.hidden || document.hidden) continue;
-    const frame = entry.kind === 'fills' || entry.kind === 'borders' ? 0 : Math.floor(state.time / entry.def.duration * entry.def.frames) % entry.def.frames;
+    const frame = entry.kind === 'fills' ? 0 : Math.floor(state.time / entry.def.duration * entry.def.frames) % entry.def.frames;
     render(entry, frame);
   }
   requestAnimationFrame(tick);
@@ -385,7 +317,7 @@ async function boot() {
   const response = await fetch('catalog.json');
   if (!response.ok) throw new Error('The artwork catalog could not be loaded. Please reload the gallery.');
   catalog = await response.json();
-  for (const category of ['icons', 'dispels', 'fills', 'borders']) $(`${category}-count`).textContent = catalog[category].length;
+  for (const category of ['icons', 'dispels', 'fills']) $(`${category}-count`).textContent = catalog[category].length;
   for (const family of [...new Set(catalog.fills.map(fill => fill.family))]) {
     const option = document.createElement('option'); option.value = family; option.textContent = family; $('family').append(option);
   }
@@ -397,8 +329,6 @@ async function boot() {
     ['tint', 'tint', String], ['speed', 'speed', Number], ['icon-shape', 'shape', String], ['icon-size', 'iconSize', Number],
     ['contour', 'contour', String], ['radius', 'radius', Number], ['aspect', 'aspect', Number],
     ['dispel-shape', 'explicit', String], ['fill', 'fill', Number], ['fill-corner', 'corner', Number], ['family', 'family', String],
-    ['border-width', 'borderWidth', Number], ['border-height', 'borderHeight', Number],
-    ['border-scale', 'borderScale', Number], ['border-artwork', 'borderArtwork', String],
   ]) $(id).addEventListener('input', event => { state[key] = cast(event.target.value); refresh(); });
   $('search').addEventListener('input', event => { state.query = event.target.value.trim().toLowerCase(); refresh(); });
   $('play').addEventListener('click', () => setPlaying(!state.playing));

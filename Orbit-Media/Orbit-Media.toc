@@ -14,9 +14,7 @@
 ## X-Curse-Project-ID: 1586459
 
 Catalog.lua
-Borders.lua
 HUDArtwork.lua
 CastCompletion.lua
-RegisterBorders.lua
 RegisterStatusBars.lua
 Register.lua
