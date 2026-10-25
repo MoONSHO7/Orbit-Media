@@ -47,7 +47,8 @@ geometry; `glow_rounded.py` owns their radius ladder. `GLOW_SHAPES` and `--glows
 
 `.pkgmeta` packages the inner addon under CurseForge project 1586459 with runtime Lua, the TOC, icon, 872
 glow, 102 status-bar, 30 HUD and 148 cast TGAs. Authoring stays in `output/`; `site/` is excluded
-from the addon.
+from the addon. Its manual Markdown changelog is the full repository `CHANGELOG.md`, used for CurseForge's file
+changelog and GitHub's release body.
 
 ## Gotchas
 - Enable Orbit-Media and remove the obsolete Orbit-Glow-Pack installation when updating manually.

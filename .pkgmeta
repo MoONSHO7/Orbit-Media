@@ -1,5 +1,9 @@
 package-as: Orbit-Media
 
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
 move-folders:
   Orbit-Media/Orbit-Media: Orbit-Media
 
